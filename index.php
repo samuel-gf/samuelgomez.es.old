@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/general.css">
-        <!--<script type="text/javascript" src="js/latexit.js"></script>-->
+        <!--<script type="text/javascript" src="js/Parsedown.js"></script>-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
         <?php
             require(__DIR__."/const.php");
