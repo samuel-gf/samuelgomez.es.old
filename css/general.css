@@ -1,0 +1,90 @@
+/* Palette URL: http://paletton.com/#uid=24b0u0kl7ll5grMdboxt9i9K-f1 */
+
+html{
+	font-family: sans-serif;
+	font-size: 18px;
+	background-color: #eeeeff;
+}
+
+.preformatted{
+    font-family: monospace;
+    white-space: pre;
+}
+
+body {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+ul{
+	padding-bottom: 2em;
+}
+
+li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.logoP{	font-size: 2rem;
+		color: black;
+		display: flex;
+		flex-direction: row;
+		vertical-align: bottom;
+	}
+
+.logoSil1{ color: #241464;	}
+.logoSil2{ color: #241464;	}
+.logoSil3{ color: #aa953a;	}
+.logoExt{ color: grey; font-size: 0.9rem; align-items: flex-end;}
+
+aside{
+	width: 20%;
+	overflow-y: auto;
+	position: fixed;
+	padding: 1rem 2rem 1rem 1rem;
+	/*
+	border-radius: 2rem;
+	background-color: #DDD7B9;*/
+	color: #aaaaaa;
+	font-size: 0.9rem;
+}
+
+aside section{
+	margin-bottom: 2em;
+}
+
+strong {
+	color: #241464;
+}
+
+aside section li{
+	list-style-type: none;
+}
+
+main{
+	margin-left: 20%;
+	padding: 1rem 1rem 1rem 2rem;
+	font-size: 1rem;
+}
+
+article{
+	padding-bottom: 2em;
+}
+
+header {
+	padding-bottom: 1rem;
+}
+
+header h1 {
+	font-size: 2rem;
+	color: #241464;
+}
+
+header time {
+	font-size: 0.8rem;
+}
