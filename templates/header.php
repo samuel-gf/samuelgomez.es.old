@@ -6,10 +6,10 @@
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/css/general.css">
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML' async></script>
 
 	</head>
-	<body>        
+	<body>
         <aside>
 			<img class="logo" src="/img/logo9.svg" alt="Logo Genio del Mal">
             <section>
