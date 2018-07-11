@@ -9,7 +9,11 @@
 
 html{
 	font-family: sans-serif;
-	font-size: 10px;
+	font-size: 16px;
+}
+
+.MathJax {
+	/*font-size: 21.3rem;*/
 }
 
 .preformatted{
@@ -89,15 +93,11 @@ header time {
 
 @media only screen and (min-width: 801px) {
 	html{
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	aside{
 		display: block;
-	}
-
-	.logoP{
-		font-size: 2rem;
 	}
 
 	main{

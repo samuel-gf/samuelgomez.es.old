@@ -7,10 +7,10 @@ function conectaDB(){
     return $db;
 }
 
-function getArrArticulos($max=10){
+function getArrArticulos($max=10, $order = 'DESC'){
     $db = $_SESSION['db'];
     $max = $db->escape_string(trim($max));
-    $query = "SELECT * FROM artículos LIMIT $max";
+    $query = "SELECT * FROM artículos ORDER BY firstTS $order LIMIT $max";
     $rArticulos = $db->query($query);
     ($rArticulos)?NULL:die("***** ERROR SQL: ".$query."\n");
     $arrArticulos = array();

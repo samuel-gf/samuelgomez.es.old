@@ -4,7 +4,7 @@
     require(__DIR__."/lib/libSql.php");
     conectaDB();
 
-    $arrArticulos = getArrArticulos();
+    $arrArticulos = getArrArticulos(10, 'DESC');
     $tmplHeader = file_get_contents(TEMPLATES.'/header.php');
     $tmplArticle = file_get_contents(TEMPLATES.'/article.php');
     $tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
