@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
     // Convierte la primera letra del nombre y apellido en mayúsculas
     function ucname($string) {
         mb_internal_encoding('UTF-8');
@@ -21,10 +19,17 @@
         return date("Y-m-d");
     }
 
+    /* Retorna una URL amigable a partir de un string */
+    function strToUrl($str){
+        $str = mb_strtolower(trim($str));
+        $str = str_replace(array('á','é', 'í', 'ó', 'ú', 'ñ', '¿', ' '),
+                              array('a', 'e', 'i', 'o', 'u', 'n', '?', '-'), $str);
+        return $str;
+    }
+
     function getFechaFromSQL($mysqldate, $formato){
         $phpdate = strtotime($mysqldate);
         return date($formato, $phpdate);
-
     }
 
 
