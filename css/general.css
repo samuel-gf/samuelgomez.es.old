@@ -2,8 +2,8 @@
 
 html{
 	font-family: sans-serif;
-	font-size: 24px;
 	background-color: #eeeeff;
+	font-size: 10px;
 }
 
 .preformatted{
@@ -13,12 +13,6 @@ html{
 
 body {
 	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 ul{
@@ -30,7 +24,7 @@ li {
 	list-style-position: inside;
 }
 
-.logoP{	font-size: 2rem;
+.logoP{	font-size: 1rem;
 		color: black;
 		display: flex;
 		flex-direction: row;
@@ -42,8 +36,9 @@ li {
 .logoSil3{ color: #aa953a;	}
 .logoExt{ color: grey; font-size: 0.9rem; align-items: flex-end;}
 
+
 aside{
-	width: 20%;
+	width: 25%;
 	overflow-y: auto;
 	position: fixed;
 	padding: 1rem 2rem 1rem 1rem;
@@ -52,6 +47,7 @@ aside{
 	background-color: #DDD7B9;*/
 	color: #aaaaaa;
 	font-size: 0.9rem;
+	display: none;
 }
 
 aside section{
@@ -67,7 +63,6 @@ aside section li{
 }
 
 main{
-	margin-left: 20%;
 	padding: 1rem 1rem 1rem 2rem;
 	font-size: 1rem;
 }
@@ -87,4 +82,23 @@ header h1 {
 
 header time {
 	font-size: 0.8rem;
+}
+
+
+@media only screen and (min-width: 801px) {
+	html{
+		font-size: 18px;
+	}
+
+	aside{
+		display: block;
+	}
+
+	.logoP{
+		font-size: 2rem;
+	}
+
+	main{
+		margin-left: 25%;
+	}
 }
