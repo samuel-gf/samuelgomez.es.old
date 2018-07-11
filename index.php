@@ -18,14 +18,7 @@
 	</head>
 	<body>
         <aside>
-            <section>
-                <h1 class="logoP">
-                    <span class="logoSil1">Genio</span>
-                    <span class="logoSil2">Del</span>
-                    <span class="logoSil3">Mal</span>
-                    <span class="logoExt">.es</span>
-                </h1>
-            </section>
+			<img class="logo" src="img/logo9.svg" alt="Logo Genio del Mal">
             <!--
             <section>
                 <strong>Contenidos</strong>

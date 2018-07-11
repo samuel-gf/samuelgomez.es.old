@@ -1,8 +1,14 @@
-/* Palette URL: http://paletton.com/#uid=24b0u0kl7ll5grMdboxt9i9K-f1 */
+/* As hex codes */
+/*
+.color-primary-0 { color: #AA3939 }
+.color-primary-1 { color: #FFAAAA }
+.color-primary-2 { color: #D46A6A }
+.color-primary-3 { color: #801515 }
+.color-primary-4 { color: #550000 }
+*/
 
 html{
 	font-family: sans-serif;
-	background-color: #eeeeff;
 	font-size: 10px;
 }
 
@@ -24,30 +30,25 @@ li {
 	list-style-position: inside;
 }
 
-.logoP{	font-size: 1rem;
-		color: black;
-		display: flex;
-		flex-direction: row;
-		vertical-align: bottom;
-	}
-
-.logoSil1{ color: #241464;	}
-.logoSil2{ color: #241464;	}
-.logoSil3{ color: #aa953a;	}
-.logoExt{ color: grey; font-size: 0.9rem; align-items: flex-end;}
-
-
 aside{
 	width: 25%;
 	overflow-y: auto;
 	position: fixed;
 	padding: 1rem 2rem 1rem 1rem;
-	/*
-	border-radius: 2rem;
-	background-color: #DDD7B9;*/
 	color: #aaaaaa;
 	font-size: 0.9rem;
 	display: none;
+}
+
+aside .logo{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+	padding-bottom: 2rem;
+	width: 95%;
+
 }
 
 aside section{
@@ -55,7 +56,7 @@ aside section{
 }
 
 strong {
-	color: #241464;
+	color: #AA3939;
 }
 
 aside section li{
@@ -77,11 +78,12 @@ header {
 
 header h1 {
 	font-size: 2rem;
-	color: #241464;
+	color: #AA3939;
 }
 
 header time {
 	font-size: 0.8rem;
+	color: #777777;
 }
 
 
