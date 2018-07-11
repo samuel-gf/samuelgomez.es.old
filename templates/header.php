@@ -9,8 +9,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 	</head>
-	<body>
-        HOLA
+	<body>        
         <aside>
 			<img class="logo" src="/img/logo9.svg" alt="Logo Genio del Mal">
             <section>
