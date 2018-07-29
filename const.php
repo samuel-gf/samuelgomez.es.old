@@ -1,7 +1,7 @@
 <?php
     // $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
     if (!session_start()) { die("ERROR DE INICIO DE SESIÓN");}
-    const ROOT = __DIR__;    
+    const ROOT = __DIR__;
     const CSS = __DIR__.'/css';
     const JS = __DIR__.'/js';
     const LIB = __DIR__.'/lib';
@@ -10,7 +10,7 @@
     const TEMPLATES = __DIR__.'/templates';
     const MAX_EN_PORTADA = 10;
 
-    if ($_SERVER['REMOTE_ADDR'] == '192.168.1.10'){
+    if (gethostname() == 'mcsamuel.local'){
         define('DATABASE_PASSWORD','uT7A69uJyXPdvBl');
         define('DATABASE_USER','root');
         define('DATABASE_HOST','localhost');

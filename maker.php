@@ -19,6 +19,7 @@
         $strDate = getFechaFromSQL($vArticulo['firstTS'],'Y-m-d');
         $strName = strToUrl($vArticulo['título']);
         $fArticuloName = ARTICLES.'/'.$year.'/'.$strName.'.html';
+        $fRelArticuloName = '/articles/'.$year.'/'.$strName.'.html';
 
         // Si el archivo existe pero es anterior a la útlima fecha de modificación bórralo
         if(file_exists($fArticuloName)){
@@ -31,8 +32,8 @@
                 echo "[$strName] Ok. No modificado<br>";
             }
         }
-
-        $tmplThisArticle = str_replace('{{TÍTULO DEL ARTÍCULO}}',$vArticulo['título'],$tmplArticle);
+        $tmplThisArticle = str_replace('{{TÍTULO DEL ARTÍCULO}}',$vArticulo['título'],$tmplArticle);    // OJO que la última variable de esta línea es diferente a la última en las demás
+        $tmplThisArticle = str_replace('{{HLINK DEL ARTÍCULO}}',$fRelArticuloName,$tmplThisArticle);
         $tmplThisArticle = str_replace('{{PRIMERA FECHA PUBLICACIÓN}}',$vArticulo['firstTS'],$tmplThisArticle);
         $tmplThisArticle = str_replace('{{ÚLTIMA FECHA PUBLICACIÓN}}',$vArticulo['lastTS'],$tmplThisArticle);
         $tmplThisArticle = str_replace('{{CUERPO}}',$vArticulo['cuerpo'],$tmplThisArticle);

@@ -85,6 +85,11 @@ header h1 {
 	color: #AA3939;
 }
 
+header h1 a{
+	color: inherit;
+	text-decoration: none;
+}
+
 header time {
 	font-size: 0.8rem;
 	color: #777777;
