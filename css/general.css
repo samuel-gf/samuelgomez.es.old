@@ -35,25 +35,35 @@ li {
 }
 
 aside{
-	width: 25%;
+	width: 100%;
 	overflow-y: auto;
 	position: fixed;
-	padding: 1rem 2rem 1rem 1rem;
+	padding: 0.5rem 2rem 0.5rem 1rem;
 	color: #aaaaaa;
 	font-size: 0.9rem;
-	display: none;
+	background-color: white;
 }
 
 aside #logoTop{
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2rem;
-	width:90%;
+	float: left;
+	width:85%;
 }
 
-aside section{
-	margin-bottom: 2em;
+aside #nav-toggle{
+	font-size: 2rem;
+}
+
+aside a#nav-toggle{
+	color: #006affff;
+	text-decoration: none;
+	float: right;
+	margin: -0.5rem -0.5rem 0 0;
+}
+
+aside section#sobreMi{
+	margin-bottom: 2rem;
+	display: none;
 }
 
 strong {
@@ -65,7 +75,7 @@ aside section li{
 }
 
 main{
-	padding: 1rem 1rem 1rem 2rem;
+	padding: 5rem 0.5rem 1rem 0.5rem;
 	font-size: 1rem;
 }
 
@@ -78,7 +88,7 @@ header {
 }
 
 header h1 {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: #006affff;
 }
 
@@ -90,19 +100,49 @@ header h1 a{
 header time {
 	font-size: 0.8rem;
 	color: #777777;
+
+}
+
+.cuerpo{
+	font-size: 1.2rem;
 }
 
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 800px) {
 	html{
 		font-size: 22px;
 	}
 
 	aside{
 		display: block;
+		width: 25%;
+		overflow-y: auto;
+		position: fixed;
+		padding: 1rem 1rem 1rem 1rem;
+		color: #aaaaaa;
+		font-size: 0.9rem;
+	}
+
+	aside #logoTop{
+		display: block;
+		float: left;
+		padding-bottom: 2rem;
+		width:100%;
+	}
+
+	aside a#nav-toggle{
+		display: none;
+	}
+
+	aside section#sobreMi{
+		display: block;
+		float: left;
 	}
 
 	main{
 		margin-left: 25%;
+		padding: 1rem 1rem 1rem 2rem;
+		font-size: 1rem;
 	}
+
 }

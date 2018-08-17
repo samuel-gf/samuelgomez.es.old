@@ -12,7 +12,7 @@
     $nArticulos = 0;
     $nArticulosReescritos = 0;
 
-    echo "Maker<br><hr><br>";
+    echo "Maker<br><hr><br>\n\n";
 
     foreach ($arrArticulos as $kArticulo => $vArticulo) {
         $year = $strDate = getFechaFromSQL($vArticulo['firstTS'],'Y');
@@ -20,6 +20,8 @@
         $strName = strToUrl($vArticulo['título']);
         $fArticuloName = ARTICLES.'/'.$year.'/'.$strName.'.html';
         $fRelArticuloName = '/articles/'.$year.'/'.$strName.'.html';
+		$strPrimeraFechaPublicacion = getFechaFromSQL($vArticulo['firstTS'], 'd/m/Y H:m');
+		$strSobreMi = file_get_contents(TEMPLATES.'/sobreMi.php');
 
         // Si el archivo existe pero es anterior a la útlima fecha de modificación bórralo
         if(file_exists($fArticuloName)){
@@ -27,32 +29,37 @@
             $tsEnBDD = strtotime($vArticulo['lastTS']);
             if ($tsEnHtml < $tsEnBDD){
                 unlink($fArticuloName);
-                echo "[$strName] Borrado por obsoleto<br>";
+                echo "[$strName] Borrado por obsoleto<br>\n";
             } else {
-                echo "[$strName] Ok. No modificado<br>";
+                echo "[$strName] Ok. No modificado<br>\n";
             }
         }
-        $tmplThisArticle = str_replace('{{TÍTULO DEL ARTÍCULO}}',$vArticulo['título'],$tmplArticle);    // OJO que la última variable de esta línea es diferente a la última en las demás
-        $tmplThisArticle = str_replace('{{HLINK DEL ARTÍCULO}}',$fRelArticuloName,$tmplThisArticle);
-        $tmplThisArticle = str_replace('{{PRIMERA FECHA PUBLICACIÓN}}',$vArticulo['firstTS'],$tmplThisArticle);
-        $tmplThisArticle = str_replace('{{ÚLTIMA FECHA PUBLICACIÓN}}',$vArticulo['lastTS'],$tmplThisArticle);
-        $tmplThisArticle = str_replace('{{CUERPO}}',$vArticulo['cuerpo'],$tmplThisArticle);
+		// Sustituye los valores del TEMPLATE del fichero HEADER
+		$tmplHeader = str_replace('{{SOBRE MÍ}}', $strSobreMi, $tmplHeader);
 
-        if(!file_exists($fArticuloName)){   // Si no existe el archivo
+		// Sustituye los valores del TEMPLATE del fichero ARTICULO
+		$tmplArticle = str_replace('{{TÍTULO DEL ARTÍCULO}}',$vArticulo['título'],$tmplArticle);
+        $tmplArticle = str_replace('{{HLINK DEL ARTÍCULO}}',$fRelArticuloName,$tmplArticle);
+        $tmplArticle = str_replace('{{PRIMERA FECHA PUBLICACIÓN}}',$strPrimeraFechaPublicacion,$tmplArticle);
+        $tmplArticle = str_replace('{{ÚLTIMA FECHA PUBLICACIÓN}}',$vArticulo['lastTS'],$tmplArticle);
+        $tmplArticle = str_replace('{{CUERPO}}',$vArticulo['cuerpo'],$tmplArticle);
+
+
+        if(!file_exists($fArticuloName)){   // Si no existe el archivo es posible que sea necesario crear un directorio para albergarlo
             !file_exists(ARTICLES.'/'.$year)?mkdir(ARTICLES.'/'.$year):NULL;    // Si no existe el directorio lo crea
             $fArticulo = fopen($fArticuloName, "w");
             $tmplHeaderForThis = str_replace('{{TÍTULO PÁGINA}}',$vArticulo['título'],$tmplHeader);
             fwrite($fArticulo, $tmplHeaderForThis);
 
-            fwrite($fArticulo, $tmplThisArticle);
+            fwrite($fArticulo, $tmplArticle);
 
             fwrite($fArticulo, $tmplFoot);
             fclose($fArticulo);
             $nArticulosReescritos++;
-            echo "[$strName] Creado<br>";
+            echo "[$strName] Creado<br>\n";
         }
         if ($nArticulos <= MAX_EN_PORTADA){
-            $portadaArticulos .= $tmplThisArticle;
+            $portadaArticulos .= $tmplArticle;
         }
         $nArticulos++;
     }
@@ -66,7 +73,7 @@
         fwrite($fPortada, $portadaArticulos);
         fwrite($fPortada, $tmplFoot);
         fclose($fPortada);
-        echo "[index.html] Reescrito<br>";
+        echo "[index.html] Reescrito<br>\n";
     } else {
-        echo "[index.html] Ok. Estaba actualizado<br>";
+        echo "[index.html] Ok. Estaba actualizado<br>\n";
     }
