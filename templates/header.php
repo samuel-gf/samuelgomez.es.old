@@ -28,7 +28,7 @@
 	</head>
 	<body>
         <aside>
-			<img class="logo" src="/img/logo9.svg" alt="Logo Genio del Mal">
+			<img id="logoTop" src="/img/logoS3.png" alt="Logo Samuel Gómez">
             <section>
                 <strong>Sobre mí</strong> Soy padre, ingeniero, padre y motero. Escribí este
                 blog porque creo que puedo aportar algo interesante

@@ -14,7 +14,7 @@
         define('DATABASE_PASSWORD','uT7A69uJyXPdvBl');
         define('DATABASE_USER','root');
         define('DATABASE_HOST','localhost');
-        define('DATABASE_NAME','GenioDelMal');
+        define('DATABASE_NAME','SamuelGomez');
     } else {
         define('DATABASE_PASSWORD','RhL-5aq-vgK-YRn');
         define('DATABASE_USER','dbo685183673');

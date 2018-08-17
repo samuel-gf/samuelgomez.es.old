@@ -61,7 +61,7 @@
     if ($nArticulosReescritos>-1){
         file_exists(ROOT.'/index.html')?unlink(ROOT.'/index.html'):NULL;
         $fPortada = fopen(ROOT.'/index.html', "w");
-        $tmplHeaderForThis = str_replace('{{TÍTULO PÁGINA}}', 'Genio del mal. Portada', $tmplHeader);
+        $tmplHeaderForThis = str_replace('{{TÍTULO PÁGINA}}', 'Samuel Gómez. Portada', $tmplHeader);
         fwrite($fPortada, $tmplHeaderForThis);
         fwrite($fPortada, $portadaArticulos);
         fwrite($fPortada, $tmplFoot);
