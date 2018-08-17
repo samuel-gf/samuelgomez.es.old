@@ -1,4 +1,4 @@
 <section id="sobreMi">
-	<strong>Sobre mí</strong> Soy padre, ingeniero, padre y motero. Escribí este
+	<strong>Sobre mí</strong> Soy padre, ingeniero, físico, profesor y motero. Escribí este
 	blog porque creo que puedo aportar algo interesante
 </section>

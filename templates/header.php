@@ -28,7 +28,7 @@
 	</head>
 	<body>
         <aside>
-			<img id="logoTop" src="/img/logoS3.png" alt="Logo Samuel Gómez">
+			<a href="/index.html"><img id="logoTop" src="/img/logoS3.png" alt="Logo Samuel Gómez"></a>
 			<a id="nav-toggle" href="#">&#9776;</a>
             {{SOBRE MÍ}}
         </aside>
