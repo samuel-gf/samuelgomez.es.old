@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="/css/general.css">
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+		<script src='js/jquery.js'></script>
+		<script src='js/general.js'></script>
 		<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({
     			"HTML-CSS": { scale: 125},
@@ -27,9 +29,14 @@
 
 	</head>
 	<body>
-        <aside>
+        <aside id="sidebar">
 			<a href="/index.html"><img id="logoTop" src="/img/logoS3.png" alt="Logo Samuel Gómez"></a>
 			<a id="nav-toggle" href="#">&#9776;</a>
-            {{SOBRE MÍ}}
+            <section id="info">
+				{{INFO}}
+			</section>
+			<section id="menu">
+				{{MENU}}
+			</section>
         </aside>
 		<main>
