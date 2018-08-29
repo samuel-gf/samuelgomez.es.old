@@ -7,7 +7,7 @@
     const LIB = __DIR__.'/lib';
     const IMG = __DIR__.'/img';
     const ARTICLES = __DIR__.'/articles';
-    const TEMPLATES = __DIR__.'/templates';
+    const TEMPLATES = __DIR__.'/_templates';
     const MAX_EN_PORTADA = 10;
 
     if (gethostname() == 'mcsamuel.local'){
