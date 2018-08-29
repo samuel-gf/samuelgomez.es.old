@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     $("#nav-toggle").click(function(){
-		$("#sidebar section#info").toggle(500);
-		$("#sidebar section#menu").toggle(500);
+		$("#sidebar section#info").fadeToggle("slow");
+		$("#sidebar section#menu").toggle("medium");
 	});
 });
