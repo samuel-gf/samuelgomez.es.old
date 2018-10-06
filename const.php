@@ -3,11 +3,11 @@
 		die("ERROR DE INICIO DE SESIÓN");
 	}
     const ROOT = __DIR__;
-	const SRC = __DIR__.'/src';
-    const CSS = __DIR__.'/css';
-    const JS = __DIR__.'/js';
-    const LIB = __DIR__.'/lib';
-    const IMG = __DIR__.'/img';
-	const HTML = __DIR__.'/html';
-    const TEMPLATES = __DIR__.'/templates';
+	const SRC = ROOT.'/src';
+    const CSS = ROOT.'/css';
+    const JS = ROOT.'/js';
+    const LIB = ROOT.'/lib';
+    const IMG = ROOT.'/img';
+	const HTML = ROOT.'/html';
+    const TEMPLATES = ROOT.'/templates';
     const MAX_EN_PORTADA = 10;

@@ -25,7 +25,6 @@
 
 	// Remplaza las fórmulas LaTex por MathML
 	$r = preg_match_all("/<eq>(.*)<\/eq>/",$tmplArticle, $arrEq);
-	//print_r($arrEq);	die();
 	foreach ($arrEq[1] as $kEqLaTex => $vEqLaTex) {
 		$mathEq = shell_exec('latexmlmath --pmml=- "'.$vEqLaTex.'"');
 		$arrEq[2][$kEqLaTex] = $mathEq;
@@ -34,9 +33,11 @@
 		$tmplArticle = str_replace($arrEq[0][$kEqMathML], $arr[2][$kEqMathML], $tmplArticle);
 	}
 
-	// Escribe el fichero en disco
+	// Escribe el artículo en disco
 	$fArticulo = fopen($fileName, 'w');
 	fwrite($fArticulo, $tmplHeader);
 	fwrite($fArticulo, $tmplArticle);
 	fwrite($fArticulo, $tmplFoot);
 	fclose($fArticulo);
+
+	
