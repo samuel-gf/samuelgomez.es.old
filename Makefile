@@ -1,7 +1,8 @@
-INPUT_FILES = src/*.html
+SOURCES := $(shell find src -name '*.phtml')
+OBJECTS := $(addprefix html/, $(notdir $(shell find src -name '*.html')))
 
-all: $(INPUT_FILES)
-	php maker.php $(notdir $<)
+$(OBJECTS) : $(SOURCES)
+	php makeArticle.php $(notdir $<)
 
 clean:
-	rm html/*.html
+	@rm html/*.html
