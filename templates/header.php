@@ -11,7 +11,7 @@
 
 	</head>
 	<body>
-        <aside id="sidebar">
+        <header id="sidebar">
 			<a href="index.html"><img id="logoTop" src="img/logoS3.png" alt="Logo Samuel Gómez"></a>
 			<a id="nav-toggle" href="#">&#9776;</a>
             <section id="info">
@@ -20,5 +20,5 @@
 			<section id="menu">
 				{{MENU}}
 			</section>
-        </aside>
+        </header>
 		<main>

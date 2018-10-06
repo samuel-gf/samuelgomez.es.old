@@ -1,6 +1,4 @@
 <ul>
-	<li>Alfa</lia>
-	<li>Bravo</lia>
-	<li>Charlie</lia>
-	<li>Delta</lia>
+	<li><a href="#">Matemáticas</a></li>
+	<li><a href="#">Física</a></li>
 </ul>
