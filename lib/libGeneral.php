@@ -1,37 +1,16 @@
 <?php
-    // Convierte la primera letra del nombre y apellido en mayúsculas
-    function ucname($string) {
-        mb_internal_encoding('UTF-8');
-        $arrMayus = ["Á","É","Í","Ó","Ú","Ü","Ñ","Ç"];
-        $arrMinus = ["á","é","í","ó","ú","ü","ñ","ç"];
-        $arrPalabras = explode(" ", $string);
-        $stringFinal = "";
-        foreach ($arrPalabras as $k => $palabra) {
-            $primera = mb_strtoupper(mb_substr($palabra, 0, 1));
-            $resto = mb_substr($palabra, 1);
-            $stringFinal .= $primera.mb_strtolower(str_replace($arrMayus,$arrMinus,$resto), 'UTF-8')." ";
-        }
-        $stringFinal = trim($stringFinal);
-        return $stringFinal;
-    }
     function getHoy(){
         date_default_timezone_set('Europe/Madrid');
         return date("Y-m-d");
     }
 
-    /* Retorna una URL amigable a partir de un string */
+	/* Retorna una URL amigable a partir de un string */
     function strToUrl($str){
         $str = mb_strtolower(trim($str));
         $str = str_replace(array('á','é', 'í', 'ó', 'ú', 'ñ', '¿', ' '),
                               array('a', 'e', 'i', 'o', 'u', 'n', '?', '-'), $str);
         return $str;
     }
-
-    function getFechaFromSQL($mysqldate, $formato){
-        $phpdate = strtotime($mysqldate);
-        return date($formato, $phpdate);
-    }
-
 
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;

@@ -1,23 +1,13 @@
 <?php
-    // $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-    if (!session_start()) { die("ERROR DE INICIO DE SESIÓN");}
+    if (!session_start()) {
+		die("ERROR DE INICIO DE SESIÓN");
+	}
     const ROOT = __DIR__;
+	const SRC = __DIR__.'/src';
     const CSS = __DIR__.'/css';
     const JS = __DIR__.'/js';
     const LIB = __DIR__.'/lib';
     const IMG = __DIR__.'/img';
-    const ARTICLES = __DIR__.'/articles';
-    const TEMPLATES = __DIR__.'/_templates';
+	const HTML = __DIR__.'/html';
+    const TEMPLATES = __DIR__.'/templates';
     const MAX_EN_PORTADA = 10;
-
-    if (gethostname() == 'mcsamuel.local'){
-        define('DATABASE_PASSWORD','uT7A69uJyXPdvBl');
-        define('DATABASE_USER','root');
-        define('DATABASE_HOST','localhost');
-        define('DATABASE_NAME','SamuelGomez');
-    } else {
-        define('DATABASE_PASSWORD','RhL-5aq-vgK-YRn');
-        define('DATABASE_USER','dbo685183673');
-        define('DATABASE_HOST','db685183673.db.1and1.com');
-        define('DATABASE_NAME','db685183673');
-    }

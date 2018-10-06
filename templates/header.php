@@ -6,26 +6,8 @@
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/css/general.css">
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 		<script src='js/jquery.js'></script>
 		<script src='js/general.js'></script>
-		<script type="text/x-mathjax-config">
-  			MathJax.Hub.Config({
-    			"HTML-CSS": { scale: 125},
-				"SVG": {scale: 125},
-				"NativeMML": {scale: 125},
-				"MML": {scale: 125},
-				"PreviewHTML": {scale: 125},
-				"CommonHTML": {scale: 125},
-				matchFontHeight: true
-  				});
-			MathJax.Hub.Register.StartupHook("End Jax",function () {
-				var BROWSER = MathJax.Hub.Browser;
-  				var jax = "CommonHTML";
-  				if (BROWSER.isMSIE && BROWSER.hasMathPlayer) jax = "NativeMML";
-				return MathJax.Hub.setRenderer(jax);
-				});
-		</script>
 
 	</head>
 	<body>
