@@ -4,41 +4,50 @@
 
 	// Lee el contenido de las plantillas
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
-	$tmplArticle = file_get_contents(SRC.'/'.$argv[1]);
+	$tmplArticleFileName = str_replace('.html','.phtml',$argv[1]);
+	$tmplArticleFileName = str_replace('html/', SRC.'/', $tmplArticleFileName);
+	$tmplArticle = file_get_contents($tmplArticleFileName);
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$menu = file_get_contents(TEMPLATES.'/menu.php');
-	$dateOfFile = date('d/m/Y H:m',filemtime (SRC.'/'.$argv[1]));
+	$dateOfFile = date('d/m/Y H:m',filemtime ($tmplArticleFileName));
 	$now = date('d/m/Y H:m');
 
 	// Obtiene el título del artículo extrayendolo del html original
 	$r = preg_match("/<h1>[\r\n]*(.*)/", $tmplArticle, $arrTitle);
 	$title = trim($arrTitle[1]);
-	$fileName = HTML.'/'.strToUrl($title).'.html';
+	$fileDestName = dirname($argv[1]).'/'.strToUrl($title).'.html';
+	$dirDestino = dirname($fileDestName);
+	$numDirectorios = substr_count($dirDestino, '/');	// Cuantos directorios de profundidad tiene el directorio destino
 
 	// Remplaza campos en la plantilla header
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplHeader);
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
 	$tmplHeader = str_replace('{{MENU}}',$menu,$tmplHeader);
+	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplHeader);
+
 
 	// Remplaza campos en la plantilla artículo
 	$tmplArticle = str_replace('{{NOW}}',$now,$tmplArticle);
 
 	// Remplaza las fórmulas LaTex por MathML
 	$r = preg_match_all("/<eq>(.*)<\/eq>/",$tmplArticle, $arrEq);
-	foreach ($arrEq[1] as $kEqLaTex => $vEqLaTex) {
-		$command = 'echo \'$$'.$vEqLaTex.'$$\' | pandoc -f html+tex_math_dollars -t html --mathml';
-		$command = str_replace('\\', '\\\\', $command);
-		$mathEq = shell_exec($command);
-		$arrEq[2][$kEqLaTex] = $mathEq;
+	if ($r > 0){	// No hay expresiones regulares que tratar
+		foreach ($arrEq[1] as $kEqLaTex => $vEqLaTex) {
+			$command = 'echo \'$$'.$vEqLaTex.'$$\' | pandoc -f html+tex_math_dollars -t html --mathml';
+			$command = str_replace('\\', '\\\\', $command);
+			$mathEq = shell_exec($command);
+			$arrEq[2][$kEqLaTex] = $mathEq;
+		}
+		foreach ($arrEq[2] as $kEqMathML => $vEqMathML) {
+			$tmplArticle = str_replace($arrEq[1][$kEqMathML], $vEqMathML, $tmplArticle);
+		}
 	}
-	foreach ($arrEq[2] as $kEqMathML => $vEqMathML) {
-		$tmplArticle = str_replace($arrEq[1][$kEqMathML], $vEqMathML, $tmplArticle);
-	}
-
 
 	// Escribe el artículo en disco
-	$fArticulo = fopen($fileName, 'w');
+	!file_exists($dirDestino)?mkdir($dirDestino):NULL;
+
+	$fArticulo = fopen($fileDestName, 'w');
 	fwrite($fArticulo, $tmplHeader);
 	fwrite($fArticulo, $tmplArticle);
 	fwrite($fArticulo, $tmplFoot);

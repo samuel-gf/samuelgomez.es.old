@@ -1,9 +1,11 @@
 PHTML := $(shell find src -name '*.phtml')
-HTML := $(addprefix html/, $(basename $(notdir $(shell find src -name '*.phtml')))).html
+HTML := $(subst src/,html/,$(PHTML:.phtml=.html))
 TEMPLATES := $(shell find templates -name '*.php')
 
-$(HTML) : $(TEMPLATES) $(PHTML)
-	php makeArticle.php $(basename $(notdir $@)).phtml
+all: $(HTML)
 
-clean:
-	@rm html/*.html
+$(HTML) : $(subst src/,html/,$($@:.html=.phtml)) $(TEMPLATES)
+	php makeArticle.php $@
+
+clean:	
+	@find html -name *.html -exec rm {} \;
