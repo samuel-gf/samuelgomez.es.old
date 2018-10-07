@@ -27,21 +27,24 @@
 	$tmplHeader = str_replace('{{MENU}}',$menu,$tmplHeader);
 	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplHeader);
 
-
 	// Remplaza campos en la plantilla artículo
 	$tmplArticle = str_replace('{{NOW}}',$now,$tmplArticle);
 
 	// Remplaza las fórmulas LaTex por MathML
-	$r = preg_match_all("/<eq>(.*)<\/eq>/",$tmplArticle, $arrEq);
+	// $arrEq es un array con subarrays de ecuaciones
+	//	$arrEq[0] es un array con las expresiones originales con $$
+	//	$arrEq[1] es un array con las que no contienen $$
+	$r = preg_match_all("/\\$\\$(.*)\\$\\$/",$tmplArticle, $arrEq);
 	if ($r > 0){	// No hay expresiones regulares que tratar
 		foreach ($arrEq[1] as $kEqLaTex => $vEqLaTex) {
 			$command = 'echo \'$$'.$vEqLaTex.'$$\' | pandoc -f html+tex_math_dollars -t html --mathml';
 			$command = str_replace('\\', '\\\\', $command);
 			$mathEq = shell_exec($command);
-			$arrEq[2][$kEqLaTex] = $mathEq;
+			$arrEq[2][$kEqLaTex] = $mathEq;	// El
 		}
+		// $arrEq[2] es un array con las expresiones en MathML
 		foreach ($arrEq[2] as $kEqMathML => $vEqMathML) {
-			$tmplArticle = str_replace($arrEq[1][$kEqMathML], $vEqMathML, $tmplArticle);
+			$tmplArticle = str_replace($arrEq[0][$kEqMathML], $vEqMathML, $tmplArticle);
 		}
 	}
 

@@ -32,6 +32,5 @@
 
 		}
 		$ret .= "\t</ul>\n";
-		echo $ret."*";
 		return $ret;
 	}
