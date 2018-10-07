@@ -12,6 +12,33 @@
         return $str;
     }
 
+	/* Devuelve un array con todos los ficheros .phtml y cierta información en forma de array */
+	function getArrFiles($root, $ext){
+		clearstatcache();
+		$arrFilesBuscados = array();
+		$arrAllDirs = getDirectorios($root, $rutaCompleta=true);
+		$arrAllDirs = array_merge(array($root), $arrAllDirs);
+		//print_r($arrAllDirs);	die();
+		foreach ($arrAllDirs as $kDir => $vDir) {
+			//echo "Entro en $vDir\n";
+			$arrFiles = scandir($vDir);
+			foreach ($arrFiles as $kFile => $vFile) {
+				//echo "\t$vFile";
+				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
+					//echo "*";
+					array_push($arrFilesBuscados, array(
+						'nombre' => str_replace($root, '', $vDir).'/'.$vFile,
+						'nombreCompleto' => $vDir.'/'.$vFile,
+						'uModificacion' => filemtime($vDir.'/'.$vFile)));
+				}
+				//echo "\n";
+			}
+		}
+		//die();
+		return $arrFilesBuscados;
+	}
+
+
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;
         $padBefore = $dir === STR_PAD_BOTH || $dir === STR_PAD_LEFT;
@@ -33,6 +60,31 @@
 	    $then = mb_substr($string, 1, $strlen - 1, $encoding);
 	    return mb_strtoupper($firstChar, $encoding) . $then;
 	}
+
+
+	// Devuelve un array con todos los directorios y subdirectorios que dependen de $root
+	function getDirectorios($root, $rutaCompleta=false){
+		$ret = '';
+		$iter = new RecursiveIteratorIterator(
+			new RecursiveDirectoryIterator($root, RecursiveDirectoryIterator::SKIP_DOTS),
+			RecursiveIteratorIterator::SELF_FIRST,
+			RecursiveIteratorIterator::CATCH_GET_CHILD // Ignore "Permission denied"
+		);
+
+		$arrAllDirs = array();
+
+		foreach ($iter as $path => $vFile) {
+		    if ($vFile->isDir()) {
+				if ($rutaCompleta){
+					array_push($arrAllDirs, $path);
+				} else {
+		        	array_push($arrAllDirs, str_replace($root.'/', '', $path));
+				}
+		    }
+		}
+		return $arrAllDirs;
+	}
+
 
     // Corta la cadena y rellena con espacios u otro
     function width($str, $nChars, $fill = ' '){

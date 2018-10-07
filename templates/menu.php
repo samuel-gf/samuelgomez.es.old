@@ -5,19 +5,7 @@
 
 	function getMenu($root){
 		$ret = '';
-		$iter = new RecursiveIteratorIterator(
-			new RecursiveDirectoryIterator($root, RecursiveDirectoryIterator::SKIP_DOTS),
-			RecursiveIteratorIterator::SELF_FIRST,
-			RecursiveIteratorIterator::CATCH_GET_CHILD // Ignore "Permission denied"
-		);
-
-		$arrAllDirs = array();
-
-		foreach ($iter as $path => $vFile) {
-		    if ($vFile->isDir()) {
-		        array_push($arrAllDirs, str_replace($root.'/', '', $path));
-		    }
-		}
+		$arrAllDirs = getDirectorios($root);
 		$ret .= "\t<ul>\n";
 
 		$subnivel = 0;

@@ -11,13 +11,14 @@
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$menu = getMenu(SRC);
-	$dateOfFile = date('d/m/Y H:m',filemtime ($tmplArticleFileName));
-	$now = date('d/m/Y H:m');
+	$dateOfFile = date('d/m/Y H:i',filemtime ($tmplArticleFileName));
+	$now = date('d/m/Y H:i');
 
 	// Obtiene el título del artículo extrayendolo del html original
-	$r = preg_match("/<h1>[\r\n]*(.*)/", $tmplArticle, $arrTitle);
+	$r = preg_match("/<h1>[\r\n\t.]*<a.*>[\r\n]*(.*)<\/a>/", $tmplArticle, $arrTitle);
 	$title = trim($arrTitle[1]);
 	$fileDestName = dirname($argv[1]).'/'.strToUrl($title).'.html';
+	//echo str_replace(HTML,'',dirname($fileDestName))."\n"; die();
 	$dirDestino = dirname($fileDestName);
 	$numDirectorios = substr_count($dirDestino, '/');	// Cuantos directorios de profundidad tiene el directorio destino
 
@@ -29,12 +30,14 @@
 
 	// Remplaza campos en la plantilla artículo
 	$tmplArticle = str_replace('{{NOW}}',$now,$tmplArticle);
+	$tmplArticle = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplArticle);
+	$tmplArticle = str_replace('{{URL_PERMANENTE}}',strToUrl($title).'.html',$tmplArticle);
 
 	// Remplaza las fórmulas LaTex por MathML
 	// $arrEq es un array con subarrays de ecuaciones
 	//	$arrEq[0] es un array con las expresiones originales con $$
 	//	$arrEq[1] es un array con las que no contienen $$
-	$r = preg_match_all("/\\$\\$(.*)\\$\\$/",$tmplArticle, $arrEq);
+	$r = preg_match_all("/\\$\\$(.*)\\$\\$/s",$tmplArticle, $arrEq);
 	if ($r > 0){	// No hay expresiones regulares que tratar
 		foreach ($arrEq[1] as $kEqLaTex => $vEqLaTex) {
 			$command = 'echo \'$$'.$vEqLaTex.'$$\' | pandoc -f html+tex_math_dollars -t html --mathml';
