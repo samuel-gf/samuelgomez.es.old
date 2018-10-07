@@ -31,6 +31,10 @@ li {
 	list-style-position: inside;
 }
 
+strong {
+	color: #006affff;
+}
+
 #sidebar{
 	width: 100%;
 	overflow-y: auto;
@@ -59,25 +63,32 @@ li {
 	margin: -0.5rem -0.5rem 0 0;
 }
 
-#sidebar section#info{
+#info{
 	margin: 2rem 0 2rem 0;
 	display: none;
 	clear: both;
 }
 
-#sidebar section#menu{
+#menu{
 	font-size: 2rem;
 	display: none;
 	clear: both;
-	text-align: center;
+	text-align: left;
 }
 
-strong {
-	color: #006affff;
-}
-
-#sidebar section li{
+#menu li{
 	list-style-type: none;
+}
+
+#menu li.segundoNivel{
+	font-size: 80%;
+	margin-left: 1rem;
+	list-style-type: square;	
+}
+
+#menu li a{
+	color: #006affff;
+	text-decoration: none;
 }
 
 main{

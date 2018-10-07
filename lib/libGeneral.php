@@ -25,6 +25,15 @@
         $after = $padAfter ? mb_substr($repeatedString, 0, ceil($targetLen), $encoding) : '';
         return $before . $str . $after;
     }
+
+	// La primera letra en mayúsula para cadenas unicode
+	function mb_ucfirst($string, $encoding='utf8'){
+	    $strlen = mb_strlen($string, $encoding);
+	    $firstChar = mb_substr($string, 0, 1, $encoding);
+	    $then = mb_substr($string, 1, $strlen - 1, $encoding);
+	    return mb_strtoupper($firstChar, $encoding) . $then;
+	}
+
     // Corta la cadena y rellena con espacios u otro
     function width($str, $nChars, $fill = ' '){
         return mb_str_pad(mb_substr($str,0,$nChars),$nChars,$fill,STR_PAD_RIGHT, $encoding='utf-8');

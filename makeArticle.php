@@ -1,6 +1,7 @@
 <?php
-    require(__DIR__."/const.php");
-    require(__DIR__."/lib/libGeneral.php");
+    require("const.php");
+    require(LIB."/libGeneral.php");
+	require(TEMPLATES."/menu.php");
 
 	// Lee el contenido de las plantillas
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
@@ -9,7 +10,7 @@
 	$tmplArticle = file_get_contents($tmplArticleFileName);
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
-	$menu = file_get_contents(TEMPLATES.'/menu.php');
+	$menu = getMenu(SRC);
 	$dateOfFile = date('d/m/Y H:m',filemtime ($tmplArticleFileName));
 	$now = date('d/m/Y H:m');
 
