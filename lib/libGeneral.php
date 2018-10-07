@@ -28,6 +28,7 @@
 					//echo "*";
 					array_push($arrFilesBuscados, array(
 						'nombre' => str_replace($root, '', $vDir).'/'.$vFile,
+						'título' => getTitleFromText(file_get_contents($vDir.'/'.$vFile)),
 						'nombreCompleto' => $vDir.'/'.$vFile,
 						'uModificacion' => filemtime($vDir.'/'.$vFile)));
 				}
@@ -37,6 +38,14 @@
 		//die();
 		return $arrFilesBuscados;
 	}
+
+	// Obtiene el título del artículo extrayendolo del texto
+	function getTitleFromText($text){
+		$r = preg_match("/<h1>[\r\n]*(.*)/", $text, $arrTitle);
+		$title = trim($arrTitle[1]);
+		return $title;
+	}
+
 
 
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){

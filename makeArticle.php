@@ -15,8 +15,7 @@
 	$now = date('d/m/Y H:i');
 
 	// Obtiene el título del artículo extrayendolo del html original
-	$r = preg_match("/<h1>[\r\n\t.]*<a.*>[\r\n]*(.*)<\/a>/", $tmplArticle, $arrTitle);
-	$title = trim($arrTitle[1]);
+	$title = getTitleFromText($tmplArticle);	
 	$fileDestName = dirname($argv[1]).'/'.strToUrl($title).'.html';
 	//echo str_replace(HTML,'',dirname($fileDestName))."\n"; die();
 	$dirDestino = dirname($fileDestName);
@@ -31,7 +30,7 @@
 	// Remplaza campos en la plantilla artículo
 	$tmplArticle = str_replace('{{NOW}}',$now,$tmplArticle);
 	$tmplArticle = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplArticle);
-	$tmplArticle = str_replace('{{URL_PERMANENTE}}',strToUrl($title).'.html',$tmplArticle);
+	//$tmplArticle = str_replace('{{URL_PERMANENTE}}',strToUrl($title).'.html',$tmplArticle);
 
 	// Remplaza las fórmulas LaTex por MathML
 	// $arrEq es un array con subarrays de ecuaciones

@@ -21,15 +21,15 @@
 		return ($a['uModificacion'] > $b['uModificacion'])?-1:1;
 		});
 	array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .phtml a solo 10 elementos
-	//print_r($arrFilesHtml);	die();
 
 	$strArticulos = '';
 	// Por cada artículo obtén el contenido
 	foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		$article = file_get_contents($vHtml['nombreCompleto']);
 		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);
-		$arr[0] = preg_replace("/<a id=\"enlacePermanente\" href=\"#\"/","<a id=\"enlacePermanente\" href=\"".mb_substr($vHtml['nombre'],1)."\"",$arr[0]);	// Pon la URL correcta
-		$strArticulos .= $arr[0];
+		$article=$arr[0];		
+		$article = str_replace($vHtml['título'],'<a id="enlacePermanente" href='.mb_substr($vHtml['nombre'],1).'>'.$vHtml['título'].'</a>',$article);	// Pon la URL correcta
+		$strArticulos .= $article;
 	}
 
 
