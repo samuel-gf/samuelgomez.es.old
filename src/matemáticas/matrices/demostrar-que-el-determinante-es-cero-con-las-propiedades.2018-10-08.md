@@ -1,7 +1,7 @@
 ---
 title: Demostrar que el determinante es cero empleando las propiedades de las matrices
 author: Samuel Gómez
-date: 12 de octubre de 2018 a las 11:13
+date: 12/10/2018 12:13
 ---
 
 # Demostrar que el determinante es cero empleando las propiedades de las matrices
