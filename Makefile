@@ -1,20 +1,16 @@
-PHTML := $(shell find src -name '*.phtml')
-HTML := $(subst src/,html/,$(PHTML:.phtml=.html))
+MD := $(shell find src -name '*.md')
+HTML := $(subst src/,html/,$(MD:.md=.html))
 TEMPLATES := $(shell find templates -name '*.php')
 
 all: $(HTML) html/index.html
 
-html/%.html: src/%.phtml $(TEMPLATES)
+html/%.html: src/%.md $(TEMPLATES)
 	php makeArticle.php $@
 
+
 html/index.html:
-	php makeIndex.php
-
-#$(HTML) : $(subst html/,src/,$(@:.html=.phtml)) $(TEMPLATES)
-#	echo $(subst html/,src/,$(@:.html=.phtml))
-#	php makeArticle.php $@
-
-
+	#@php makeIndex.php
+	#@php makeArticle.php $@
 
 clean:
 	@find html -name *.html -exec rm {} \;
