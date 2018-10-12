@@ -30,7 +30,7 @@
 	touch($fileNameMd, $tsFileMd);
 
 	// pandoc .md -> .html
-	!file_exists($dirDestino)?mkdir($dirDestino):NULL;
+	!file_exists(dirname($fileNameMd))?mkdir(dirname($fileNameMd)):NULL;
 	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
 	shell_exec($command);
 

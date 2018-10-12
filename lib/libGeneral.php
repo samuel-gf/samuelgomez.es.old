@@ -26,6 +26,7 @@
 				//echo "\t$vFile";
 				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
 					//echo "*";
+					//echo file_get_contents($vDir.'/'.$vFile);
 					array_push($arrFilesBuscados, array(
 						'nombre' => str_replace($root, '', $vDir).'/'.$vFile,
 						'título' => getTitleFromText(file_get_contents($vDir.'/'.$vFile)),
@@ -41,7 +42,7 @@
 
 	// Obtiene el título del artículo extrayendolo del texto
 	function getTitleFromText($text){
-		$r = preg_match("/<h1>[\r\n]*(.*)/", $text, $arrTitle);
+		$r = preg_match("/<title>(.*)<\/title>/", $text, $arrTitle);
 		$title = trim($arrTitle[1]);
 		return $title;
 	}

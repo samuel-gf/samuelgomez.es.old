@@ -9,8 +9,7 @@ html/%.html: src/%.md $(TEMPLATES)
 
 
 html/index.html:
-	#@php makeIndex.php
-	#@php makeArticle.php $@
+	php makeIndex.php	
 
 clean:
 	@find html -name *.html -exec rm {} \;
