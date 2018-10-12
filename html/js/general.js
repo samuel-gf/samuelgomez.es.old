@@ -3,4 +3,5 @@ $( document ).ready(function() {
 		$("#sidebar section#info").fadeToggle("fast");
 		$("#sidebar section#menu").toggle("medium");
 	});
+
 });

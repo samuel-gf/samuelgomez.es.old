@@ -12,7 +12,7 @@
         return $str;
     }
 
-	/* Devuelve un array con todos los ficheros .phtml y cierta información en forma de array */
+	/* Devuelve un array con todos los ficheros .md y cierta información en forma de array */
 	function getArrFiles($root, $ext){
 		clearstatcache();
 		$arrFilesBuscados = array();

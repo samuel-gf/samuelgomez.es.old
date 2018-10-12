@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		<title>{{TÍTULO PÁGINA}}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,6 +8,24 @@
 
 		<script src='{{BASE_DIR}}js/jquery.js'></script>
 		<script src='{{BASE_DIR}}js/general.js'></script>
+
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  jax: ["input/TeX","output/CommonHTML"],
+		  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+		  TeX: {
+		    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+		},
+		"fast-preview": {
+			    Chunks: {EqnChunk: 10000, EqnChunkFactor: 1, EqnChunkDelay: 0},
+			    color: "inherit!important",
+			    updateTime: 30, updateDelay: 6,
+			    messageStyle: "none",
+			    disabled: false
+			  }
+		});
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' async></script>
 
 	</head>
 	<body>
