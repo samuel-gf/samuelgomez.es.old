@@ -20,9 +20,7 @@
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
 
 	// Obtiene la fecha de creación del artículo a partir del nombre
-	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];
-	echo "Fecha creación $fechaCreacion\n";
-	//$tsFileMd = filemtime($fileNameMd);
+	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];	
 	$tsFileMd = strtotime($fechaCreacion);
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
