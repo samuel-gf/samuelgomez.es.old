@@ -1,7 +1,7 @@
 ---
 title: Hallar el valor del determinante
 author: Samuel Gómez
-date: 12/10/2018 23:14
+date: 20/10/2018 15:34
 ---
 
 # Hallar el valor del determinante

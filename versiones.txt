@@ -1,1 +1,2 @@
-0.15  Emplea como fuentes ficheros .md en lugar de .phtml
+0.16	Funcionará con KeTex en lugar de MathJax
+0.15  	Emplea como fuentes ficheros .md en lugar de .phtml

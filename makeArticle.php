@@ -32,8 +32,8 @@
 	// pandoc .md -> .html
 	!file_exists(dirname($fileDestNameCompleto))?mkdir(dirname($fileDestNameCompleto)):NULL;
 	//$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
-	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathjax -o $fileDestNameCompleto";
-	echo $command."\n";
+	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --katex -o $fileDestNameCompleto";
+	//echo $command."\n";
 	echo shell_exec($command)."\n";
 
 	// Remplaza campos en la plantilla header

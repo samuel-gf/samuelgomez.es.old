@@ -1,7 +1,7 @@
 ---
 title: Los números están en todas partes
 author: Samuel Gómez
-date: 12/10/2018 16:45
+date: 20/10/2018 15:34
 ---
 
 # Los números están en todas partes
