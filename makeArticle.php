@@ -1,6 +1,6 @@
 <?php
     require("const.php");
-    require(LIB."/libGeneral.php");
+    require("libGeneral.php");
 
 	// Lee el contenido de las plantillas
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
@@ -8,9 +8,9 @@
 	$fileNameMd = str_replace('.html', SRC_EXT, $argv[1]);
 	$fileNameMd = str_replace('html/', SRC.'/', $fileNameMd);
 	$tmplArticle = file_get_contents($fileNameMd);
-	//preg_match("/#(.*)/s",$tmplArticle, $arrMatch);	// Coge todo el contenido menos los metadatos del .md
-	preg_match("/((.*)---){2}(.*)/s",$tmplArticle, $arrMatch);	// Coge todo el contenido menos los metadatos del .md
-	$tmplArticle = trim($arrMatch[3]);
+	preg_match("/#(.*)/s",$tmplArticle, $arrMatch);	// Coge todo el contenido menos los metadatos del .md
+	//preg_match("/((.*)---){2}(.*)/s",$tmplArticle, $arrMatch);	// Coge todo el contenido menos los metadatos del .md
+	$tmplArticle = trim($arrMatch[0]);
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$menu = getMenu(SRC);
@@ -30,9 +30,11 @@
 	touch($fileNameMd, $tsFileMd);
 
 	// pandoc .md -> .html
-	!file_exists(dirname($fileNameMd))?mkdir(dirname($fileNameMd)):NULL;
-	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
-	shell_exec($command);
+	!file_exists(dirname($fileDestNameCompleto))?mkdir(dirname($fileDestNameCompleto)):NULL;
+	//$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
+	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathjax -o $fileDestNameCompleto";
+	echo $command."\n";
+	echo shell_exec($command)."\n";
 
 	// Remplaza campos en la plantilla header
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplHeader);

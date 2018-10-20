@@ -1,6 +1,6 @@
 <?php
     require("const.php");
-    require(LIB."/libGeneral.php");
+    require("libGeneral.php");
 
 	// Lee el contenido de las plantillas
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
@@ -16,7 +16,6 @@
 
 	// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo
 	$arrFilesHtml = getArrFiles(HTML, 'html');
-	//print_r($arrFilesHtml);
 	usort($arrFilesHtml, function($a, $b) {
 		return ($a['uModificacion'] > $b['uModificacion'])?-1:1;
 		});
@@ -33,7 +32,7 @@
 	}
 
 
-	// Escribe el artículo en disco
+	// Escribe index.html en disco
 	$fArticulo = fopen(HTML.'/index.html', 'w');
 	fwrite($fArticulo, $tmplHeader);
 	fwrite($fArticulo, $strArticulos);

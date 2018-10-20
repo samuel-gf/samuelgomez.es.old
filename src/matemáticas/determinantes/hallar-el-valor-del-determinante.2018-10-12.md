@@ -1,0 +1,78 @@
+---
+title: Hallar el valor del determinante
+author: Samuel Gómez
+date: 12/10/2018 23:14
+---
+
+# Hallar el valor del determinante
+
+Sabiendo que:
+
+$$
+\left|
+\begin{array}{ccc}
+	1 & 1 & 1 \\
+	a & b & c \\
+	d & e & f \\
+\end{array}
+\right| = 2
+$$
+
+Calcular el valor de:
+
+$$
+\left|
+\begin{array}{ccc}
+	6 		& 6 	& 6 	\\
+	a-2 	& b-2 	& c-2 	\\
+	d/4 	& e/4 	& f/4 	\\
+\end{array}
+\right|
+$$
+
+**Solución** Aplicando exclusivamente las propiedades de los determinantes debemos lograr
+que el segundo determinante se convierta en algo parecido al que nos da el enunciado
+que es el único que en realidad conocemos:
+
+$$
+6 \cdot
+\left|
+\begin{array}{ccc}
+	1 		& 1 	& 1 	\\
+	a-2 	& b-2 	& c-2 	\\
+	d/4 	& e/4 	& f/4 	\\
+\end{array}
+\right|
+=
+\frac{6}{4} \cdot
+\left|
+\begin{array}{ccc}
+	1 		& 1 	& 1 	\\
+	a-2 	& b-2 	& c-2 	\\
+	d 	& e 	& f 	\\
+\end{array}
+\right|
+$$
+
+Aplicando una combinación lineal
+
+$$
+\begin{array}{c}
+	F_2 = F_2+2 \cdot F_1\\
+	\longrightarrow
+\end{array}
+=
+\frac{3}{2} \cdot
+\left|
+\begin{array}{ccc}
+	1 		& 1 	& 1 	\\
+	a 	& b 	& c 	\\
+	d 	& e 	& f 	\\
+\end{array}
+\right|
+$$
+
+Como conocemos el valor del determinante que tenemos en este momento simplemente
+sustituimos por su valor y obtenemos:
+
+$$\frac{3}{2} \cdot 2 = \boxed{3}$$

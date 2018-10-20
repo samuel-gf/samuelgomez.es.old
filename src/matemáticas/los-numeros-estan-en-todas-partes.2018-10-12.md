@@ -1,7 +1,7 @@
 ---
 title: Los números están en todas partes
 author: Samuel Gómez
-date: 12/10/2018 12:18
+date: 12/10/2018 16:45
 ---
 
 # Los números están en todas partes
@@ -13,8 +13,6 @@ date: 12/10/2018 12:18
 * El número de veces que alguien se rasca la nariz
 * El número de mensajes que tengo en Whatsapp
 
-$$x = \frac{27 \pm \sqrt{b^2-4ac}}{2a}$$
-
-$$a = b$$
+$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 
 El universo son números y las matemáticas permiten estudiar, analizar y en ocasiones predecir lo que ocurrirá en el futuro.

@@ -4,12 +4,11 @@
 	}
 	setlocale(LC_ALL,"es_ES");
 	date_default_timezone_set('Europe/Madrid');
-	
+
     const ROOT = __DIR__;
 	const SRC = ROOT.'/src';
     const CSS = ROOT.'/css';
     const JS = ROOT.'/js';
-    const LIB = ROOT.'/lib';
     const IMG = ROOT.'/img';
 	const HTML = ROOT.'/html';
     const TEMPLATES = ROOT.'/templates';

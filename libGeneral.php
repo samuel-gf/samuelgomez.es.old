@@ -17,7 +17,7 @@
 		clearstatcache();
 		$arrFilesBuscados = array();
 		$arrAllDirs = getDirectorios($root, $rutaCompleta=true);
-		$arrAllDirs = array_merge(array($root), $arrAllDirs);
+		$arrAllDirs = array_merge($arrAllDirs);
 		//print_r($arrAllDirs);	die();
 		foreach ($arrAllDirs as $kDir => $vDir) {
 			//echo "Entro en $vDir\n";

@@ -8,8 +8,8 @@ html/%.html: src/%.md $(TEMPLATES)
 	php makeArticle.php $@
 
 
-html/index.html:
-	php makeIndex.php	
+html/index.html: $(MD)
+	php makeIndex.php
 
 clean:
 	@find html -name *.html -exec rm {} \;
