@@ -14,16 +14,22 @@
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$menu = getMenu(SRC);
-	$tsFileMd = filemtime ($fileNameMd);
-	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
-	$dateOfFileLong = strftime('%e de %B de %G a las %H:%M', $tsFileMd);
 
 	// Obtiene el título del artículo extrayendolo del texto del .md mirando lo que viene después del primer #
 	$title = getTitleFromMd($tmplArticle);
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
 
+	// Obtiene la fecha de creación del artículo a partir del nombre
+	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];
+	echo "Fecha creación $fechaCreacion\n";
+	//$tsFileMd = filemtime($fileNameMd);
+	$tsFileMd = strtotime($fechaCreacion);
+	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
+	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
+
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
-	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $dateOfFileShort\n---\n\n".$tmplArticle;
+	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
+	$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
 	$fArticulo = fopen($fileNameMd, 'w');
 	fwrite($fArticulo, $tmplArticle);
 	fclose($fArticulo);

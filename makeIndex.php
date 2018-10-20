@@ -17,7 +17,7 @@
 	// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo
 	$arrFilesHtml = getArrFiles(HTML, 'html');
 	usort($arrFilesHtml, function($a, $b) {
-		return ($a['uModificacion'] > $b['uModificacion'])?-1:1;
+		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});
 	array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos
 

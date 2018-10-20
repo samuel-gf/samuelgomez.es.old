@@ -27,11 +27,14 @@
 				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
 					//echo "*";
 					//echo file_get_contents($vDir.'/'.$vFile);
+					$fechaCreacion = (explode('.',basename($vFile)))[0];
 					array_push($arrFilesBuscados, array(
 						'nombre' => str_replace($root, '', $vDir).'/'.$vFile,
 						'título' => getTitleFromText(file_get_contents($vDir.'/'.$vFile)),
 						'nombreCompleto' => $vDir.'/'.$vFile,
-						'uModificacion' => filemtime($vDir.'/'.$vFile)));
+						'uModificacion' => filemtime($vDir.'/'.$vFile),
+						'fechaCreación' => $fechaCreacion
+					));
 				}
 				//echo "\n";
 			}
