@@ -8,7 +8,7 @@ html/%.html: src/%.md $(TEMPLATES)
 	php makeArticle.php $@
 
 
-html/index.html: $(MD)
+html/index.html: $(MD) $(TEMPLATES)
 	php makeIndex.php
 
 clean:

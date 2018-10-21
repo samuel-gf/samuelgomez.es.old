@@ -20,10 +20,15 @@
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
 
 	// Obtiene la fecha de creación del artículo a partir del nombre
-	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];	
+	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];
 	$tsFileMd = strtotime($fechaCreacion);
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
+
+	// Cambia el nombre del archivo fuente .md
+	echo "Cambiar ".$fileNameMd." por ***".dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).".md\n";
+	die();
+	//rename($fileNameMd, $fechaCreacion.'.'.strToUrl($title));
 
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
