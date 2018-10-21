@@ -33,6 +33,9 @@
 		$fileDestNameCompleto = dirname($fileDestNameCompleto).'/'.$fechaCreacion.'.'.strToUrl($title).'.html';
 	}
 
+	// Remplaza campos en la plantilla article
+	$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
+
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
 	$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
@@ -42,7 +45,8 @@
 	touch($fileNameMd, $tsFileMd);
 
 	// pandoc .md -> .html
-	!file_exists(dirname($fileDestNameCompleto))?mkdir(dirname($fileDestNameCompleto)):NULL;
+	//echo "***".strToUrl(dirname($fileDestNameCompleto))."****\n";	die();
+	!file_exists(strToUrl(dirname($fileDestNameCompleto)))?mkdir(strToUrl(dirname($fileDestNameCompleto))):NULL;
 	//$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
 	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --katex -o $fileDestNameCompleto";
 	//echo $command."\n";
@@ -56,11 +60,11 @@
 
 	// Reemplaza campos en la plantilla foot
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplFoot);
-	
+
 
 	// Agrega la plantilla cabecera y pie al .html
 	$articulo = "<article>\n".file_get_contents($fileDestNameCompleto)."\n</article>\n";
-	$articulo = preg_replace('/<\/h1>/',"<p><time datetime=$dateOfFileShort pubdate=$dateOfFileShort>$dateOfFileLong</time></p></h1>", $articulo);
+	//$articulo = preg_replace('/<\/h1>/',"<p><time datetime=$dateOfFileShort pubdate=$dateOfFileShort>$dateOfFileLong</time></p></h1>", $articulo);
 	$fArticulo = fopen($fileDestNameCompleto, 'w');
 	fwrite($fArticulo, $tmplHeader);
 	fwrite($fArticulo, $articulo);
