@@ -12,6 +12,7 @@
     const IMG = ROOT.'/img';
 	const HTML = ROOT.'/html';
     const TEMPLATES = ROOT.'/templates';
+	const PAGES = ROOT.'/pages';
     const MAX_EN_PORTADA = 10;
 
 	const SRC_EXT = '.md';

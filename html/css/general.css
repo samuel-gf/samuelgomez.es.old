@@ -36,7 +36,7 @@ strong {
 	color: #006affff;
 }
 
-#sidebar{
+body header{
 	width: 100%;
 	overflow-y: auto;
 	position: fixed;
@@ -46,19 +46,22 @@ strong {
 	background-color: white;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 	z-index: 1;
+	max-height: 200px;
 }
 
-#sidebar #logoTop{
+body header #logoTop{
 	display: block;
 	float: left;
 	width:85%;
+	/*max-height: 50px;*/
+	max-width: 200px;
 }
 
-#sidebar #nav-toggle{
+body header #nav-toggle{
 	font-size: 2rem;
 }
 
-#sidebar a#nav-toggle{
+body header a#nav-toggle{
 	color: #006affff;
 	text-decoration: none;
 	float: right;
@@ -94,7 +97,7 @@ strong {
 }
 
 main{
-	padding: 5rem 0.5rem 1rem 0.5rem;
+	padding: 2.5rem 0.5rem 1rem 0.5rem;
 	font-size: 1rem;
 }
 
@@ -102,6 +105,29 @@ article{
 	margin-top: 1rem;
 	padding-bottom: 1em;
 }
+
+/* Página de contacto */
+article #contacto textarea{
+	margin: 1rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 4rem;
+}
+
+article #contacto input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+article #contacto #emailremitente{
+	font-size: 0.8rem;
+	width: 80%;
+}
+/* FIN Página contacto */
 
 h1 {
 	font-size: 1.6rem;
@@ -144,7 +170,7 @@ main footer{
 }
 
 /********************************************************************************/
-
+/* Pantalla PC */
 @media only screen and (min-width: 800px) {
 	html{
 		font-size: 22px;
@@ -164,19 +190,21 @@ main footer{
 	}
 
 
-	#sidebar{
-		width: unset;
+	body header{
+		width: 1000px;
 		max-width: 1000px;
+		max-height: 300px;
 		z-index: 1;
 	}
 
 
-	#sidebar #logoTop{
-		width:50%;
+	body header #logoTop{
+		width:40%;
+		max-width: 400px;
 	}
 
 	article{
-		margin-top: 5rem;
+		margin-top: 4rem;
 	}
 
 }

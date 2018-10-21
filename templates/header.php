@@ -26,7 +26,7 @@
 
 </head>
 <body>
-    <header id="sidebar">
+    <header>
 		<a href="{{BASE_DIR}}index.html"><img id="logoTop"
 			src="{{BASE_DIR}}img/logoS3.png" alt="Logo Samuel Gómez"></a>
 		<a id="nav-toggle" href="#">&#9776;</a>
