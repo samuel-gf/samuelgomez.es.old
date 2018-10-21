@@ -6,13 +6,14 @@
     <link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/reset.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/general.css">
 
-	<link rel="icon" type="image/png" sizes="48x48"   href="{{BASE_DIR}}img/favicon.ico">
-	<link rel="icon" type="image/png" sizes="96x96"   href="{{BASE_DIR}}img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="196x196" href="{{BASE_DIR}}img/favicon-196x196.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{BASE_DIR}}img/favicon-120x120.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{BASE_DIR}}img/favicon-180x180.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{BASE_DIR}}img/favicon-152x152.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="{{BASE_DIR}}img/favicon-167x167.png">
+	<link rel='shortcut icon' type='image/x-icon' href='{{BASE_DIR}}img/favicon.ico' />
+	<link rel="icon" type="image/png" sizes="48x48"   href="{{BASE_DIR}}img/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="96x96"   href="{{BASE_DIR}}img/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="196x196" href="{{BASE_DIR}}img/favicon-196x196.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="{{BASE_DIR}}img/favicon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{{BASE_DIR}}img/favicon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="{{BASE_DIR}}img/favicon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="{{BASE_DIR}}img/favicon-167x167.png" />
 
 
 	<script src='{{BASE_DIR}}js/jquery.js'></script>

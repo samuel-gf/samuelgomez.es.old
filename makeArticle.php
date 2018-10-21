@@ -30,6 +30,7 @@
 		//echo "Renombrado $fileNameMd por ".dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
 		rename($fileNameMd, dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md');
 		$fileNameMd = dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
+		$fileDestNameCompleto = dirname($fileDestNameCompleto).'/'.$fechaCreacion.'.'.strToUrl($title).'.html';
 	}
 
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
