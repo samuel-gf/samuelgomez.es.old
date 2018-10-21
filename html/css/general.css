@@ -24,7 +24,7 @@ p {
 }
 
 ul{
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 li {
@@ -33,7 +33,7 @@ li {
 }
 
 strong {
-	color: #006affff;
+	color: #006aff;
 }
 
 body header{
@@ -62,27 +62,35 @@ body header #nav-toggle{
 }
 
 body header a#nav-toggle{
-	color: #006affff;
+	color: #006aff;
 	text-decoration: none;
 	float: right;
 	margin: -0.5rem -0.5rem 0 0;
 }
 
 #info{
-	margin: 2rem 0 2rem 0;
-	display: none;
+	margin: 0 0 1rem 0;
+	/*display: none;*/
 	clear: both;
+	font-size: 0.8rem;
+	color: #777777;
 }
 
 #menu{
+	margin-top: 3rem;
 	font-size: 2rem;
 	display: none;
 	clear: both;
 	text-align: left;
+	padding: 1rem;
+	border-radius: 25px;
+	/*border: 2px solid #D76900;*/
+	border: 2px solid #000000;
 }
 
 #menu li{
 	list-style-type: none;
+	color: #D76900;
 }
 
 #menu li.segundoNivel{
@@ -92,7 +100,7 @@ body header a#nav-toggle{
 }
 
 #menu li a{
-	color: #006affff;
+	color: #006aff;
 	text-decoration: none;
 }
 
@@ -106,7 +114,7 @@ article{
 	padding-bottom: 1em;
 }
 
-/* Página de contacto */
+/* Página de contacto *****************************/
 article #contacto textarea{
 	margin: 1rem;
 	display: block;
@@ -127,7 +135,7 @@ article #contacto #emailremitente{
 	font-size: 0.8rem;
 	width: 80%;
 }
-/* FIN Página contacto */
+/* FIN Página contacto *******************************/
 
 h1 {
 	font-size: 1.6rem;
@@ -193,7 +201,6 @@ main footer{
 	body header{
 		width: 1000px;
 		max-width: 1000px;
-		max-height: 300px;
 		z-index: 1;
 	}
 
@@ -220,10 +227,10 @@ main footer{
 		height: auto;
 	}
 
-	#sidebar{
+/*	#sidebar{
 		max-width: 90%;
 		box-shadow: unset;
-	}
+	}*/
 
 	article{
 		padding: 2rem;

@@ -30,11 +30,13 @@
 		<a href="{{BASE_DIR}}index.html"><img id="logoTop"
 			src="{{BASE_DIR}}img/logoS3.png" alt="Logo Samuel Gómez"></a>
 		<a id="nav-toggle" href="#">&#9776;</a>
-        <section id="info">
-			{{INFO}}
-		</section>
-		<section id="menu">
-			{{MENU}}
-		</section>
     </header>
 	<main>
+		<section id="menu">
+			<section id="info">
+				{{INFO}}
+			</section>			
+			<li><a href="{{BASE_DIR}}contacto.html">Contacto</a></li>
+			<hr/>
+			{{MENU}}
+		</section>

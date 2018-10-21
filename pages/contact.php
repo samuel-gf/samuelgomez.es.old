@@ -27,11 +27,11 @@
 </script>
 
 <article>
+	<h1>Contacto con el autor del sitio web</h1>
 	<form id="contacto">
-		<label>Mensaje para contactar con el autor del sitio web:</label>
 		<br/>
 		<input type="email" id="emailremitente" placeholder="Tu email" required />
-		<textarea id="mensaje"></textarea>
+		<textarea id="mensaje" placeholder="Mensaje"></textarea>
 		<input type="button" value="Enviar" onclick="javascript:enviaFormulario();" />
 	</form>
 </article>
