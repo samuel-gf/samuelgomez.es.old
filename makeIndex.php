@@ -31,6 +31,9 @@
 		$strArticulos .= $article;
 	}
 
+	// Reemplaza campos en la plantilla foot
+	$tmplFoot = str_replace('{{BASE_DIR}}','',$tmplFoot);
+
 
 	// Escribe index.html en disco
 	$fArticulo = fopen(HTML.'/index.html', 'w');

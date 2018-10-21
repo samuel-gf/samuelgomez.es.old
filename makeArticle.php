@@ -54,6 +54,10 @@
 	$tmplHeader = str_replace('{{MENU}}',$menu,$tmplHeader);
 	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplHeader);
 
+	// Reemplaza campos en la plantilla foot
+	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplFoot);
+	
+
 	// Agrega la plantilla cabecera y pie al .html
 	$articulo = "<article>\n".file_get_contents($fileDestNameCompleto)."\n</article>\n";
 	$articulo = preg_replace('/<\/h1>/',"<p><time datetime=$dateOfFileShort pubdate=$dateOfFileShort>$dateOfFileLong</time></p></h1>", $articulo);

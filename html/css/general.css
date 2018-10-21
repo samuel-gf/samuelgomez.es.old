@@ -32,6 +32,10 @@ li {
 	list-style-position: inside;
 }
 
+a{	text-decoration: none; color: #006aff;}
+a:visited{color: #006aff;}
+a:hover{text-decoration: underline;}
+
 strong {
 	color: #006aff;
 }
@@ -208,6 +212,10 @@ main footer{
 	body header #logoTop{
 		width:40%;
 		max-width: 400px;
+	}
+
+	#menu{
+		font-size: 1.5rem;
 	}
 
 	article{
