@@ -25,10 +25,12 @@
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
 
-	// Cambia el nombre del archivo fuente .md
-	echo "Cambiar ".$fileNameMd." por ***".dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).".md\n";
-	die();
-	//rename($fileNameMd, $fechaCreacion.'.'.strToUrl($title));
+	// Cambia el nombre del archivo fuente .md acorde al título del artículo
+	if ($fileNameMd!=dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md'){
+		//echo "Renombrado $fileNameMd por ".dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
+		rename($fileNameMd, dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md');
+		$fileNameMd = dirname($fileNameMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
+	}
 
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
