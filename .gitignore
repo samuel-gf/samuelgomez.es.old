@@ -1,6 +1,1 @@
-_doc
-html
-!html/css
-!html/js
-!html/rq
-!html/img
+*.html
