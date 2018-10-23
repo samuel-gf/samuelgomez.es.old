@@ -48,7 +48,7 @@
 	//echo "***".strToUrl(dirname($fileDestNameCompleto))."****\n";	die();
 	!file_exists(dirname($fileDestNameCompleto))?mkdir(dirname($fileDestNameCompleto), 0755, true):NULL;
 	//$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
-	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --katex -o $fileDestNameCompleto";
+	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars-fancy_lists --katex -o $fileDestNameCompleto";
 	//echo $command."\n";
 	echo shell_exec($command)."\n";
 

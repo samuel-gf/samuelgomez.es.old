@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head lang="es">
+	<title>Artículos más recientes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	<link rel="icon" type="image/png" sizes="48x48"   href="img/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="96x96"   href="img/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicon-167x167.png" />
+
+
+	<script src='js/jquery.js'></script>
+	<script src='js/general.js'></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+</head>
+<body>
+    <header>
+		<a href="index.html"><img id="logoTop"
+			src="img/logoS3.png" alt="Logo Samuel Gómez"></a>
+		<a id="nav-toggle" href="#">&#9776;</a>
+    </header>
+	<main>
+		<section id="menu">
+			<section id="info">
+				<strong>Sobre mí</strong> Soy padre, ingeniero, físico, profesor y motero. Escribí este
+blog porque creo que puedo aportar algo interesante
+
+			</section>			
+			<li><a href="contacto.html">Contacto</a></li>
+			<hr/>
+				<ul>
+		<li class='primerNivel'><a href='#'>Matematicas</a></li>
+		<li class='segundoNivel'><a href='#'>Determinantes</a></li>
+		<li class='segundoNivel'><a href='#'>Tecnologia</a></li>
+		<li class='segundoNivel'><a href='#'>Matrices</a></li>
+	</ul>
+
+		</section>
+<article>
+<h1 id="matemáticas-madrid-evau-2017-modelo-opción-a"><a id="enlacePermanente" href=matematicas/matrices/2018-10-22.matematicas-madrid-evau-2017-modelo-opcion-a.html>Matemáticas Madrid EvAU 2017 modelo opción A</a></h1>
+<p>Dadas las matrices:</p>
+<p><span class="math display">\[
+A=
+\left(
+\begin{array}{ccc}
+    1 &amp; -1 &amp; 1 \\
+    1 &amp; 0 &amp; -1 \\
+    -1 &amp; 2 &amp; 2 \\
+\end{array}
+\right)
+\;\;\;\;
+B=
+\left(
+\begin{array}{ccc}
+    1 &amp; 2 &amp; m \\
+    2 &amp; 4 &amp; 1 \\
+    m &amp; 2 &amp; -1 \\
+\end{array}
+\right)
+\;\;\;\;
+C=
+\left(
+\begin{array}{ccc}
+    1 &amp; 1 &amp; -1 \\
+    -1 &amp; 2 &amp; 1 \\
+    1 &amp; -2 &amp; 0 \\
+\end{array}
+\right)
+\]</span></p>
+<h2 id="a-calcular-el-valor-de-b-en-función-de-los-valores-de-m">a) Calcular el valor de B en función de los valores de m</h2>
+<p>Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
+<p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p>
+<p><span class="math display">\[
+|B|=
+\left|
+\begin{array}{cc}
+    4 &amp; 1 \\
+    2 &amp; -1 \\
+\end{array}
+\right|
+=-4-4=-8
+\]</span></p>
+<p>Acabamos de comprobar que el rango de <span class="math inline">\(B\)</span> es al menos dos independientemente del valor de <span class="math inline">\(m\)</span>. Veamos ahora si podría ser de rango 3 mediante su determinante</p>
+<p><span class="math display">\[
+|B|=
+\left|
+\begin{array}{ccc}
+    1 &amp; 2 &amp; m \\
+    2 &amp; 4 &amp; 1 \\
+    m &amp; 2 &amp; -1 \\
+\end{array}
+\right|
+=-4m^2+6m-2
+\]</span></p>
+<p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">\(m\)</span> el determinante se anula</p>
+<p><span class="math display">\[-4m^2+6m-2=0\]</span></p>
+<p>Obtenemos los resultados 1 y <span class="math inline">\(\frac{1}{2}\)</span>. Llegamos a la conclusión de que si <span class="math inline">\(m\)</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p>
+<p><strong>Conclusión:</strong> Si <span class="math inline">\(m\)</span> toma el valor 1 o <span class="math inline">\(\frac{1}{2}\)</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
+<p><span class="math display">\[\text{Rango}(B)=\begin{cases}
+      2 &amp; \text{si m} \in \{1, \frac{1}{2}\} \\
+      3 &amp; \text{para otros valores de m}
+   \end{cases}\]</span></p>
+<h2 id="b-calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">b) Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></h2>
+<p>Próximamente</p>
+
+</article><article>
+<h1 id="katex-vs-mathjax"><a id="enlacePermanente" href=matematicas/tecnologia/2018-10-21.katex-vs-mathjax.html>KaTeX vs MathJax</a></h1>
+<p><time>21 de octubre de 2018</time></p>
+<p>Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas muy útiles para representar matemáticas en la web.</p>
+<p>Debo aclarar que antes de usar estas dos me decanté por <a href="https://es.wikipedia.org/wiki/MathML">MathML</a> pero desgraciadamente <a href="https://www.quora.com/Why-did-Chrome-drop-MathML-support">Google Chrome no tiene soporte para MathML</a> con lo cual no me quedó más remedio que estudiar las opciones que os voy a presentar.</p>
+<p>Ambas librerías permiten escribir código <a href="https://www.latex-project.org">LaTeX</a> y transformarlo en tiempo real a un formato matemático mediante JavaScript.</p>
+<ul>
+<li><p><a href="https://katex.org">KaTeX</a> ofrece la posibilidad de transformar fórmulas con gran rápidez. En realidad parece ser que <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">es más rápido que su rival MathJax</a> pero <a href="https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support">no soporta todas las funciones</a></p></li>
+<li><p><a href="https://www.mathjax.org">MathJax</a> parece ser un proyecto que tiene un mayor soporte por parte de la comunidad de desarrolladores y esto significa que puede representar más y mejores expresiones matemática que su rival KaTeX</p></li>
+</ul>
+<p>Tras experimentar con ambos, he decidido quedarme con KaTeX para este sitio web ya que no emplea cookies y deseo crear un sitio web totalmente limpio. Además KaTeX me ofrece mayor velocidad y eso es importante porque deseo emplear muchas expresiones matemáticas.</p>
+<p>Uno de los puntos fuertes de este sitio web es que es en su mayoría estático, esto implica que es ligero y rápido de cargar y visualizar, incluso en un equipo antiguo.</p>
+
+</article><article>
+<h1 id="matemáticas-madrid-evau-2015-septiembre-opción-b"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-20.matematicas-madrid-evau-2015-septiembre-opcion-b.html>Matemáticas Madrid EvAU 2015 septiembre opción B</a></h1>
+<p>Hallar el valor del determinante sabiendo que:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    a &amp; b &amp; c \\
+    d &amp; e &amp; f \\
+    1 &amp; 2 &amp; 3 \\
+\end{array}
+\right| = 3
+\]</span></p>
+<p>Calcular el valor de estos dos determinantes:</p>
+<h2 id="a-primer-determinante">a) Primer determinante</h2>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    2a-2b       &amp; c     &amp; 5b    \\
+    2d-2e       &amp; f     &amp; 5e    \\
+    -2          &amp; 3     &amp; 10    \\
+\end{array}
+\right|
+\]</span></p>
+<h3 id="solución">Solución</h3>
+<p>Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos.</p>
+<p>Saco factor común 5 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
+<p><span class="math display">\[
+5 \cdot
+\left|
+\begin{array}{ccc}
+    2a-2b       &amp; c     &amp; b     \\
+    2d-2e       &amp; f     &amp; e     \\
+    -2          &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplico la combinación lineal a la 1ª columna <span class="math inline">\(C_1 = C_1+2 \cdot C_3\)</span></p>
+<p><span class="math display">\[
+5 \cdot
+\left|
+\begin{array}{ccc}
+    2a      &amp; c     &amp; b     \\
+    2d      &amp; f     &amp; e     \\
+    2       &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Saco factor común 2 a la primera columna <span class="math inline">\(C_1\)</span></p>
+<p><span class="math display">\[
+10 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; c     &amp; b     \\
+    d       &amp; f     &amp; e     \\
+    1       &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Intercambio la segunda columna <span class="math inline">\(C_2\)</span> por la tercera columna <span class="math inline">\(C_3\)</span> y obtenemos el mismo determinante que me daba el enunciado</p>
+<p><span class="math display">\[
+-10 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    d       &amp; e     &amp; f     \\
+    1       &amp; 2     &amp; 3     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Sustituyo el determinante que conozco y obtengo la solución</p>
+<p><span class="math display">\[-10 \cdot 3 = \boxed{-30}\]</span></p>
+<h2 id="b-segundo-determinante">b) Segundo determinante</h2>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; 2c-6  \\
+    2           &amp; 4     &amp; 12    \\
+    d           &amp; e     &amp; 2f    \\
+\end{array}
+\right|
+\]</span></p>
+<h3 id="solución-1">Solución</h3>
+<p>Saco el factor 2 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
+<p><span class="math display">\[
+2 \cdot
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; c-3   \\
+    2           &amp; 4     &amp; 6     \\
+    d           &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Ahora saco el factor 2 de la segunda file <span class="math inline">\(F_2\)</span></p>
+<p><span class="math display">\[
+4 \cdot
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; c-3   \\
+    1           &amp; 2     &amp; 3     \\
+    d           &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplico la siguiente combinación lineal <span class="math inline">\(F_1=F_1+F_2\)</span> <span class="math display">\[
+4 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    1       &amp; 2     &amp; 3     \\
+    d       &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Cambio la segunda fila <span class="math inline">\(F_2\)</span> por la tercera <span class="math inline">\(F_3\)</span></p>
+<p><span class="math display">\[
+-4 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    d       &amp; e     &amp; f     \\
+    1       &amp; 2     &amp; 3     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Sustituyo el valor del determinante que conozco por el enunciado para obtener el enunciado</p>
+<p><span class="math display">\[-4 \cdot 3 = \boxed{-12}\]</span></p>
+
+</article><article>
+<h1 id="hallar-el-valor-del-determinante"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-13.hallar-el-valor-del-determinante.html>Hallar el valor del determinante</a></h1>
+<p>Sabiendo que:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    1 &amp; 1 &amp; 1 \\
+    a &amp; b &amp; c \\
+    d &amp; e &amp; f \\
+\end{array}
+\right| = 2
+\]</span></p>
+<p>Calcular el valor de:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    6       &amp; 6     &amp; 6     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d/4     &amp; e/4   &amp; f/4   \\
+\end{array}
+\right|
+\]</span></p>
+<h3 id="solución">Solución</h3>
+<p>Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el segundo determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos:</p>
+<p>Saco el factor de la fila 1 <span class="math inline">\(F_1\)</span> <span class="math display">\[
+6 \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d/4     &amp; e/4   &amp; f/4   \\
+\end{array}
+\right|
+\]</span></p>
+<p>Saco el factor <span class="math inline">\(\frac{1}{4}\)</span> de la tercera fila <span class="math inline">\(F_3\)</span></p>
+<p><span class="math display">\[
+\frac{6}{4} \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d   &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplicando una combinación lineal a la segunda fila <span class="math inline">\(F_2 = F_2+2\cdot F_1\)</span></p>
+<p><span class="math display">\[
+\frac{3}{2} \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a   &amp; b     &amp; c     \\
+    d   &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p>
+<p><span class="math display">\[\frac{3}{2} \cdot 2 = \boxed{3}\]</span></p>
+
+</article><article>
+<h1 id="los-números-están-en-todas-partes"><a id="enlacePermanente" href=matematicas/2018-10-12.los-numeros-estan-en-todas-partes.html>Los números están en todas partes</a></h1>
+<p><time>12 de octubre de 2018</time></p>
+<ul>
+<li>El número de letras que contiene este artículo</li>
+<li>El número de personas que están viendo un vídeo en youtube</li>
+<li>El número de veces que una persona está quejandose a lo largo de un día</li>
+<li>El número de miradas que recibe alguien</li>
+<li>El número de veces que alguien se rasca la nariz</li>
+<li>El número de mensajes que tengo en Whatsapp</li>
+</ul>
+<p><span class="math display">\[e^{i\pi}+1=0\]</span></p>
+<p>El universo son números y las matemáticas permiten estudiar, analizar y en ocasiones predecir lo que ocurrirá en el futuro</p>
+
+</article>	<footer>
+		Este sitio web no utiliza cookies de ningún tipo ni rastrea a sus usuarios.
+		Para contactar conmigo puedes emplear el <a href="contacto.html">formulario de contacto</a>
+	</footer>
+    </main>
+</body>
+</html>
