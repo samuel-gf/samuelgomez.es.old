@@ -15,7 +15,7 @@
 
 
 	// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo
-	$arrFilesHtml = getArrFiles(HTML, 'html');
+	$arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas root pq se incluiría a sí mismo
 	usort($arrFilesHtml, function($a, $b) {
 		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});

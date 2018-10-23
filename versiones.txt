@@ -1,3 +1,4 @@
+0.19	makeSitemap.php creado y añadido robots.txt
 0.18	El encabezado "Solución" pasa a ser cabecera html de nivel 3
 0.17	Pone la fecha del archivo correcta extrayéndola del nombre del fichero
 0.16	Funcionará con KeTex en lugar de MathJax

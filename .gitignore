@@ -1,1 +1,8 @@
-*.html
+html
+!html/css
+!html/js
+!html/fonts
+!html/img
+!html/rq
+!html/woff
+!html/robots.txt

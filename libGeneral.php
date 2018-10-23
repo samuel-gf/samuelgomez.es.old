@@ -12,12 +12,14 @@
         return $str;
     }
 
-	/* Devuelve un array con todos los ficheros .md y cierta información en forma de array */
-	function getArrFiles($root, $ext){
+	/* Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array */
+	function getArrFiles($root, $ext, $includeRoot=false){
 		clearstatcache();
 		$arrFilesBuscados = array();
 		$arrAllDirs = getDirectorios($root, $rutaCompleta=true);
-		$arrAllDirs = array_merge($arrAllDirs);
+		if ($includeRoot){
+			array_unshift($arrAllDirs, $root);
+		}
 		//print_r($arrAllDirs);	die();
 		foreach ($arrAllDirs as $kDir => $vDir) {
 			//echo "Entro en $vDir\n";
