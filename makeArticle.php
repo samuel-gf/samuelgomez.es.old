@@ -46,7 +46,7 @@
 
 	// pandoc .md -> .html
 	//echo "***".strToUrl(dirname($fileDestNameCompleto))."****\n";	die();
-	!file_exists(strToUrl(dirname($fileDestNameCompleto)))?mkdir(strToUrl(dirname($fileDestNameCompleto))):NULL;
+	!file_exists(dirname($fileDestNameCompleto))?mkdir(dirname($fileDestNameCompleto), 0755, true):NULL;
 	//$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --mathml -o $fileDestNameCompleto";
 	$command = "pandoc $fileNameMd -f markdown+tex_math_dollars --katex -o $fileDestNameCompleto";
 	//echo $command."\n";

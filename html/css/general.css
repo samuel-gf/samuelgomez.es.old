@@ -4,21 +4,13 @@
 
 
 @font-face {
-    font-family: SourceSansPro-ExtraLight;
-    src: url("../fonts/SourceSansPro-ExtraLight.otf") format("opentype"),
-		url("../woff/SourceSansPro-ExtraLight.woff") format("woff");
-}
-
-@font-face {
     font-family: SourceSansPro-Regular;
-    src: url("../fonts/SourceSansPro-Regular.otf") format("opentype"),
-		url("../woff/SourceSansPro-Regular.woff") format("woff");
+    src: url("../woff/SourceSansPro-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: SourceSansPro-Semibold;
-    src: url("../fonts/SourceSansPro-Semibold.otf") format("opentype"),
-		url("../woff/SourceSansPro-Semibold.woff") format("woff");
+    src: url("../woff/SourceSansPro-Semibold.woff") format("woff");
 }
 
 
@@ -162,7 +154,7 @@ article #contacto #emailremitente{
 h1 {
 	font-family: SourceSansPro-Semibold;
 	font-size: 1.6rem;
-	color: #006affff;
+	color: #006aff;
 	border-bottom: 1px solid #FF9200;
 }
 
