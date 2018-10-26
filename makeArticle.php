@@ -34,8 +34,8 @@
 	}
 
 	// Remplaza campos en la plantilla article
-	$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
-
+	//$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
+	
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
 	$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
@@ -63,7 +63,9 @@
 
 
 	// Agrega la plantilla cabecera y pie al .html
-	$articulo = "<article>\n".file_get_contents($fileDestNameCompleto)."\n</article>\n";
+	$htmlArticle = file_get_contents($fileDestNameCompleto);
+	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{1,2}\-[0-9]{1,2}/s","<time datetime='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
+	$articulo = "<article>\n".$htmlArticle."\n</article>\n";
 	//$articulo = preg_replace('/<\/h1>/',"<p><time datetime=$dateOfFileShort pubdate=$dateOfFileShort>$dateOfFileLong</time></p></h1>", $articulo);
 	$fArticulo = fopen($fileDestNameCompleto, 'w');
 	fwrite($fArticulo, $tmplHeader);
