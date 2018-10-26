@@ -5,7 +5,7 @@
 	// Lee el contenido de las plantillas
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
 	// Remplaza campos en la plantilla header
-	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Artículos más recientes',$tmplHeader);
+	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Artículos recientes. '.AUTOR,$tmplHeader);
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
 	$menu = getMenu(SRC);
@@ -22,7 +22,7 @@
 	array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos
 
 	$strArticulos = '';
-	// Por cada artículo obtén el contenido
+	// Por cada artículo obtén el contenido	
 	foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		$article = file_get_contents($vHtml['nombreCompleto']);
 		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);

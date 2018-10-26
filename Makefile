@@ -13,7 +13,7 @@ html/index.html: $(MD) $(TEMPLATES)
 html/contacto.html: pages/contact.php $(TEMPLATES)
 	php makeContact.php
 
-html/sitemap.xml: $(MD)
+html/sitemap.xml: #$(HTML)
 	php makeSitemap.php
 
 clean:
