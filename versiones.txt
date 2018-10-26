@@ -1,3 +1,4 @@
+0.21	Emplea el sistema de metadatos .md basado en --- en lugar del de pandoc %
 0.20	Identifica una fecha y al escribirla en el .html le añade <time></time>
 0.19	makeSitemap.php creado y añadido robots.txt
 0.18	El encabezado "Solución" pasa a ser cabecera html de nivel 3

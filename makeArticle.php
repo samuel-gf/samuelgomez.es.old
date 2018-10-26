@@ -35,10 +35,10 @@
 
 	// Remplaza campos en la plantilla article
 	//$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
-	
+
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
-	//$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
-	$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
+	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
+	//$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
 	$fArticulo = fopen($fileNameMd, 'w');
 	fwrite($fArticulo, $tmplArticle);
 	fclose($fArticulo);
