@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/reset.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/general.css">
+	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/menu.css">
+	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/contacto.css">
 
 	<link rel='shortcut icon' type='image/x-icon' href='{{BASE_DIR}}img/favicon.ico' />
 	<link rel="icon" type="image/png" sizes="48x48"   href="{{BASE_DIR}}img/favicon.ico" />
@@ -35,7 +37,7 @@
 		<section id="menu">
 			<section id="info">
 				{{INFO}}
-			</section>			
+			</section>
 			<li><a href="{{BASE_DIR}}contacto.html">Contacto</a></li>
 			<hr/>
 			{{MENU}}

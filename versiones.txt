@@ -1,3 +1,5 @@
+0.23	Las etiquetas se añaden estilo Twitter con # al principio de la palabra. Se suelen escribir al final del artículo .md
+0.22	DESCARTADA: Introduce automáticamente las etiquetas en cada artículo. Fue descartada pq suponía un tiempo de proceso cuadrático
 0.21	Emplea el sistema de metadatos .md basado en --- en lugar del de pandoc %
 0.20	Identifica una fecha y al escribirla en el .html le añade <time></time>
 0.19	makeSitemap.php creado y añadido robots.txt

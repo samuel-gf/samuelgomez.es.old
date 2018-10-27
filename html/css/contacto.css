@@ -1,0 +1,20 @@
+article #contacto textarea{
+	margin: 1rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 4rem;
+}
+
+article #contacto input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+article #contacto #emailremitente{
+	font-size: 0.8rem;
+	width: 80%;
+}

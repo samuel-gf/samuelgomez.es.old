@@ -1,0 +1,35 @@
+#info{
+	margin: 0 0 1rem 0;
+	/*display: none;*/
+	clear: both;
+	font-size: 0.8rem;
+	color: #777777;
+}
+
+#menu{
+	margin-top: 3rem;
+	font-size: 2rem;
+	display: none;
+	clear: both;
+	text-align: left;
+	padding: 1rem;
+	border-radius: 25px;
+	/*border: 2px solid #D76900;*/
+	border: 2px solid #000000;
+}
+
+#menu li{
+	list-style-type: none;
+	color: #D76900;
+}
+
+#menu li.segundoNivel{
+	font-size: 80%;
+	margin-left: 1rem;
+	list-style-type: square;
+}
+
+#menu li a{
+	color: #006aff;
+	text-decoration: none;
+}

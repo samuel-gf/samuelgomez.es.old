@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 
 	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
 	<link rel="icon" type="image/png" sizes="48x48"   href="img/favicon.ico" />
@@ -37,7 +39,7 @@
 				<strong>Sobre mí</strong> Soy padre, ingeniero, físico, profesor y motero. Escribí este
 blog porque creo que puedo aportar algo interesante
 
-			</section>			
+			</section>
 			<li><a href="contacto.html">Contacto</a></li>
 			<hr/>
 				<ul>
@@ -79,7 +81,7 @@ C=
 \end{array}
 \right)
 \]</span></p>
-<h2 id="a-calcular-el-valor-de-b-en-función-de-los-valores-de-m">a) Calcular el valor de B en función de los valores de m</h2>
+<h2 id="calcular-el-valor-de-b-en-función-de-los-valores-de-m">Calcular el valor de B en función de los valores de m</h2>
 <p>Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
 <p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p>
 <p><span class="math display">\[
@@ -107,12 +109,12 @@ C=
 <p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">\(m\)</span> el determinante se anula</p>
 <p><span class="math display">\[-4m^2+6m-2=0\]</span></p>
 <p>Obtenemos los resultados 1 y <span class="math inline">\(\frac{1}{2}\)</span>. Llegamos a la conclusión de que si <span class="math inline">\(m\)</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p>
-<p><strong>Conclusión:</strong> Si <span class="math inline">\(m\)</span> toma el valor 1 o <span class="math inline">\(\frac{1}{2}\)</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
+<p><strong>Conclusión</strong> Si <span class="math inline">\(m\)</span> toma el valor 1 o <span class="math inline">\(\frac{1}{2}\)</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
 <p><span class="math display">\[\text{Rango}(B)=\begin{cases}
       2 &amp; \text{si m} \in \{1, \frac{1}{2}\} \\
       3 &amp; \text{para otros valores de m}
    \end{cases}\]</span></p>
-<h2 id="b-calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">b) Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></h2>
+<h2 id="calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></h2>
 <p>Buscamos la inversa de <span class="math inline">\(A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)\)</span></p>
 <p>Tenemos varias formas de encontrar la inversa <span class="math inline">\(A^{-1}\)</span>. En este caso vamos a emplear la fórmula</p>
 <p><span class="math display">\[A^{-1}=\frac{1}{|A|}\cdot adj(A)^T\]</span></p>
@@ -220,10 +222,11 @@ C=
 \right)
 \]</span></p>
 <p>Como vemos, esta expresión es la misma que la <a href="#ec1">ecuación 1</a> por lo tanto, comprobamos que sí que se cumple la igualdad</p>
+<p>#EvAU #determinante #matriz</p>
 
 </article><article>
 <h1 id="katex-vs-mathjax"><a id="enlacePermanente" href=matematicas/tecnologia/2018-10-21.katex-vs-mathjax.html>KaTeX vs MathJax</a></h1>
-<p><time datetime='2018-10-21'>21 de octubre de 2018</time></p>
+<p><time datetime='2018-10-21' pubdate='2018-10-21'>21 de octubre de 2018</time></p>
 <p>Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas muy útiles para representar matemáticas en la web.</p>
 <p>Debo aclarar que antes de usar estas dos me decanté por <a href="https://es.wikipedia.org/wiki/MathML">MathML</a> pero desgraciadamente <a href="https://www.quora.com/Why-did-Chrome-drop-MathML-support">Google Chrome no tiene soporte para MathML</a> con lo cual no me quedó más remedio que estudiar las opciones que os voy a presentar.</p>
 <p>Ambas librerías permiten escribir código <a href="https://www.latex-project.org">LaTeX</a> y transformarlo en tiempo real a un formato matemático mediante JavaScript.</p>
@@ -233,6 +236,7 @@ C=
 </ul>
 <p>Tras experimentar con ambos, he decidido quedarme con KaTeX para este sitio web ya que no emplea cookies y deseo crear un sitio web totalmente limpio. Además KaTeX me ofrece mayor velocidad y eso es importante porque deseo emplear muchas expresiones matemáticas.</p>
 <p>Uno de los puntos fuertes de este sitio web es que es en su mayoría estático, esto implica que es ligero y rápido de cargar y visualizar, incluso en un equipo antiguo.</p>
+<p>#KaTeX #MathJaX #librería #web</p>
 
 </article><article>
 <h1 id="matemáticas-madrid-evau-2015-septiembre-opción-b"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-20.matematicas-madrid-evau-2015-septiembre-opcion-b.html>Matemáticas Madrid EvAU 2015 septiembre opción B</a></h1>
@@ -247,7 +251,7 @@ C=
 \right| = 3
 \]</span></p>
 <p>Calcular el valor de estos dos determinantes:</p>
-<h2 id="a-primer-determinante">a) Primer determinante</h2>
+<h2 id="primer-determinante">Primer determinante</h2>
 <p><span class="math display">\[
 \left|
 \begin{array}{ccc}
@@ -257,8 +261,7 @@ C=
 \end{array}
 \right|
 \]</span></p>
-<h3 id="solución">Solución</h3>
-<p>Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos.</p>
+<p><strong>Solución</strong> Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos.</p>
 <p>Saco factor común 5 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
 <p><span class="math display">\[
 5 \cdot
@@ -305,7 +308,7 @@ C=
 \]</span></p>
 <p>Sustituyo el determinante que conozco y obtengo la solución</p>
 <p><span class="math display">\[-10 \cdot 3 = \boxed{-30}\]</span></p>
-<h2 id="b-segundo-determinante">b) Segundo determinante</h2>
+<h2 id="segundo-determinante">Segundo determinante</h2>
 <p><span class="math display">\[
 \left|
 \begin{array}{ccc}
@@ -315,8 +318,7 @@ C=
 \end{array}
 \right|
 \]</span></p>
-<h3 id="solución-1">Solución</h3>
-<p>Saco el factor 2 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
+<p><strong>Solución</strong> Saco el factor 2 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
 <p><span class="math display">\[
 2 \cdot
 \left|
@@ -361,6 +363,7 @@ C=
 \]</span></p>
 <p>Sustituyo el valor del determinante que conozco por el enunciado para obtener el enunciado</p>
 <p><span class="math display">\[-4 \cdot 3 = \boxed{-12}\]</span></p>
+<p>#EvAU #determinante #matriz</p>
 
 </article><article>
 <h1 id="hallar-el-valor-del-determinante"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-13.hallar-el-valor-del-determinante.html>Hallar el valor del determinante</a></h1>
@@ -384,8 +387,7 @@ C=
 \end{array}
 \right|
 \]</span></p>
-<h3 id="solución">Solución</h3>
-<p>Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el segundo determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos:</p>
+<p><strong>Solución</strong> Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el segundo determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos:</p>
 <p>Saco el factor de la fila 1 <span class="math inline">\(F_1\)</span> <span class="math display">\[
 6 \cdot
 \left|
@@ -420,10 +422,11 @@ C=
 \]</span></p>
 <p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p>
 <p><span class="math display">\[\frac{3}{2} \cdot 2 = \boxed{3}\]</span></p>
+<p>#determinante #matriz</p>
 
 </article><article>
 <h1 id="los-números-están-en-todas-partes"><a id="enlacePermanente" href=matematicas/2018-10-12.los-numeros-estan-en-todas-partes.html>Los números están en todas partes</a></h1>
-<p><time datetime='2018-10-12'>12 de octubre de 2018</time></p>
+<p><time datetime='2018-10-12' pubdate='2018-10-12'>12 de octubre de 2018</time></p>
 <ul>
 <li>El número de letras que contiene este artículo</li>
 <li>El número de personas que están viendo un vídeo en youtube</li>
@@ -434,6 +437,7 @@ C=
 </ul>
 <p><span class="math display">\[e^{i\pi}+1=0\]</span></p>
 <p>El universo son números y las matemáticas permiten estudiar, analizar y en ocasiones predecir lo que ocurrirá en el futuro</p>
+<p>#generalidades</p>
 
 </article>	<footer>
 		Este sitio web no utiliza cookies de ningún tipo ni rastrea a sus usuarios.

@@ -33,6 +33,10 @@ p {
 	margin: 0 0 1rem 0;
 }
 
+p > strong{
+	padding-right: 0.5rem;
+}
+
 ul{
 	padding-bottom: 1em;
 }
@@ -86,41 +90,45 @@ body header a#nav-toggle{
 	font-size: 1rem !important;
 }
 
-#info{
-	margin: 0 0 1rem 0;
-	/*display: none;*/
-	clear: both;
-	font-size: 0.8rem;
-	color: #777777;
-}
 
-#menu{
-	margin-top: 3rem;
-	font-size: 2rem;
-	display: none;
-	clear: both;
-	text-align: left;
-	padding: 1rem;
-	border-radius: 25px;
-	/*border: 2px solid #D76900;*/
-	border: 2px solid #000000;
-}
 
-#menu li{
-	list-style-type: none;
-	color: #D76900;
-}
-
-#menu li.segundoNivel{
-	font-size: 80%;
-	margin-left: 1rem;
-	list-style-type: square;
-}
-
-#menu li a{
+/********************************************* Cabeceras *********************************/
+h1 {
+	font-family: SourceSansPro-Semibold;
+	font-size: 1.6rem;
 	color: #006aff;
-	text-decoration: none;
+	border-bottom: 1px solid #FF9200;
 }
+
+
+h1 a{
+	color: inherit;
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #006aff;
+}
+
+h2 {
+	font-family: SourceSansPro-Semibold;
+	color: black;
+	margin: 3rem 0 1rem 0;
+}
+
+h2::before{
+	color: #006aff;
+	counter-increment: apartado;
+	content: counter(apartado, lower-alpha) ") ";
+}
+
+h3 {
+	color: #006aff;
+	margin: 3rem 0 1rem 0;
+	display: inline;
+	width: 100%;
+	border-bottom: 1px solid #777777;
+}
+
+/***************************************** /cabeceras **********************************/
 
 :target {
   display: block;
@@ -137,36 +145,7 @@ main{
 article{
 	margin-top: 1rem;
 	padding-bottom: 1em;
-}
-
-/* Página de contacto *****************************/
-article #contacto textarea{
-	margin: 1rem;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	height: 4rem;
-}
-
-article #contacto input{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1rem;
-}
-
-article #contacto #emailremitente{
-	font-size: 0.8rem;
-	width: 80%;
-}
-/* FIN Página contacto *******************************/
-
-h1 {
-	font-family: SourceSansPro-Semibold;
-	font-size: 1.6rem;
-	color: #006aff;
-	border-bottom: 1px solid #FF9200;
+	counter-reset: apartado;
 }
 
 time {
@@ -175,37 +154,33 @@ time {
 	color: #777777;
 }
 
-h1 a{
-	color: inherit;
-	text-decoration: none;
-	font-size: 1.6rem;
-	color: #006aff;
-}
-
-h2 {
-	font-family: SourceSansPro-Semibold;
-	/*font-weight: bold;*/
-	color: #006aff;
-	margin: 1rem 0 1rem 0;
-}
-
-h3 {
-	/*font-weight: bold;*/
-	color: #006aff;
-	margin: 1rem 0 1rem 0;
-	display: inline;
-}
-
 math{
 	margin: 1rem 0 1rem 0;
 	color: #0000ff;
 }
 
+/* Etiquetas al final del artículo*/
+article > p:last-of-type{
+	color: #777777;
+	text-transform: capitalize;
+	word-spacing: 0.5rem;
+}
+
+/* Añade la palabra etiqueta delante de las etiquetas */
+article > p:last-of-type::before{
+	content: "Etiquetas ";
+	font-family: SourceSansPro-Semibold;
+	color: #006aff;
+	margin-right: 0.5rem;
+}
+
+/*	Pie de página */
 main footer{
 	border-top: 1px solid #777777;
 	color: #777777;
 	margin-bottom: 2rem;
 }
+
 
 /********************************************************************************/
 /* Pantalla PC */

@@ -19,6 +19,11 @@
 	$title = getTitleFromMd($tmplArticle);
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
 
+	// Obtiene las etiquetas
+	$arrTags = array();
+	preg_match_all('/[^(]#([\w])/', $tmplArticle, $arrTags);
+	$sTags = rtrim(implode(', ', $arrTags[1]), ', ');
+
 	// Obtiene la fecha de creación del artículo a partir del nombre
 	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];
 	$tsFileMd = strtotime($fechaCreacion);
@@ -37,7 +42,7 @@
 	//$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
 
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
-	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\n---\n\n".$tmplArticle;
+	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
 	//$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
 	$fArticulo = fopen($fileNameMd, 'w');
 	fwrite($fArticulo, $tmplArticle);
@@ -64,9 +69,8 @@
 
 	// Agrega la plantilla cabecera y pie al .html
 	$htmlArticle = file_get_contents($fileDestNameCompleto);
-	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{1,2}\-[0-9]{1,2}/s","<time datetime='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
+	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{1,2}\-[0-9]{1,2}/s","<time datetime='$fechaCreacion' pubdate='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
 	$articulo = "<article>\n".$htmlArticle."\n</article>\n";
-	//$articulo = preg_replace('/<\/h1>/',"<p><time datetime=$dateOfFileShort pubdate=$dateOfFileShort>$dateOfFileLong</time></p></h1>", $articulo);
 	$fArticulo = fopen($fileDestNameCompleto, 'w');
 	fwrite($fArticulo, $tmplHeader);
 	fwrite($fArticulo, $articulo);
