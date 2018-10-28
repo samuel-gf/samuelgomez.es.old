@@ -21,8 +21,9 @@
 
 	// Obtiene las etiquetas
 	$arrTags = array();
-	preg_match_all('/[^(]#([\w])/', $tmplArticle, $arrTags);
+	preg_match_all('/[^(]#([\w\-ö]+)/', $tmplArticle, $arrTags);
 	$sTags = rtrim(implode(', ', $arrTags[1]), ', ');
+
 
 	// Obtiene la fecha de creación del artículo a partir del nombre
 	$fechaCreacion = (explode('.',basename($fileNameMd)))[0];

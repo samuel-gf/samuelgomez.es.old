@@ -1,5 +1,6 @@
 /* As hex codes */
 /*.color-primary-0 { color: #006aff }	Color principal */
+/*.color-primary-0b{ color: #003B8C }	Color azul oscuro */
 /*.color-primary-1 { color: #FF9200 }	    Color Opuesto */
 
 
@@ -122,7 +123,7 @@ h2::before{
 
 h3 {
 	color: #006aff;
-	margin: 3rem 0 1rem 0;
+	margin: 3rem 0 3rem 0;	
 	display: inline;
 	width: 100%;
 	border-bottom: 1px solid #777777;
@@ -146,6 +147,22 @@ article{
 	margin-top: 1rem;
 	padding-bottom: 1em;
 	counter-reset: apartado;
+}
+
+table{
+	margin: 1.5rem auto 1.5rem auto;
+	border-top: 1px solid #003B8C;
+	border-bottom: 1px solid #003B8C;
+}
+
+th {
+	padding: 0 1.5rem 0 1.5rem;
+	border-bottom: 1px solid #003B8C;
+	color: black;
+}
+
+td{
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 time {

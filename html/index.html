@@ -47,10 +47,149 @@ blog porque creo que puedo aportar algo interesante
 		<li class='segundoNivel'><a href='#'>Determinantes</a></li>
 		<li class='segundoNivel'><a href='#'>Tecnologia</a></li>
 		<li class='segundoNivel'><a href='#'>Matrices</a></li>
+		<li class='segundoNivel'><a href='#'>SistemaDeEcuaciones</a></li>
 	</ul>
 
 		</section>
 <article>
+<h1 id="discutir-el-sistema-de-ecuaciones-en-función-del-parámetro"><a id="enlacePermanente" href=matematicas/sistemaDeEcuaciones/2018-10-28.discutir-el-sistema-de-ecuaciones-en-funcion-del-parametro.html>Discutir el sistema de ecuaciones en función del parámetro</a></h1>
+<p><span class="math display">\[
+\left.
+\begin{array}{cccccc}
+    x&amp;+y&amp;-z&amp;=&amp;\lambda \\
+    \lambda x&amp;+2y&amp;-z&amp;=&amp;3\lambda \\
+    2x&amp;+\lambda y &amp;-z&amp;=&amp;6
+\end{array}
+\right\}
+\]</span></p>
+<p><strong>Solución</strong> Escribimos el sistema de ecuaciones como matriz <span class="math inline">\(A\)</span></p>
+<p><span class="math display">\[
+A= \left(
+\begin{array}{cccc}
+    1       &amp; 1 &amp; -1 \\
+    \lambda &amp; 2 &amp;-1  \\
+    2       &amp;   \lambda &amp; -1
+\end{array}
+\right)
+\]</span></p>
+<p>Calculamos el rango de <span class="math inline">\(A\)</span> a partir de sus determinantes. Sabemos que el rango de <span class="math inline">\(A\)</span> es 3 porque es de 3x3, excepto cuando su determinante sea 0, buscamos este caso</p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{ccc}
+    1       &amp; 1 &amp; -1 \\
+    \lambda &amp; 2 &amp;-1  \\
+    2       &amp;   \lambda &amp; -1
+\end{array}
+\right| = -\lambda^2+2\lambda=0
+\]</span></p>
+<p>Obtenemos que si <span class="math inline">\(\lambda\)</span> es 0 o 2 el deteminante vale 0 <span class="math display">\[\lambda \in \{0, 2\} \rightarrow |A| = 0 \]</span></p>
+<p>Ahora sabemos que en estos dos casos el rango de <span class="math inline">\(\lambda\)</span> no es 3 pero ¿cuál es entonces su rango?</p>
+<p>Buscamos el siguiente número menor, probamos con rango 2 para ello busco una matriz de 2x2 que obtengo de la matriz <span class="math inline">\(A\)</span></p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{cc}
+    1 &amp; -1 \\
+    2 &amp; -1
+\end{array}
+\right| = 1 \not= 0
+\]</span></p>
+<p>Luego he descubierto que la matriz <span class="math inline">\(A\)</span> sí es rango 2 independientemente del valor de <span class="math inline">\(\lambda\)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">λ</th>
+<th style="text-align: center;">Rango(A)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">otro</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Ahora estudiaré el rango de la matriz ampliada <span class="math inline">\(A^*\)</span> para los casos λ=0 y λ=2</p>
+<p><span class="math display">\[
+A= \left(
+\begin{array}{ccc|c}
+    1       &amp; 1 &amp; -1 &amp; \lambda \\
+    \lambda &amp; 2 &amp;-1 &amp; 3\lambda \\
+    2       &amp;   \lambda &amp; -1 &amp; 6
+\end{array}
+\right)
+\]</span></p>
+<h3 id="si-λ-0">Si λ = 0</h3>
+<p>Hago el determinante pero sustituyo el valor de λ por el valor 0. Como es la matriz ampliada elijo tres columnas de las cuatro posibles. En este caso elijo las columnas 1, 2 y 4</p>
+<p><span class="math display">\[
+|A^*|= \left|
+\begin{array}{ccc}
+    1 &amp; 1 &amp; 0 \\
+    0 &amp; 2   &amp; 0  \\
+    2 &amp; 0 &amp; 6
+\end{array}
+\right| = 12 \not= 0
+\]</span></p>
+<p>Luego para λ=0 el Rango de <span class="math inline">\(A^*\)</span> es 3</p>
+<p><span class="math display">\[\lambda=0 \rightarrow \text{Rango}(A^*)=3\]</span></p>
+<h3 id="si-λ2">Si λ=2</h3>
+<p>He buscado todos los determinantes posibles a partir de elegir tres columnas de las cuatro posibles. No he encontrado ninguna que dé un valor diferente de cero, luego no puede ser de rango 3. Probaré a ver si es de rango 2, para ello selecciono un determinante de 2x2. En principio sería rango 2 salvo que el determinante valga 0</p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{cc}
+    1 &amp; -2 \\
+    2 &amp; \phantom{-}6
+\end{array}
+\right| = 10 \not= 0
+\]</span></p>
+<p>Como el resultado no es nulo el rango es 2</p>
+<p>Construyo una tabla con los datos obtenidos hasta ahora</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">λ</th>
+<th style="text-align: center;">Rango(A)</th>
+<th style="text-align: center;">Rango(<span class="math inline">\(A^*\)</span>)</th>
+<th style="text-align: center;">Nº incógnitas</th>
+<th style="text-align: center;">Sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.I.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.C.I.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">otro</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.C.D.</td>
+</tr>
+</tbody>
+</table>
+<p>Donde S.I. significa sistema incompatible; S.C.D. sistema compatible determinado y S.C.I. es sistema compatible indeterminado</p>
+<p>Esta última columna la obtenemos aplicando el teorema de Rouche-Fröbenius</p>
+<p>#SistemaDeEcuaciones #2ºbachillerato #determinante #Rouche-Fröbenius</p>
+
+</article><article>
 <h1 id="matemáticas-madrid-evau-2017-modelo-opción-a"><a id="enlacePermanente" href=matematicas/matrices/2018-10-22.matematicas-madrid-evau-2017-modelo-opcion-a.html>Matemáticas Madrid EvAU 2017 modelo opción A</a></h1>
 <p>Dadas las matrices:</p>
 <p><span class="math display">\[
@@ -222,21 +361,9 @@ C=
 \right)
 \]</span></p>
 <p>Como vemos, esta expresión es la misma que la <a href="#ec1">ecuación 1</a> por lo tanto, comprobamos que sí que se cumple la igualdad</p>
-<p>#EvAU #determinante #matriz</p>
+<p>#EvAU #2ºBachillerato #determinante #matriz</p>
 
 </article><article>
-<h1 id="katex-vs-mathjax"><a id="enlacePermanente" href=matematicas/tecnologia/2018-10-21.katex-vs-mathjax.html>KaTeX vs MathJax</a></h1>
-<p><time datetime='2018-10-21' pubdate='2018-10-21'>21 de octubre de 2018</time></p>
-<p>Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas muy útiles para representar matemáticas en la web.</p>
-<p>Debo aclarar que antes de usar estas dos me decanté por <a href="https://es.wikipedia.org/wiki/MathML">MathML</a> pero desgraciadamente <a href="https://www.quora.com/Why-did-Chrome-drop-MathML-support">Google Chrome no tiene soporte para MathML</a> con lo cual no me quedó más remedio que estudiar las opciones que os voy a presentar.</p>
-<p>Ambas librerías permiten escribir código <a href="https://www.latex-project.org">LaTeX</a> y transformarlo en tiempo real a un formato matemático mediante JavaScript.</p>
-<ul>
-<li><p><a href="https://katex.org">KaTeX</a> ofrece la posibilidad de transformar fórmulas con gran rápidez. En realidad parece ser que <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">es más rápido que su rival MathJax</a> pero <a href="https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support">no soporta todas las funciones</a></p></li>
-<li><p><a href="https://www.mathjax.org">MathJax</a> parece ser un proyecto que tiene un mayor soporte por parte de la comunidad de desarrolladores y esto significa que puede representar más y mejores expresiones matemática que su rival KaTeX</p></li>
-</ul>
-<p>Tras experimentar con ambos, he decidido quedarme con KaTeX para este sitio web ya que no emplea cookies y deseo crear un sitio web totalmente limpio. Además KaTeX me ofrece mayor velocidad y eso es importante porque deseo emplear muchas expresiones matemáticas.</p>
-<p>Uno de los puntos fuertes de este sitio web es que es en su mayoría estático, esto implica que es ligero y rápido de cargar y visualizar, incluso en un equipo antiguo.</p>
-<p>#KaTeX #MathJaX #librería #web</p>
 
 </article><article>
 <h1 id="matemáticas-madrid-evau-2015-septiembre-opción-b"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-20.matematicas-madrid-evau-2015-septiembre-opcion-b.html>Matemáticas Madrid EvAU 2015 septiembre opción B</a></h1>
@@ -363,7 +490,7 @@ C=
 \]</span></p>
 <p>Sustituyo el valor del determinante que conozco por el enunciado para obtener el enunciado</p>
 <p><span class="math display">\[-4 \cdot 3 = \boxed{-12}\]</span></p>
-<p>#EvAU #determinante #matriz</p>
+<p>#EvAU #2ºBachillerato #determinante #matriz</p>
 
 </article><article>
 <h1 id="hallar-el-valor-del-determinante"><a id="enlacePermanente" href=matematicas/determinantes/2018-10-13.hallar-el-valor-del-determinante.html>Hallar el valor del determinante</a></h1>
@@ -422,7 +549,7 @@ C=
 \]</span></p>
 <p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p>
 <p><span class="math display">\[\frac{3}{2} \cdot 2 = \boxed{3}\]</span></p>
-<p>#determinante #matriz</p>
+<p>#2ºBachillerato #determinante #matriz</p>
 
 </article><article>
 <h1 id="los-números-están-en-todas-partes"><a id="enlacePermanente" href=matematicas/2018-10-12.los-numeros-estan-en-todas-partes.html>Los números están en todas partes</a></h1>

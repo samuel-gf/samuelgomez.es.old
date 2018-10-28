@@ -42,4 +42,10 @@
 	<changefreq>yearly</changefreq>
 	<priority>0.5</priority>
 </url>
+<url>
+	<loc>http://samuelgomez.es/matematicas/sistemaDeEcuaciones/2018-10-28.discutir-el-sistema-de-ecuaciones-en-funcion-del-parametro.html</loc>
+	<lastmod>2018-10-28</lastmod>
+	<changefreq>yearly</changefreq>
+	<priority>0.5</priority>
+</url>
 </urlset>
