@@ -1,2 +1,4 @@
 html/matematicas
 html/*.html
+!html/contacto.html
+log

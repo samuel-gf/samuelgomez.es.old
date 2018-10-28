@@ -22,7 +22,7 @@
 	array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos
 
 	$strArticulos = '';
-	// Por cada artículo obtén el contenido	
+	// Por cada artículo obtén el contenido
 	foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		$article = file_get_contents($vHtml['nombreCompleto']);
 		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);
@@ -33,6 +33,7 @@
 
 	// Reemplaza campos en la plantilla foot
 	$tmplFoot = str_replace('{{BASE_DIR}}','',$tmplFoot);
+	$tmplFoot = str_replace('{{HTML_NAME}}','/index.html',$tmplFoot);
 
 
 	// Escribe index.html en disco

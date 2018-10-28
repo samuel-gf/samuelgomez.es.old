@@ -65,6 +65,7 @@
 
 	// Reemplaza campos en la plantilla foot
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplFoot);
+	$tmplFoot = str_replace('{{HTML_NAME}}',$argv[1],$tmplFoot);
 
 
 	// Agrega la plantilla cabecera y pie al .html

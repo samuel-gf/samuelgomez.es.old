@@ -1,3 +1,4 @@
+0.24	Contador de visitas
 0.23	Las etiquetas se añaden estilo Twitter con # al principio de la palabra. Se suelen escribir al final del artículo .md
 0.22	DESCARTADA: Introduce automáticamente las etiquetas en cada artículo. Fue descartada pq suponía un tiempo de proceso cuadrático
 0.21	Emplea el sistema de metadatos .md basado en --- en lugar del de pandoc %
