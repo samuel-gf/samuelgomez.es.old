@@ -9,6 +9,6 @@
 
 
 ## Niveles de cabecera
-h1	Título del artículo
+h1	Título del artículo o del ejercicio
 h2	Apartados
-h6	Etiquetas
+h3	Casos partículares
