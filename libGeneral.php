@@ -3,7 +3,6 @@
         date_default_timezone_set('Europe/Madrid');
         return date("Y-m-d");
     }
-
 	/* Retorna una URL amigable a partir de un string */
     function strToUrl($str){
         $str = mb_strtolower(trim($str));
@@ -11,7 +10,6 @@
                               array('a', 'e', 'i', 'o', 'u', 'n', '?', '-'), $str);
         return $str;
     }
-
 	/* Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array */
 	function getArrFiles($root, $ext, $includeRoot=false){
 		clearstatcache();
@@ -44,26 +42,22 @@
 		//die();
 		return $arrFilesBuscados;
 	}
-
 	// Obtiene el título del artículo extrayendolo del texto
 	function getTitleFromText($text){
 		$r = preg_match("/<title>(.*)<\/title>/", $text, $arrTitle);
 		$title = trim($arrTitle[1]);
 		return $title;
 	}
-
 	// Obtiene el título de un texto en formato .md
 	function getTitleFromMd($text){
 		$r = preg_match("/# *(.*)/", $text, $arrData);
 		$data = trim($arrData[1]);
 		return $data;
 	}
-
 	function getMenu($root){
 		$ret = '';
 		$arrAllDirs = getDirectorios($root);
 		$ret .= "\t<ul>\n";
-
 		$subnivel = 0;
 		foreach ($arrAllDirs as $k => $vDir) {
 			if (dirname($vDir) == '.'){	// Es un primer nivel
@@ -73,12 +67,10 @@
 				$subnivel++;
 				$ret .= "\t\t<li class='segundoNivel'><a href='#'>".mb_ucfirst(str_replace(dirname($vDir).'/','',$vDir))."</a></li>\n";
 			}
-
 		}
 		$ret .= "\t</ul>\n";
 		return $ret;
 	}
-
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;
         $padBefore = $dir === STR_PAD_BOTH || $dir === STR_PAD_LEFT;
@@ -92,7 +84,6 @@
         $after = $padAfter ? mb_substr($repeatedString, 0, ceil($targetLen), $encoding) : '';
         return $before . $str . $after;
     }
-
 	// La primera letra en mayúsula para cadenas unicode
 	function mb_ucfirst($string, $encoding='utf8'){
 	    $strlen = mb_strlen($string, $encoding);
@@ -100,8 +91,6 @@
 	    $then = mb_substr($string, 1, $strlen - 1, $encoding);
 	    return mb_strtoupper($firstChar, $encoding) . $then;
 	}
-
-
 	// Devuelve un array con todos los directorios y subdirectorios que dependen de $root
 	function getDirectorios($root, $rutaCompleta=false){
 		$ret = '';
@@ -110,9 +99,7 @@
 			RecursiveIteratorIterator::SELF_FIRST,
 			RecursiveIteratorIterator::CATCH_GET_CHILD // Ignore "Permission denied"
 		);
-
 		$arrAllDirs = array();
-
 		foreach ($iter as $path => $vFile) {
 		    if ($vFile->isDir()) {
 				if ($rutaCompleta){
@@ -124,13 +111,10 @@
 		}
 		return $arrAllDirs;
 	}
-
-
     // Corta la cadena y rellena con espacios u otro
     function width($str, $nChars, $fill = ' '){
         return mb_str_pad(mb_substr($str,0,$nChars),$nChars,$fill,STR_PAD_RIGHT, $encoding='utf-8');
     }
-
     function rDebug(&$arr){
         echo '<div class="preformatted">';
         print_r($arr);
