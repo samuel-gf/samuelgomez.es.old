@@ -28,6 +28,7 @@
 		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);
 		$article=$arr[0];
 		$article = str_replace($vHtml['título'],'<a id="enlacePermanente" href='.mb_substr($vHtml['nombre'],1).'>'.$vHtml['título'].'</a>',$article);	// Pon la URL correcta
+		$article = preg_replace('/<img src="(..\/)*/', '<img src="./', $article);
 		$strArticulos .= $article;
 	}
 
