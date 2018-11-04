@@ -19,7 +19,7 @@
 
 
 	<script src='{{BASE_DIR}}js/jquery.js'></script>
-	<script src='{{BASE_DIR}}js/general.js'></script>	
+	<script src='{{BASE_DIR}}js/general.js'></script>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
 	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
@@ -31,14 +31,7 @@
     <header>
 		<a href="{{BASE_DIR}}index.html"><img id="logoTop"
 			src="{{BASE_DIR}}img/logoS3.png" alt="Logo Samuel Gómez"></a>
-		<a id="nav-toggle" href="#">&#9776;</a>
+		{{MENU}}
     </header>
 	<main>
-		<section id="menu">
-			<section id="info">
-				{{INFO}}
-			</section>
-			<li><a href="{{BASE_DIR}}contacto.html">Contacto</a></li>
-			<hr/>
-			{{MENU}}
-		</section>
+		

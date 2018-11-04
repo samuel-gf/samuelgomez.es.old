@@ -2,16 +2,20 @@ MD := $(shell find src -name '*.md')
 HTML := $(subst src/,html/,$(MD:.md=.html))
 TEMPLATES := $(shell find templates -name '*.php')
 
-all: $(HTML) const.php html/index.html html/contacto.html html/sitemap.xml
+all: $(HTML) const.php html/index.html html/contacto.html html/menu.html html/sitemap.xml
 
 html/%.html: src/%.md $(TEMPLATES)
 	php makeArticle.php $@
 
 html/index.html: $(MD) $(TEMPLATES)
 	php makeIndex.php
+	php makeCategory.php
 
 html/contacto.html: pages/contact.php $(TEMPLATES)
 	php makeContact.php
+
+html/menu.html:
+	php makeMenu.php
 
 html/sitemap.xml: #$(HTML)
 	php makeSitemap.php

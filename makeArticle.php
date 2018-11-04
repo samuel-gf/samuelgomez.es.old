@@ -12,7 +12,6 @@
 	$tmplArticle = trim($arrMatch[0]);
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 	$info = file_get_contents(TEMPLATES.'/info.php');
-	$menu = getMenu(SRC);
 	// Obtiene el título del artículo extrayendolo del texto del .md mirando lo que viene después del primer #
 	$title = getTitleFromMd($tmplArticle);
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
@@ -36,7 +35,7 @@
 	// Remplaza campos en la plantilla article
 	//$tmplArticle = str_replace('{{FECHA}}',"<time>$dateOfFileLong</time>",$tmplArticle);
 	// Reemplaza campos en la plantilla article
-	$tmplArticle = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplArticle);	
+	$tmplArticle = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplArticle);
 	// Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
 	//$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
@@ -54,7 +53,7 @@
 	// Remplaza campos en la plantilla header
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplHeader);
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
-	$tmplHeader = str_replace('{{MENU}}',$menu,$tmplHeader);
+	$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="'.str_repeat('../',$numDirectorios).'menu.html">&#9776;</a>',$tmplHeader); //@TODO
 	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDirectorios),$tmplHeader);
 
 	// Reemplaza campos en la plantilla foot

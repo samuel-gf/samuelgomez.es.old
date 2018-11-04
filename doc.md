@@ -16,3 +16,6 @@ h3	Casos partículares
 Puedes poner:
 - {{FECHA}} y se sustituirá por el valor de la fecha de hoy
 - yyyy-mm-dd es el otro formato. Se sustituirá por un formato humano más legible
+
+## Fuentes de imágenes libres
+- ![Observatorio Europeo del Sur](https://www.eso.org/public/images/)

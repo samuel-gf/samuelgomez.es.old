@@ -29,9 +29,9 @@
 					//echo file_get_contents($vDir.'/'.$vFile);
 					$fechaCreacion = (explode('.',basename($vFile)))[0];
 					array_push($arrFilesBuscados, array(
-						'nombre' => str_replace($root, '', $vDir).'/'.$vFile,
 						'título' => getTitleFromText(file_get_contents($vDir.'/'.$vFile)),
-						'nombreCompleto' => $vDir.'/'.$vFile,
+						'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
+						'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
 						'uModificacion' => filemtime($vDir.'/'.$vFile),
 						'fechaCreación' => $fechaCreacion
 					));
@@ -54,18 +54,29 @@
 		$data = trim($arrData[1]);
 		return $data;
 	}
-	function getMenu($root){
+
+	/* A partir del nombre completo de un fichero obtiene metainformación */
+	function getArrInfoFromHtmlFile($vHtmlFullName){
+		$contenidoHtml = file_get_contents($vHtmlFullName);
+		$arrFileName = explode('.',basename($vHtmlFullName));
+		$arrRet = array(
+			'título' => getTitleFromText($contenidoHtml),
+			'ficheroRutaRelativa' => str_replace(ROOT, '', $vDir).'/'.$vHtmlFullName,
+			'ficheroRutaAbsoluta' => $vHtmlFullName,
+			'uModificacion' => filemtime($vHtmlFullName),
+			'fechaCreación' => $arrFileName[0]		// Desde el nombre del fichero
+		);
+		return $arrRet;
+	}
+
+	function getMenu($srcDir){
 		$ret = '';
-		$arrAllDirs = getDirectorios($root);
+		$arrAllDirs = getDirectorios($srcDir);
 		$ret .= "\t<ul>\n";
-		$subnivel = 0;
-		foreach ($arrAllDirs as $k => $vDir) {
-			if (dirname($vDir) == '.'){	// Es un primer nivel
-				$subnivel = 0;
-				$ret .= "\t\t<li class='primerNivel'><a href='#'>".mb_ucfirst($vDir)."</a></li>\n";
-			} else {	// Es un nivel inferior
-				$subnivel++;
-				$ret .= "\t\t<li class='segundoNivel'><a href='#'>".mb_ucfirst(str_replace(dirname($vDir).'/','',$vDir))."</a></li>\n";
+		foreach ($arrAllDirs as $k => $vDirRelativo) {
+			$arrHtmlFiles = glob(HTML.'/'.$vDirRelativo.'/*.html');
+			if (sizeof($arrHtmlFiles) > 0){
+				$ret .= "\t\t<li class='primerNivel'><a href='./$vDirRelativo/index.html'>".mb_ucfirst($vDirRelativo)."</a></li>\n";
 			}
 		}
 		$ret .= "\t</ul>\n";

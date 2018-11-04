@@ -8,8 +8,7 @@
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Artículos recientes. '.AUTOR,$tmplHeader);
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
-	$menu = getMenu(SRC);
-	$tmplHeader = str_replace('{{MENU}}',$menu,$tmplHeader);
+	$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9776;</a>',$tmplHeader); //@TODO 
 	$tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 
@@ -24,11 +23,11 @@
 	$strArticulos = '';
 	// Por cada artículo obtén el contenido
 	foreach ($arrFilesHtml as $kHtml => $vHtml) {
-		$article = file_get_contents($vHtml['nombreCompleto']);
+		$article = file_get_contents($vHtml['ficheroRutaAbsoluta']);
 		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);
 		$article=$arr[0];
-		$article = str_replace($vHtml['título'],'<a id="enlacePermanente" href='.mb_substr($vHtml['nombre'],1).'>'.$vHtml['título'].'</a>',$article);	// Pon la URL correcta
-		$article = preg_replace('/<img src="(..\/)*/', '<img src="./', $article);
+		$article = str_replace($vHtml['título'],'<a id="enlacePermanente" href='.mb_substr($vHtml['ficheroRutaRelativa'],1).'>'.$vHtml['título'].'</a>',$article);	// Pon la URL correcta
+		$article = preg_replace('/<img src="(..\/)+/', '<img src="./', $article);
 		$strArticulos .= $article;
 	}
 
