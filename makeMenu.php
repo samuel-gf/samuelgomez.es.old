@@ -1,6 +1,7 @@
 <?php
     require("const.php");
     require("libGeneral.php");
+	require("templates/categorias.php");
 
 	// Lee el contenido de la cabecera
 	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');

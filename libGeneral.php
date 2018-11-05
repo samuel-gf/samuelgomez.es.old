@@ -69,19 +69,57 @@
 		return $arrRet;
 	}
 
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 	function getMenu($srcDir){
+		global $arrCategoriasPalabras;
 		$ret = '';
 		$arrAllDirs = getDirectorios($srcDir);
-		$ret .= "\t<ul>\n";
-		foreach ($arrAllDirs as $k => $vDirRelativo) {
+		sort($arrAllDirs);
+		$actNumDirectorios = -1;
+		foreach ($arrAllDirs as $k => $vDirRelativo) {	// Cada $vDirRelativo es una ruta
+			$antNumDirectorios = $actNumDirectorios;
+			$actNumDirectorios = substr_count($vDirRelativo, '/');
+			$relNumDirectorios = $actNumDirectorios-$antNumDirectorios;	// Variación relativa
+
 			$arrHtmlFiles = glob(HTML.'/'.$vDirRelativo.'/*.html');
-			if (sizeof($arrHtmlFiles) > 0){
-				$ret .= "\t\t<li class='primerNivel'><a href='./$vDirRelativo/index.html'>".mb_ucfirst($vDirRelativo)."</a></li>\n";
+			$nFicherosHtml = sizeof($arrHtmlFiles);
+
+			$arrCategoriasDir = explode('/', $vDirRelativo);	// Cada elemento del array es un directorio (perteneciente a la ruta completa)
+			$linea = '';
+			//foreach ($arrCategoriasDir as $kCategoriaDir => $vCategoriaDir) {	// Cada directorio
+				$arrCategoriaPalabras = explode('-', end($arrCategoriasDir));
+				foreach ($arrCategoriaPalabras as $kPalabra => $vPalabra) {	// Cada palabra
+					$linea.=array_key_exists($vPalabra, $arrCategoriasPalabras)?$arrCategoriasPalabras[strtolower($vPalabra)]:$vPalabra;
+					$linea.=' ';
+				}
+				$linea = rtrim($linea, ' ');
+				$linea.=' > ';
+			//}
+			$linea = rtrim($linea, ' > ');
+			echo $vDirRelativo."($antNumDirectorios, $actNumDirectorios, $relNumDirectorios)\n";
+
+			$tabulaciones = str_repeat("\t", $actNumDirectorios);
+			if ($relNumDirectorios==1){	// Incrementa un direcotorio
+				$ret .= str_repeat("$tabulaciones", $actNumDirectorios)."<ol>\n";
+			}
+			if ($relNumDirectorios==0){
+				$ret .= str_repeat("\t", $antNumDirectorios)."</li>\n";
+			}
+			if ($relNumDirectorios==-1){
+				$ret .= str_repeat("\t", $antNumDirectorios)."</li></ol>\n";
+			}
+
+			if ($nFicherosHtml > 0){	/*********** La madre del cordero **********/
+				$ret .= "$tabulaciones\t<li><a href='./$vDirRelativo/index.html'>".mb_ucfirst($linea)."</a>\n";
+			} else {
+				$ret .= "$tabulaciones\t<li>".mb_ucfirst($linea)."\n";
 			}
 		}
-		$ret .= "\t</ul>\n";
+		$ret .= "\t</li></ol>\n";
+		//echo $ret;
 		return $ret;
 	}
+
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;
         $padBefore = $dir === STR_PAD_BOTH || $dir === STR_PAD_LEFT;

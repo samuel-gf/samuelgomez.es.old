@@ -38,15 +38,6 @@ p > strong{
 	padding-right: 0.5rem;
 }
 
-ul{
-	padding-bottom: 1em;
-}
-
-li {
-	list-style-type: disc;
-	list-style-position: inside;
-}
-
 a{	text-decoration: none; color: #006aff;}
 a:visited{color: #006aff;}
 a:hover{color: #FF9200;}

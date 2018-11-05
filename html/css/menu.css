@@ -10,9 +10,30 @@ nav{
 	margin: 1rem 0 0 0;
 }
 
-nav li{
+
+nav ul{
 	list-style-type: square;
 	list-style-position: inside;
-	color: #006aff;
+}
+
+nav ol{
+	counter-reset: section;
+	list-style-type: none;
+}
+
+nav li{
+	list-style-position: inside;
+	color: black;
 	font-size: 1.5rem;
+	text-align: left;
+}
+
+nav ol li::before{
+	counter-increment: section;
+	content: counters(section, ".") ".";
+	margin-right: 1rem;
+}
+
+nav li a{
+	color: #006aff;
 }
