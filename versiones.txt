@@ -1,4 +1,4 @@
-0.26	Genera un index por cada categoría
+0.26	Genera un index por cada categoría y hace del menú una página independiente
 0.25	DESCARTADA: Agrupa las categoríasd dentro del mismo fichero .md
 0.24	Contador de visitas y log
 0.23	Las etiquetas se añaden estilo Twitter con # al principio de la palabra. Se suelen escribir al final del artículo .md
