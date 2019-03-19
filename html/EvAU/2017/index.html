@@ -36,9 +36,9 @@
 	<main>
 		
 <article>
-<h1 id="matemáticas-madrid-evau-2017-modelo-opción-a"><a id="enlacePermanente" href=/Users/samuel/Sites/samuelgomez.es/html/EvAU/2017/2018-10-22.matematicas-madrid-evau-2017-modelo-opcion-a.html>Matemáticas Madrid EvAU 2017 modelo opción A</a></h1>
+<h1 id="matemáticas-madrid-evau-2017-modelo-opción-a"><a id="enlacePermanente" href=html/EvAU/2017//home/samuel/Web/samuelgomez.es/html/EvAU/2017/2018-10-22.matematicas-madrid-evau-2017-modelo-opcion-a.html>Matemáticas Madrid EvAU 2017 modelo opción A</a></h1>
 <p>Dadas las matrices:</p>
-<p><span class="math display">\[
+<p><span class="math display">\displaystyle 
 A=
 \left(
 \begin{array}{ccc}
@@ -65,11 +65,11 @@ C=
     1 &amp; -2 &amp; 0 \\
 \end{array}
 \right)
-\]</span></p>
+</span></p>
 <h2 id="calcular-el-valor-de-b-en-función-de-los-valores-de-m">Calcular el valor de B en función de los valores de m</h2>
-<p>Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
-<p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p>
-<p><span class="math display">\[
+<p>Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">m</span></p>
+<p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\text{Rango}(B)&gt;=2</span></p>
+<p><span class="math display">\displaystyle 
 |B|=
 \left|
 \begin{array}{cc}
@@ -78,9 +78,9 @@ C=
 \end{array}
 \right|
 =-4-4=-8
-\]</span></p>
-<p>Acabamos de comprobar que el rango de <span class="math inline">\(B\)</span> es al menos dos independientemente del valor de <span class="math inline">\(m\)</span>. Veamos ahora si podría ser de rango 3 mediante su determinante</p>
-<p><span class="math display">\[
+</span></p>
+<p>Acabamos de comprobar que el rango de <span class="math inline">B</span> es al menos dos independientemente del valor de <span class="math inline">m</span>. Veamos ahora si podría ser de rango 3 mediante su determinante</p>
+<p><span class="math display">\displaystyle 
 |B|=
 \left|
 \begin{array}{ccc}
@@ -90,29 +90,29 @@ C=
 \end{array}
 \right|
 =-4m^2+6m-2
-\]</span></p>
-<p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">\(m\)</span> el determinante se anula</p>
-<p><span class="math display">\[-4m^2+6m-2=0\]</span></p>
-<p>Obtenemos los resultados 1 y <span class="math inline">\(\frac{1}{2}\)</span>. Llegamos a la conclusión de que si <span class="math inline">\(m\)</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p>
-<p><strong>Conclusión</strong> Si <span class="math inline">\(m\)</span> toma el valor 1 o <span class="math inline">\(\frac{1}{2}\)</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
-<p><span class="math display">\[\text{Rango}(B)=\begin{cases}
+</span></p>
+<p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">m</span> el determinante se anula</p>
+<p><span class="math display">\displaystyle -4m^2+6m-2=0</span></p>
+<p>Obtenemos los resultados 1 y <span class="math inline">\frac{1}{2}</span>. Llegamos a la conclusión de que si <span class="math inline">m</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p>
+<p><strong>Conclusión</strong> Si <span class="math inline">m</span> toma el valor 1 o <span class="math inline">\frac{1}{2}</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
+<p><span class="math display">\displaystyle \text{Rango}(B)=\begin{cases}
       2 &amp; \text{si m} \in \{1, \frac{1}{2}\} \\
       3 &amp; \text{para otros valores de m}
-   \end{cases}\]</span></p>
-<h2 id="calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></h2>
-<p>Buscamos la inversa de <span class="math inline">\(A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)\)</span></p>
-<p>Tenemos varias formas de encontrar la inversa <span class="math inline">\(A^{-1}\)</span>. En este caso vamos a emplear la fórmula</p>
-<p><span class="math display">\[A^{-1}=\frac{1}{|A|}\cdot adj(A)^T\]</span></p>
-<p>Para poder usarla debemos obtener el determinante <span class="math inline">\(|A|\)</span></p>
-<p><span class="math display">\[|A|=\left|
+   \end{cases}</span></p>
+<h2 id="calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">Calcular la matriz inversa de <span class="math inline">A</span> y comprobar que verifica <span class="math inline">A^{-1}=\frac{1}{5}(A^2+3c)</span></h2>
+<p>Buscamos la inversa de <span class="math inline">A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)</span></p>
+<p>Tenemos varias formas de encontrar la inversa <span class="math inline">A^{-1}</span>. En este caso vamos a emplear la fórmula</p>
+<p><span class="math display">\displaystyle A^{-1}=\frac{1}{|A|}\cdot adj(A)^T</span></p>
+<p>Para poder usarla debemos obtener el determinante <span class="math inline">|A|</span></p>
+<p><span class="math display">\displaystyle |A|=\left|
 \begin{array}{ccc}
     1 &amp; -1 &amp; 1 \\
     1 &amp; 0 &amp; -1 \\
     -1 &amp; 2 &amp; 2 \\
 \end{array}
 \right|
-=5\]</span></p>
-<p>Ahora vamos a calcular la adjunta <span class="math inline">\(adj(A)\)</span> <span class="math display">\[
+=5</span></p>
+<p>Ahora vamos a calcular la adjunta <span class="math inline">adj(A)</span> <span class="math display">\displaystyle 
 \begin{array}{lll}
         \phantom{-}\left|\begin{array}{cc} 0 &amp; -1 \\ 2 &amp; 2 \end{array}\right|=2\hspace{1cm} &amp;
         -\left|\begin{array}{cc} 1 &amp; -1 \\ -1 &amp; 2 \end{array}\right|=-1\hspace{1cm}&amp;
@@ -126,33 +126,33 @@ C=
         -\left|\begin{array}{cc} 1 &amp; 1 \\ 1 &amp; -1 \end{array}\right|=2\hspace{1cm} &amp;
         \phantom{-}\left|\begin{array}{cc} 1 &amp; -1 \\ 1 &amp; 0 \end{array}\right|=1
          \\      \\
-\end{array}\]</span></p>
+\end{array}</span></p>
 <p>Así pues, obtenemos la matriz de adjuntos</p>
-<p><span class="math display">\[adj(A)=\left(
+<p><span class="math display">\displaystyle adj(A)=\left(
 \begin{array}{rrr}
     2 &amp; -1 &amp; 2 \\
     4 &amp; 3 &amp; -1 \\
     \phantom{-}1 &amp; 2 &amp; 1
 \end{array}
-\right)\]</span></p>
+\right)</span></p>
 <p>Ahora vamos a calcular la traspuesta de esta misma</p>
-<p><span class="math display">\[adj(A)^T=\left(
+<p><span class="math display">\displaystyle adj(A)^T=\left(
 \begin{array}{rrr}
     2 &amp; 4 &amp; 1 \\
     -1 &amp; 3 &amp; 2 \\
     2 &amp; -1 &amp; \phantom{-}1
 \end{array}
-\right)\]</span></p>
+\right)</span></p>
 <p>Y finalmente la inversa a partir de la fórmula que llamaremos <strong>(1)</strong><a name="ec1"></a></p>
-<p><span class="math display">\[A^{-1}=\frac{1}{|A|}adj(A)^T=\frac{1}{5}
+<p><span class="math display">\displaystyle A^{-1}=\frac{1}{|A|}adj(A)^T=\frac{1}{5}
 \left(\begin{array}{rrr}
     2 &amp; 4 &amp; 1 \\
     -1 &amp; 3 &amp; 2 \\
     2 &amp; -1 &amp; \phantom{-}1
 \end{array}
-\right)\]</span></p>
-<p>También debemos obtener <span class="math inline">\(A^2\)</span></p>
-<p><span class="math display">\[A^2=
+\right)</span></p>
+<p>También debemos obtener <span class="math inline">A^2</span></p>
+<p><span class="math display">\displaystyle A^2=
 \left(
 \begin{array}{rrr}
     1 &amp; -1 &amp; 1 \\
@@ -176,9 +176,9 @@ C=
     -1 &amp; 5 &amp; 1 \\
 \end{array}
 \right)
-\]</span></p>
+</span></p>
 <p>Finalmente sustituimos en la fórmula del enunciado</p>
-<p><span class="math display">\[\frac{1}{5}(A^2+3C)=\frac{1}{5}
+<p><span class="math display">\displaystyle \frac{1}{5}(A^2+3C)=\frac{1}{5}
 \left[
     \left(
     \begin{array}{rrr}
@@ -195,9 +195,9 @@ C=
         3 &amp; -6 &amp; 0 \\
     \end{array}
     \right)
-\right]\]</span></p>
+\right]</span></p>
 <p>Y el resultado final es</p>
-<p><span class="math display">\[\frac{1}{5}(A^2+3C)=\frac{1}{5}
+<p><span class="math display">\displaystyle \frac{1}{5}(A^2+3C)=\frac{1}{5}
 \left(
     \begin{array}{rrr}
         2  &amp; 4 &amp; 1\\
@@ -205,7 +205,7 @@ C=
         2  &amp;-1 &amp; 1
     \end{array}
 \right)
-\]</span></p>
+</span></p>
 <p>Como vemos, esta expresión es la misma que la <a href="#ec1">ecuación 1</a> por lo tanto, comprobamos que sí que se cumple la igualdad</p>
 <p>#EvAU #2ºBachillerato #determinante #matriz</p>
 

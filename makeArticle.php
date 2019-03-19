@@ -15,7 +15,7 @@
 	// Obtiene el título del artículo extrayendolo del texto del .md mirando lo que viene después del primer #
 	$title = getTitleFromMd($tmplArticle);
 	$numDirectorios = substr_count($argv[1], '/')-1;	// Cuantos directorios de profundidad tiene el directorio destino
-	// Obtiene las etiquetas
+	// Obtiene las etiquetas o keywords
 	$arrTags = array();
 	//preg_match_all('/[^(]#([\w\-öáéíóúÁÉÍÓÚñÑ]+)/', $tmplArticle, $arrTags);
 	preg_match_all('/[^(]#([^\s#]+)/', $tmplArticle, $arrTags);

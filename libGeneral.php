@@ -61,7 +61,7 @@
 		$arrFileName = explode('.',basename($vHtmlFullName));
 		$arrRet = array(
 			'título' => getTitleFromText($contenidoHtml),
-			'ficheroRutaRelativa' => str_replace(ROOT, '', $vDir).'/'.$vHtmlFullName,
+			'ficheroRutaRelativa' => str_replace(ROOT, '', dirname($vHtmlFullName)).'/'.$vHtmlFullName,
 			'ficheroRutaAbsoluta' => $vHtmlFullName,
 			'uModificacion' => filemtime($vHtmlFullName),
 			'fechaCreación' => $arrFileName[0]		// Desde el nombre del fichero
