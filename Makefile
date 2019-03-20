@@ -1,6 +1,6 @@
-MD := $(shell find src -name '*.md')
-HTML := $(subst src/,html/,$(MD:.md=.html))
-TEMPLATES := $(shell find templates -name '*.php')
+MD := $(shell find src -name '*.md') 					# All sources .md
+HTML := $(subst src/,html/,$(MD:.md=.html))				# All targets .html (from source .md) 
+TEMPLATES := $(shell find templates -name '*.php')		# All templates .php (from templates/)
 
 all: $(HTML) const.php html/index.html html/contacto.html html/menu.html html/sitemap.xml
 

@@ -55,6 +55,15 @@
 		return $data;
 	}
 
+  // Dado un fichero html reemplaza su extensión .html por .md
+  // y le añade la ruta absoluta y la devuelve
+  function getFullFileNameMdFromHtml($htmlFile){
+    $fAbsoluteMd = str_replace('.html', SRC_EXT, $htmlFile);
+	  $fAbsoluteMd = str_replace('html/', SRC.'/', $fAbsoluteMd);
+    return $fAbsoluteMd; // Ruta absoluta + archivo .md
+  }
+
+
 	/* A partir del nombre completo de un fichero obtiene metainformación */
 	function getArrInfoFromHtmlFile($vHtmlFullName){
 		$contenidoHtml = file_get_contents($vHtmlFullName);
@@ -68,6 +77,12 @@
 		);
 		return $arrRet;
 	}
+
+  function getContentWithoutMetadata($tmplContentMd){
+    preg_match("/#(.*)/s",$tmplContentMd, $arrMatch);	// Coge el contenido sin el bloque de metadatos del .md
+    $tmplArticle = trim($arrMatch[0]);
+    return $tmplArticle;
+  }
 
 	// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 	function getMenu($srcDir){
