@@ -52,8 +52,11 @@
 	!file_exists(dirname($fAbsoluteHtml))?mkdir(dirname($fAbsoluteHtml), 0755, true):NULL;
 	//$command = "pandoc $fAbsoluteMd -f markdown+tex_math_dollars --mathml -o $fAbsoluteHtml";
 	$command = "pandoc $fAbsoluteMd -f markdown+tex_math_dollars-fancy_lists --katex -o $fAbsoluteHtml";
-	//echo $command."\n";
-	echo shell_exec($command)."\n";
+	exec($command, $arrOutput, $nReturnCode)."\n"; // Solo por si existe algún error
+	if ($nReturnCode != 0){
+		$strArrOutput = implode($arrOutput);
+		echo "[Pandoc error $nReturnCode] $strArrOutput";
+	}
 	// Remplaza campos en la plantilla header
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplHeader);
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
