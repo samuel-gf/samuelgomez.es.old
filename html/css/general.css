@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: SourceSansPro-Semibold;
-    src: url("../woff/SourceSansPro-Semibold.woff") format("woff");
+	src: url("../woff/SourceSansPro-Semibold.woff") format("woff");
 }
 
 
@@ -83,39 +83,29 @@ body header a#nav-toggle{
 }
 
 /********************************************* Cabeceras *********************************/
-h1 {
+h1, h2, h3{
 	font-family: SourceSansPro-Semibold;
-	font-size: 1.6rem;
 	color: #006aff;
+}
+
+h1 {
 	border-bottom: 1px solid #FF9200;
+	font-size: 1.6rem;
 }
 
 
 h1 a{
 	color: inherit;
 	text-decoration: none;
-	font-size: 1.6rem;
 	color: #006aff;
 }
 
 h2 {
-	font-family: SourceSansPro-Semibold;
-	color: black;
-	margin: 3rem 0 1rem 0;
-}
-
-h2::before{
-	color: #006aff;
-	counter-increment: apartado;
-	content: counter(apartado, lower-alpha) ") ";
+	font-size: 1.4rem;
 }
 
 h3 {
-	color: #006aff;
-	margin: 3rem 0 3rem 0;
-	display: inline;
-	width: 100%;
-	border-bottom: 1px solid #777777;
+	font-size: 1.2rem;
 }
 
 /***************************************** /cabeceras **********************************/
@@ -250,11 +240,6 @@ main footer{
 		box-shadow: unset;
 		height: auto;
 	}
-
-/*	#sidebar{
-		max-width: 90%;
-		box-shadow: unset;
-	}*/
 
 	article{
 		padding: 2rem;

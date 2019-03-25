@@ -1,44 +1,40 @@
 <?php
-    require("const.php");
-    require("libGeneral.php");
+require("const.php");
+require("libGeneral.php");
 
-	// Lee el contenido de las plantillas
-	$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
-	// Remplaza campos en la plantilla header
-	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Artículos recientes. '.AUTOR,$tmplHeader);
-	$info = file_get_contents(TEMPLATES.'/info.php');
-	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
-	$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9776;</a>',$tmplHeader); //@TODO 
-	$tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
-	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
+// Carga la plantilla INFO
+$info = file_get_contents(TEMPLATES.'/info.php');
+
+// Carga y sustituye en la plantilla FOOT
+$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
+$tmplFoot = str_replace('{{BASE_DIR}}','',$tmplFoot);
+$tmplFoot = str_replace('{{HTML_NAME}}','/index.html',$tmplFoot);
+
+// Carga y sustituye en la plantilla HEADER
+$tmplHeader = file_get_contents(TEMPLATES.'/header.php');
+$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Índice. '.AUTOR,$tmplHeader);
+$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
+$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9776;</a>',$tmplHeader); 
+$tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
 
 
-	// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo
-	$arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas root pq se incluiría a sí mismo
-	usort($arrFilesHtml, function($a, $b) {
+// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo en un array $arrFilesHtml
+$arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas root pq se incluiría a sí mismo
+usort($arrFilesHtml, function($a, $b) {
 		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});
-	array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos
+array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos	
+$strArticulos = "<article><h1>Índice</h1>\n<ul>";
+// Por cada artículo obtén el título y la fecha
+foreach ($arrFilesHtml as $kHtml => $vHtml) {
+	$article = file_get_contents($vHtml['ficheroRutaAbsoluta']);
+	$title = '<li><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$vHtml['título'].'</a></li>';
+	$strArticulos .= $title;
+}
 
-	$strArticulos = '';
-	// Por cada artículo obtén el contenido
-	foreach ($arrFilesHtml as $kHtml => $vHtml) {
-		$article = file_get_contents($vHtml['ficheroRutaAbsoluta']);
-		$r = preg_match("/<article(.*)<\/article>/s", $article, $arr);
-		$article=$arr[0];
-		$article = str_replace($vHtml['título'],'<a id="enlacePermanente" href='.mb_substr($vHtml['ficheroRutaRelativa'],1).'>'.$vHtml['título'].'</a>',$article);	// Pon la URL correcta
-		$article = preg_replace('/<img src="(..\/)+/', '<img src="./', $article);
-		$strArticulos .= $article;
-	}
-
-	// Reemplaza campos en la plantilla foot
-	$tmplFoot = str_replace('{{BASE_DIR}}','',$tmplFoot);
-	$tmplFoot = str_replace('{{HTML_NAME}}','/index.html',$tmplFoot);
-
-
-	// Escribe index.html en disco
-	$fArticulo = fopen(HTML.'/index.html', 'w');
-	fwrite($fArticulo, $tmplHeader);
-	fwrite($fArticulo, $strArticulos);
-	fwrite($fArticulo, $tmplFoot);
-	fclose($fArticulo);
+// Escribe index.html en disco
+$fArticulo = fopen(HTML.'/index.html', 'w');
+fwrite($fArticulo, $tmplHeader);
+fwrite($fArticulo, "$strArticulos</ul></article>");
+fwrite($fArticulo, $tmplFoot);
+fclose($fArticulo);

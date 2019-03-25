@@ -1,4 +1,3 @@
-html/matematicas
-html/*.html
+*.html
 !html/contacto.html
 log

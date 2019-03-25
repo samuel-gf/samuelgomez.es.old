@@ -18,7 +18,7 @@ html/menu.html:
 	php makeMenu.php
 
 html/sitemap.xml: #$(HTML)
-	php makeSitemap.php
+	# php makeSitemap.php
 
 clean:
 	@find html -name *.html -exec rm {} \;
