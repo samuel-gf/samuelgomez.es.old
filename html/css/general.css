@@ -6,12 +6,13 @@
 
 @font-face {
     font-family: SourceSansPro-Regular;
-    src: url("../woff/SourceSansPro-Regular.woff") format("woff");
+    /*src: url("../woff/SourceSansPro-Regular.woff") format("woff");*/
+
 }
 
 @font-face {
     font-family: SourceSansPro-Semibold;
-	src: url("../woff/SourceSansPro-Semibold.woff") format("woff");
+	/*src: url("../woff/SourceSansPro-Semibold.woff") format("woff");*/
 }
 
 
@@ -43,7 +44,8 @@ a:visited{color: #006aff;}
 a:hover{color: #FF9200;}
 
 strong {
-	color: #006aff;
+	/*color: #006aff;*/
+	font-weight: bold;
 }
 
 body header{
@@ -108,6 +110,11 @@ h3 {
 	font-size: 1.2rem;
 }
 
+h4 {
+	font-size: 1rem;
+	color: black;
+}
+
 /***************************************** /cabeceras **********************************/
 
 :target {
@@ -162,6 +169,11 @@ figcaption{
 math{
 	margin: 1rem 0 1rem 0;
 	color: #0000ff;
+}
+
+li{
+	list-style-type: circle;
+	padding: 0.5rem 0 0 0;
 }
 
 /* Etiquetas al final del artículo*/

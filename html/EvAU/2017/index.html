@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon-180x180.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon-152x152.png" />
 	<link rel="apple-touch-icon" sizes="167x167" href="../../img/favicon-167x167.png" />
-
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet"> 
 
 	<script src='../../js/jquery.js'></script>
 	<script src='../../js/general.js'></script>
@@ -66,8 +66,9 @@ C=
 \end{array}
 \right)
 \]</span></p>
-<h2 id="calcular-el-valor-de-b-en-función-de-los-valores-de-m">Calcular el valor de B en función de los valores de m</h2>
-<p>Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
+<h2 id="primer-ejercicio">Primer ejercicio</h2>
+<p>Calcular el valor de B en función de los valores de m</p>
+<p><strong>Solución</strong> Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
 <p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p>
 <p><span class="math display">\[
 |B|=
@@ -99,7 +100,9 @@ C=
       2 &amp; \text{si m} \in \{1, \frac{1}{2}\} \\
       3 &amp; \text{para otros valores de m}
    \end{cases}\]</span></p>
-<h2 id="calcular-la-matriz-inversa-de-a-y-comprobar-que-verifica-a-1frac15a23c">Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></h2>
+<h2 id="segundo-ejercicio">Segundo ejercicio</h2>
+<p>Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></p>
+<p><strong>Solución</strong></p>
 <p>Buscamos la inversa de <span class="math inline">\(A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)\)</span></p>
 <p>Tenemos varias formas de encontrar la inversa <span class="math inline">\(A^{-1}\)</span>. En este caso vamos a emplear la fórmula</p>
 <p><span class="math display">\[A^{-1}=\frac{1}{|A|}\cdot adj(A)^T\]</span></p>
