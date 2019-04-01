@@ -5,19 +5,19 @@
 
 
 @font-face {
-    font-family: SourceSansPro-Regular;
+    /*font-family: SourceSansPro-Regular;*/
     /*src: url("../woff/SourceSansPro-Regular.woff") format("woff");*/
 
 }
 
 @font-face {
-    font-family: SourceSansPro-Semibold;
+    /*font-family: SourceSansPro-Semibold;*/
 	/*src: url("../woff/SourceSansPro-Semibold.woff") format("woff");*/
 }
 
 
 html{
-	font-family: SourceSansPro-Regular;
+	/*font-family: SourceSansPro-Regular;*/
 	font-size: 1rem;
 }
 
@@ -86,7 +86,7 @@ body header a#nav-toggle{
 
 /********************************************* Cabeceras *********************************/
 h1, h2, h3{
-	font-family: SourceSansPro-Semibold;
+	/*font-family: SourceSansPro-Semibold;*/
 	color: #006aff;
 }
 
@@ -172,7 +172,6 @@ math{
 }
 
 li{
-	list-style-type: circle;
 	padding: 0.5rem 0 0 0;
 }
 
@@ -186,7 +185,7 @@ article > p:last-of-type{
 /* Añade la palabra etiqueta delante de las etiquetas */
 article > p:last-of-type::before{
 	content: "Etiquetas ";
-	font-family: SourceSansPro-Semibold;
+	/*font-family: SourceSansPro-Semibold;*/
 	color: #006aff;
 	margin-right: 0.5rem;
 }

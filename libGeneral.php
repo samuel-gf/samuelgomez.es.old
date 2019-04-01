@@ -1,16 +1,19 @@
 <?php
+	# Obtiene fecha formateada
     function getHoy(){
         date_default_timezone_set('Europe/Madrid');
         return date("Y-m-d");
-    }
-	/* Retorna una URL amigable a partir de un string */
+	}
+
+	# Retorna una URL amigable a partir de un string 
     function strToUrl($str){
         $str = mb_strtolower(trim($str));
         $str = str_replace(array(   'á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', ' '),
                               array('a', 'e', 'i', 'o', 'u', 'n', '', '-'), $str);
         return $str;
-    }
-	/* Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array */
+	}
+
+	# Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array 
 	function getArrFiles($root, $ext, $includeRoot=false){
 		clearstatcache();
 		$arrFilesBuscados = array();
@@ -42,21 +45,22 @@
 		//die();
 		return $arrFilesBuscados;
 	}
-	// Obtiene el título del artículo extrayendolo del texto
+    # Obtiene el título del artículo extrayendolo del texto
 	function getTitleFromText($text){
 		$r = preg_match("/<title>(.*)<\/title>/", $text, $arrTitle);
 		$title = trim($arrTitle[1]);
 		return $title;
 	}
-	// Obtiene el título de un texto en formato .md
+
+	# Obtiene el título de un texto en formato .md
 	function getTitleFromMd($text){
 		$r = preg_match("/# *(.*)/", $text, $arrData);
 		$data = trim($arrData[1]);
 		return $data;
 	}
 
-  // Dado un fichero html reemplaza su extensión .html por .md
-  // y le añade la ruta absoluta y la devuelve
+  # Dado un fichero html reemplaza su extensión .html por .md
+  # y le añade la ruta absoluta y la devuelve
   function getFullFileNameMdFromHtml($htmlFile){
     $fAbsoluteMd = str_replace('.html', SRC_EXT, $htmlFile);
 	  $fAbsoluteMd = str_replace('html/', SRC.'/', $fAbsoluteMd);
@@ -64,7 +68,7 @@
   }
 
 
-	/* A partir del nombre completo de un fichero obtiene metainformación */
+	# A partir del nombre completo de un fichero obtiene metainformación 
 	function getArrInfoFromHtmlFile($vHtmlFullName){
 		$contenidoHtml = file_get_contents($vHtmlFullName);
 		$arrFileName = explode('.',basename($vHtmlFullName));
@@ -84,7 +88,7 @@
     return $tmplArticle;
   }
 
-	// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+	# https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 	function getMenu($srcDir){
 		global $arrCategoriasPalabras;
 		$ret = '';
@@ -135,6 +139,7 @@
 		return $ret;
 	}
 
+	# 
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;
         $padBefore = $dir === STR_PAD_BOTH || $dir === STR_PAD_LEFT;
@@ -148,14 +153,16 @@
         $after = $padAfter ? mb_substr($repeatedString, 0, ceil($targetLen), $encoding) : '';
         return $before . $str . $after;
     }
-	// La primera letra en mayúsula para cadenas unicode
+	
+	# La primera letra en mayúsula para cadenas unicode
 	function mb_ucfirst($string, $encoding='utf8'){
 	    $strlen = mb_strlen($string, $encoding);
 	    $firstChar = mb_substr($string, 0, 1, $encoding);
 	    $then = mb_substr($string, 1, $strlen - 1, $encoding);
 	    return mb_strtoupper($firstChar, $encoding) . $then;
 	}
-	// Devuelve un array con todos los directorios y subdirectorios que dependen de $root
+	
+	# Devuelve un array con todos los directorios y subdirectorios que dependen de $root
 	function getDirectorios($root, $rutaCompleta=false){
 		$ret = '';
 		$iter = new RecursiveIteratorIterator(
@@ -175,10 +182,13 @@
 		}
 		return $arrAllDirs;
 	}
-    // Corta la cadena y rellena con espacios u otro
+	
+	# Corta la cadena y rellena con espacios u otro
     function width($str, $nChars, $fill = ' '){
         return mb_str_pad(mb_substr($str,0,$nChars),$nChars,$fill,STR_PAD_RIGHT, $encoding='utf-8');
     }
+
+	# Muestra información sobre un array. Usada para depurar
     function rDebug(&$arr){
         echo '<div class="preformatted">';
         print_r($arr);

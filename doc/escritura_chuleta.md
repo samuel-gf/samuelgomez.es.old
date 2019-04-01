@@ -8,8 +8,6 @@
 
 ## Niveles de cabecera
 h1	Título del artículo o del ejercicio
-h2	Apartados
-h3	Casos partículares
 
 ## Sustituciones realizadas por mi script php
 ### Fecha
