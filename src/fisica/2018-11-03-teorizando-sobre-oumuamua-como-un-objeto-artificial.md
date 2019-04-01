@@ -1,7 +1,7 @@
 ---
 title: Teorizando sobre Oumuamua como un objeto artificial
 author: Samuel Gómez
-date: 2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial
+date: 2018-11-03
 keywords: Oumuamua, Hardvard, origenDesconocido
 ---
 

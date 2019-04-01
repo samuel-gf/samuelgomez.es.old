@@ -1,7 +1,7 @@
 ---
 title: Matemáticas Madrid EvAU 2017 modelo opción A
 author: Samuel Gómez
-date: 2018-10-22-matematicas-madrid-evau-2017-modelo-opcion-a
+date: 2018-10-22
 keywords: EvAU, 2ºBachillerato, determinante, matriz
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Discutir el sistema de ecuaciones en función del parámetro
 author: Samuel Gómez
-date: 2018-10-28-discutir-el-sistema-de-ecuaciones-en-funcion-del-parametro
+date: 2018-10-28
 keywords: SistemaDeEcuaciones, 2ºbachillerato, determinante, Rouche-Fröbenius
 ---
 

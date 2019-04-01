@@ -3,6 +3,7 @@
 $arrCategoriasPalabras = array(
 	'discusion' => 'discusión',
 	'fisica' => 'física',
+	'informatica' => 'informática',
 	'matematica' => 'matemática',
 	'matematicas' => 'matemáticas',
 	'opinion' => 'opinión',

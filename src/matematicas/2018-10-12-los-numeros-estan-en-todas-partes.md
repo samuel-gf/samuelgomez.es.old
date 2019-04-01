@@ -1,7 +1,7 @@
 ---
 title: Los números están en todas partes
 author: Samuel Gómez
-date: 2018-10-12-los-numeros-estan-en-todas-partes
+date: 2018-10-12
 keywords: generalidades
 ---
 

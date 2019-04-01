@@ -2,17 +2,17 @@
     require("const.php");
     require("libGeneral.php");
 
-	// Lee el contenido de las plantillas
+	# Lee el contenido de las plantillas
 	$tmplHeaderOriginal = file_get_contents(TEMPLATES.'/header.php');
-	// Remplaza campos en la plantilla header
+	# Remplaza campos en la plantilla header
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');
 
-	// Reemplaza campos en la plantilla foot
+	# Reemplaza campos en la plantilla foot
 	$tmplFoot = str_replace('{{BASE_DIR}}','',$tmplFoot);
 	$tmplFoot = str_replace('{{HTML_NAME}}','/index.html',$tmplFoot);
 
-	// Obtiene todos los directorios donde existen archivos html
+	# Obtiene todos los directorios donde existen archivos html
 	$strArticulos = '';
 	$arrDirs = getDirectorios(HTML);
 	foreach ($arrDirs as $kDir => $vDirRelativo) {

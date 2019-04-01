@@ -12,7 +12,7 @@ $tmplFoot = str_replace('{{HTML_NAME}}','/index.html',$tmplFoot);
 
 // Carga y sustituye en la plantilla HEADER
 $tmplHeader = file_get_contents(TEMPLATES.'/header.php');
-$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Índice. '.AUTOR,$tmplHeader);
+$tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Últimos artículos. '.AUTOR,$tmplHeader);
 $tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
 $tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9776;</a>',$tmplHeader); 
 $tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);

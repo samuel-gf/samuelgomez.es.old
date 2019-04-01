@@ -1,7 +1,7 @@
 ---
 title: Hallar el valor del determinante
 author: Samuel Gómez
-date: 2018-10-13-hallar-el-valor-del-determinante
+date: 2018-10-13
 keywords: 2ºBachillerato, determinante, matriz
 ---
 

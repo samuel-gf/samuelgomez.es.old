@@ -9,7 +9,7 @@ html/%.html: src/%.md $(TEMPLATES)
 
 html/index.html: $(MD) $(TEMPLATES)
 	php makeIndex.php
-	# php makeCategory.php
+	php makeCategory.php
 
 html/contacto.html: pages/contact.php $(TEMPLATES)
 	php makeContact.php
@@ -17,8 +17,8 @@ html/contacto.html: pages/contact.php $(TEMPLATES)
 html/menu.html:
 	php makeMenu.php
 
-html/sitemap.xml: #$(HTML)
-	# php makeSitemap.php
+html/sitemap.xml: $(HTML)
+	php makeSitemap.php
 
 clean:
 	@find html -name '*.html' -exec rm {} \;

@@ -1,7 +1,7 @@
 ---
 title: Matemáticas Madrid EvAU 2015 septiembre opción B
 author: Samuel Gómez
-date: 2018-10-20-matematicas-madrid-evau-2015-septiembre-opcion-b
+date: 2018-10-20
 keywords: EvAU, 2ºBachillerato, determinante, matriz
 ---
 

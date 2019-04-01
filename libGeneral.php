@@ -80,6 +80,7 @@
 		return $arrRet;
 	}
 
+  # Obtiene el contenido de un fichero .md al que elimina previamete los metadatos
   function getContentWithoutMetadata($tmplContentMd){
     preg_match("/#(.*)/s",$tmplContentMd, $arrMatch);	// Coge el contenido sin el bloque de metadatos del .md
     $tmplArticle = trim($arrMatch[0]);
@@ -91,6 +92,7 @@
 		global $arrCategoriasPalabras;
 		$ret = '';
 		$arrAllDirs = getDirectorios($srcDir);
+		//rDebug($arrAllDirs);	die();
 		sort($arrAllDirs);
 		$actNumDirectorios = -1;
 		foreach ($arrAllDirs as $k => $vDirRelativo) {	// Cada $vDirRelativo es una ruta
@@ -102,18 +104,14 @@
 			$nFicherosHtml = sizeof($arrHtmlFiles);
 
 			$arrCategoriasDir = explode('/', $vDirRelativo);	// Cada elemento del array es un directorio (perteneciente a la ruta completa)
-			$linea = '';
-			//foreach ($arrCategoriasDir as $kCategoriaDir => $vCategoriaDir) {	// Cada directorio
-				$arrCategoriaPalabras = explode('-', end($arrCategoriasDir));
-				foreach ($arrCategoriaPalabras as $kPalabra => $vPalabra) {	// Cada palabra
-					$linea.=array_key_exists($vPalabra, $arrCategoriasPalabras)?$arrCategoriasPalabras[strtolower($vPalabra)]:$vPalabra;
-					$linea.=' ';
-				}
-				$linea = rtrim($linea, ' ');
-				$linea.=' > ';
-			//}
-			$linea = rtrim($linea, ' > ');
-			echo $vDirRelativo."($antNumDirectorios, $actNumDirectorios, $relNumDirectorios)\n";
+			$nombre_categoria = '';
+			$arrCategoriaPalabras = explode('-', end($arrCategoriasDir));
+			foreach ($arrCategoriaPalabras as $kPalabra => $vPalabra) {	// Cada palabra
+				$nombre_categoria.=array_key_exists($vPalabra, $arrCategoriasPalabras)?$arrCategoriasPalabras[strtolower($vPalabra)]:$vPalabra;
+				$nombre_categoria.=' ';
+			}
+			$nombre_categoria = rtrim($nombre_categoria, ' > ');
+			//echo $vDirRelativo."($antNumDirectorios, $actNumDirectorios, $relNumDirectorios)\n";
 
 			$tabulaciones = str_repeat("\t", $actNumDirectorios);
 			if ($relNumDirectorios==1){	// Incrementa un direcotorio
@@ -125,15 +123,15 @@
 			if ($relNumDirectorios==-1){
 				$ret .= str_repeat("\t", $antNumDirectorios)."</li></ol>\n";
 			}
-
-			if ($nFicherosHtml > 0){	/*********** La madre del cordero **********/
-				$ret .= "$tabulaciones\t<li><a href='./$vDirRelativo/index.html'>".mb_ucfirst($linea)."</a>\n";
+			# Si es un directorio no vacío pon enlaces, en caso contrario una línea sin enlace
+			if ($nFicherosHtml > 0){
+				$ret.="$tabulaciones\t<li><a href='./$vDirRelativo/index.html'>".mb_ucfirst($nombre_categoria)."</a>\n";
 			} else {
-				$ret .= "$tabulaciones\t<li>".mb_ucfirst($linea)."\n";
+				$ret.="$tabulaciones\t<li>".mb_ucfirst($nombre_categoria)."\n";
 			}
 		}
 		$ret .= "\t</li></ol>\n";
-		//echo $ret;
+		//echo $ret; 
 		return $ret;
 	}
 
