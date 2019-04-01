@@ -1,6 +1,7 @@
 <?php
     require("const.php");
     require("libGeneral.php");
+	
 	# Recibe como parámetro la ruta relativa del .html a construir
   	$fRelativeHtml = $argv[1];
   	$fAbsoluteHtml = ROOT.'/'.$fRelativeHtml;	// Ruta absoluta + archivo .html
@@ -24,17 +25,20 @@
 	$sTags = rtrim(implode(', ', $arrTags[1]), ', ');
 
   	# Obtiene la fecha de creación del artículo a partir del nombre del .md  
-	$fechaCreacion = (explode('.',basename($fAbsoluteMd)))[0];
+	$arrFecha_tmp = explode('-',basename($fAbsoluteMd));
+	$fechaCreacion = $arrFecha_tmp[0].'-'.$arrFecha_tmp[1].'-'.$arrFecha_tmp[2];
 	$tsFileMd = strtotime($fechaCreacion);
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
 
-  	# Cambia el nombre del archivo fuente .md acorde al título del artículo
-	if ($fAbsoluteMd!=dirname($fAbsoluteMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md'){
-		//echo "Renombrado $fAbsoluteMd por ".dirname($fAbsoluteMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
-		rename($fAbsoluteMd, dirname($fAbsoluteMd).'/'.$fechaCreacion.'-'.strToUrl($title).'.md');
-		$fAbsoluteMd = dirname($fAbsoluteMd).'/'.$fechaCreacion.'.'.strToUrl($title).'.md';
-		$fAbsoluteHtml = dirname($fAbsoluteHtml).'/'.$fechaCreacion.'.'.strToUrl($title).'.html';
+  	# Cambia el nombre del archivo fuente .md acorde al título del artículo solo si ha cambiado
+	$new_absolute_md = dirname($fAbsoluteMd).'/'.$fechaCreacion.'-'.strToUrl($title).'.md';
+	$new_absolute_html = dirname($fAbsoluteHtml).'/'.$fechaCreacion.'-'.strToUrl($title).'.html';
+	if ($fAbsoluteMd!=$new_absolute_md){
+		//echo "Renombrado $fAbsoluteMd por $new_absolute_md";
+		rename($fAbsoluteMd, $new_absolute_md);
+		$fAbsoluteMd = $new_absolute_md;
+		$fAbsoluteHtml = $new_absolute_html;
 	}
 
   	# Replace fields in $tmpArticle
@@ -62,7 +66,7 @@
 	# Remplaza campos en la plantilla header
 	$tmplHeader = str_replace('{{TÍTULO PÁGINA}}',$title,$tmplHeader);
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
-	$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="'.str_repeat('../',$numDir).'menu.html">&#9776;</a>',$tmplHeader); //@TODO
+	$tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="'.str_repeat('../',$numDir).'menu.html">&#9776;</a>',$tmplHeader);
 	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplHeader);
 
 	# Reemplaza campos en la plantilla foot

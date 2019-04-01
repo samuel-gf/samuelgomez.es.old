@@ -28,11 +28,8 @@
 			foreach ($arrFiles as $kFile => $vFile) {
 				//echo "\t$vFile";
 				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
-					//echo "*";
-					//echo file_get_contents($vDir.'/'.$vFile);
 					$fechaCreacion = (explode('.',basename($vFile)))[0];
 					array_push($arrFilesBuscados, array(
-						'título' => getTitleFromText(file_get_contents($vDir.'/'.$vFile)),
 						'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
 						'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
 						'uModificacion' => filemtime($vDir.'/'.$vFile),
@@ -45,14 +42,15 @@
 		//die();
 		return $arrFilesBuscados;
 	}
-    # Obtiene el título del artículo extrayendolo del texto
-	function getTitleFromText($text){
+
+    # Obtiene el título del artículo extrayendolo del contenido .html
+	function getTitleFromHtml($text){
 		$r = preg_match("/<title>(.*)<\/title>/", $text, $arrTitle);
 		$title = trim($arrTitle[1]);
 		return $title;
 	}
 
-	# Obtiene el título de un texto en formato .md
+	# Obtiene el título de un artículo extrayendolo del contenido .md
 	function getTitleFromMd($text){
 		$r = preg_match("/# *(.*)/", $text, $arrData);
 		$data = trim($arrData[1]);
@@ -73,7 +71,7 @@
 		$contenidoHtml = file_get_contents($vHtmlFullName);
 		$arrFileName = explode('.',basename($vHtmlFullName));
 		$arrRet = array(
-			'título' => getTitleFromText($contenidoHtml),
+			'título' => getTitleFromHtml($contenidoHtml),
 			'ficheroRutaRelativa' => str_replace(ROOT, '', dirname($vHtmlFullName)).'/'.$vHtmlFullName,
 			'ficheroRutaAbsoluta' => $vHtmlFullName,
 			'uModificacion' => filemtime($vHtmlFullName),
@@ -163,6 +161,7 @@
 	}
 	
 	# Devuelve un array con todos los directorios y subdirectorios que dependen de $root
+	# por defecto con ruta relativa
 	function getDirectorios($root, $rutaCompleta=false){
 		$ret = '';
 		$iter = new RecursiveIteratorIterator(

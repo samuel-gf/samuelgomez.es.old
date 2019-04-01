@@ -21,5 +21,5 @@ html/sitemap.xml: #$(HTML)
 	# php makeSitemap.php
 
 clean:
-	@find html -name *.html -exec rm {} \;
+	@find html -name '*.html' -exec rm {} \;
 	@rm -f html/sitemap.xml

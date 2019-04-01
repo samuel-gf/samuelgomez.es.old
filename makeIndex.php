@@ -18,18 +18,19 @@ $tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9
 $tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
 
 
-// Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo en un array $arrFilesHtml
+# Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo en un array $arrFilesHtml
 $arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas root pq se incluiría a sí mismo
 usort($arrFilesHtml, function($a, $b) {
 		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});
 array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos	
-$strArticulos = "<article><h1>Índice</h1>\n<ul>";
-// Por cada artículo obtén el título y la fecha
+$strArticulos = "<article><h1>Últimos artículos</h1>\n<ul>";
+# Por cada artículo obtén el título y la fecha
 foreach ($arrFilesHtml as $kHtml => $vHtml) {
-	$article = file_get_contents($vHtml['ficheroRutaAbsoluta']);
-	$title = '<li><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$vHtml['título'].'</a></li>';
-	$strArticulos .= $title;
+	$contenido_html = file_get_contents($vHtml['ficheroRutaAbsoluta']);
+	$titulo = getTitleFromHtml($contenido_html);
+	$titulo_html = '<li><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$titulo.'</a></li>';
+	$strArticulos .= $titulo_html;
 }
 
 // Escribe index.html en disco
