@@ -1,10 +1,3 @@
----
-title: No te rindas en las clases de ciencias
-author: Samuel Gómez
-date: 2019-03-25
-keywords: noTeRindas, estudia, ciencias
----
-
 # No te rindas en las clases de ciencias
 
 En mi día a día como profesor me encuentro que una de las dificultades a las que se enfrentan los alumnos de ciencias durante las clases es no entender el cien por cien de lo que se explica en clase. Si a eso añadimos el sentimiento de culpa o de inferioridad frente a la incertidumbre nos encontramos un panorama desalentador.

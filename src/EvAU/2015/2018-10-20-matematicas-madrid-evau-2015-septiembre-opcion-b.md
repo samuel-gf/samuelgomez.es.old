@@ -1,10 +1,3 @@
----
-title: Matemáticas Madrid EvAU 2015 septiembre opción B
-author: Samuel Gómez
-date: 2018-10-20
-keywords: EvAU, 2ºBachillerato, determinante, matriz
----
-
 # Matemáticas Madrid EvAU 2015 septiembre opción B
 
 Hallar el valor del determinante sabiendo que:

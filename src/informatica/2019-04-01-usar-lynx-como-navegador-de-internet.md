@@ -1,10 +1,3 @@
----
-title: Usar lynx como navegador de internet
-author: Samuel Gómez
-date: 2019-04-01
-keywords: lynx, navegador, browser, texto
----
-
 # Usar lynx como navegador de internet
 
 ![Lynx browser: El navegador en modo texto](https://lynx.browser.org/lynx.png)

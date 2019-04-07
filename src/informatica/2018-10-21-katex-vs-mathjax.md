@@ -1,10 +1,3 @@
----
-title: KaTeX vs MathJax
-author: Samuel Gómez
-date: 2018-10-21
-keywords: KaTeX, MathJaX, librería, web
----
-
 # KaTeX vs MathJax
 
 2018-10-21

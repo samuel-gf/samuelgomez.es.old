@@ -1,10 +1,3 @@
----
-title: Los números están en todas partes
-author: Samuel Gómez
-date: 2018-10-12
-keywords: generalidades
----
-
 # Los números están en todas partes
 
 2018-10-12

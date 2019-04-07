@@ -1,10 +1,3 @@
----
-title: My experience with KaTeX in my personal blog
-author: Samuel Gómez
-date: 2019-04-02
-keywords: KaTeX, blog, speed, printQuality, possibilities
----
-
 # My experience with KaTeX in my personal blog
 
 ![KaTeX logo](https://katex.org/img/og_logo.png)
