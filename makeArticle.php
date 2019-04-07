@@ -15,7 +15,7 @@
 	$info = file_get_contents(TEMPLATES.'/info.php');
 
   	# PLANTILLA ARTÍCULO .md
-	$tmplArticle = getContentWithoutMetadata($tmplArticle);
+	$tmplArticle = getContentWithoutMetadata($tmplArticle);	// @TODO Si ya no se escribe metadatos no será necesario
 	$title = getTitleFromMd($tmplArticle); 
 
 	# Obtiene las etiquetas o keywords
@@ -44,11 +44,12 @@
 	$tmplArticle = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplArticle);
 	
 	# Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
-	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
+	/*$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
 	$fArticulo = fopen($fAbsoluteMd, 'w');
 	fwrite($fArticulo, $tmplArticle);
 	fclose($fArticulo);
 	touch($fAbsoluteMd, $tsFileMd);
+	 */
 
   	# pandoc .md -> .html
 	//echo "***".strToUrl(dirname($fAbsoluteHtml))."****\n";	die();
