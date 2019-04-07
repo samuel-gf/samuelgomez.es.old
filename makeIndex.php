@@ -22,12 +22,14 @@ $arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas ro
 usort($arrFilesHtml, function($a, $b) {
 		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});
-array_splice($arrFilesHtml, 10);	// Creo que esto recorta el array de .md a solo 10 elementos	
 $strArticulos = "<article><h1>Últimos artículos</h1>\n<ul>";
 
 # Por cada artículo obtén el título y la fecha
+$nArticulos = 0;
 foreach ($arrFilesHtml as $kHtml => $vHtml) {
 	if(basename($vHtml['ficheroRutaRelativa'])!='index.html'){
+		$nArticulos++;
+		if ($nArticulos == 11) break;
 		$contenido_html = file_get_contents($vHtml['ficheroRutaAbsoluta']);
 		$titulo = getTitleFromHtml($contenido_html);
 		$titulo_html = '<li><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$titulo.'</a></li>';

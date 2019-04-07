@@ -6,7 +6,7 @@ keywords: bandaSonora, elUltimoMohicano, épica, héroe
 ---
 
 # Banda sonora de El último mohicano
-
+ 
 
 ![Portada del disco con la banda sonora Él último mohicano](https://images-na.ssl-images-amazon.com/images/I/81yGSabsVjL._SY355_.jpg)
 
