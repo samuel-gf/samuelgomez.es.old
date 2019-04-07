@@ -6,6 +6,7 @@ $arrCategoriasPalabras = array(
 	'informatica' => 'informática',
 	'matematica' => 'matemática',
 	'matematicas' => 'matemáticas',
+	'musica' => 'música',
 	'opinion' => 'opinión',
 	'parametro' => 'parámetro',
 	'resolucion' => 'resolución',

@@ -33,7 +33,7 @@ body {
 
 p {
 	display: block;
-	margin: 0 0 1rem 0;
+	margin: 1rem 0;
 }
 
 p > strong{
@@ -89,7 +89,6 @@ body header a#nav-toggle{
 h1, h2, h3{
 	/*font-family: SourceSansPro-Semibold;*/
 	color: #006aff;
-	margin: 1rem 0;
 }
 
 h1 {
@@ -104,8 +103,13 @@ h1 a{
 	color: #006aff;
 }
 
+h1:first-child{
+		margin: 1rem 0;
+}
+
 h2 {
 	font-size: 1.4rem;
+	margin: 1rem 0;
 }
 
 h3 {
@@ -176,16 +180,20 @@ math{
 	color: #0000ff;
 }
 
+ul{
+	margin: 0.5rem 0;
+}
+
 li{
 	list-style-position: inside;
-	padding: 0.5rem 0 0 0;
+	padding: 0.5rem 0;
 }
 
 /* Etiquetas al final del artículo*/
 article > p:last-of-type{
 	color: #777777;
 	text-transform: capitalize;
-	word-spacing: 0.3rem;
+	word-spacing: 0.1rem;
 }
 
 /* Añade la palabra etiqueta delante de las etiquetas */
