@@ -20,7 +20,6 @@
 
 	# Obtiene las etiquetas o keywords
 	$arrTags = array();
-	//preg_match_all('/[^(]#([\w\-öáéíóúÁÉÍÓÚñÑ]+)/', $tmplArticle, $arrTags);
 	preg_match_all('/[^(]#([^\s#]+)/', $tmplArticle, $arrTags);
 	$sTags = rtrim(implode(', ', $arrTags[1]), ', ');
 
@@ -46,7 +45,6 @@
 	
 	# Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
-	//$tmplArticle = "% $title\n% ".AUTOR."\n% $fechaCreacion\n\n".$tmplArticle;
 	$fArticulo = fopen($fAbsoluteMd, 'w');
 	fwrite($fArticulo, $tmplArticle);
 	fclose($fArticulo);

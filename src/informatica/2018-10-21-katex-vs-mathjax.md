@@ -9,6 +9,8 @@ keywords: KaTeX, MathJaX, librería, web
 
 2018-10-21
 
+$$e^{i\pi}+1=0$$
+
 Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo
 decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas
 muy útiles para representar matemáticas en la web.

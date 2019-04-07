@@ -81,9 +81,10 @@ body header a#nav-toggle{
 	margin: -0.5rem -0.5rem 0 0;
 }
 
+/*
 .katex{
 	font-size: 1rem !important;
-}
+}*/
 
 /********************************************* Cabeceras *********************************/
 h1, h2, h3{
@@ -175,9 +176,9 @@ figcaption{
 	margin-bottom: 1rem;
 }
 
-math{
+.katex-html{	/* Modo móvil */
 	margin: 1rem 0 1rem 0;
-	color: #0000ff;
+	font-size: 1rem !important;
 }
 
 ul{
@@ -254,6 +255,9 @@ main footer{
 		margin-top: 4rem;
 	}
 
+	.katex-html{	/* Modo escritorio */
+			font-size: 1.1rem !important;
+	}
 }
 
 /********************************************************************************/
