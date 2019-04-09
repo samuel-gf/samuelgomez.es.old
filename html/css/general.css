@@ -31,13 +31,24 @@ body {
 	background-color: white;
 }
 
-p {
+p {				/* Modo móvil */
 	display: block;
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 }
 
 p > strong{
 	padding-right: 0.5rem;
+}
+
+pre.sourceCode{
+		background-color: #ddddff;
+		padding: 1rem;
+		font-size: 0.8rem;
+}
+
+code a{
+		color: black;
+		margin: 1rem 0;
 }
 
 a{	text-decoration: none; color: #006aff;}

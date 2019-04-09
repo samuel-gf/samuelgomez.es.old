@@ -28,6 +28,7 @@
 	$fechaCreacion = $arrFecha_tmp[0].'-'.$arrFecha_tmp[1].'-'.$arrFecha_tmp[2];
 	$tsFileMd = strtotime($fechaCreacion);
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
+	setlocale(LC_ALL, 'es_ES.UTF-8');
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
 
   	# Cambia el nombre del archivo fuente .md acorde al título del artículo solo si ha cambiado
@@ -74,7 +75,7 @@
 
 	# Agrega la plantilla cabecera y pie al .html
 	$htmlArticle = file_get_contents($fAbsoluteHtml);
-	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{1,2}\-[0-9]{1,2}/s","<time datetime='$fechaCreacion' pubdate='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
+	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{2}\-[0-9]{2}(?!\-)/s","<time datetime='$fechaCreacion' pubdate='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
 
 	$articulo = "<article>\n".$htmlArticle."\n</article>\n";
 	$fArticulo = fopen($fAbsoluteHtml, 'w');
