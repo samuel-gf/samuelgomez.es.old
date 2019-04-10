@@ -266,6 +266,10 @@ main footer{
 		margin-top: 4rem;
 	}
 
+	p {		/* Modo escritorio */
+		line-height: 1.5rem;
+	}
+
 	.katex-html{	/* Modo escritorio */
 			font-size: 1.1rem !important;
 	}
