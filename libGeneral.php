@@ -14,6 +14,7 @@
 	}
 
 	# Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array 
+	# No devuelve ficheros index.html
 	function getArrFiles($root, $ext, $includeRoot=false){
 		clearstatcache();
 		$arrFilesBuscados = array();
@@ -27,14 +28,18 @@
 			$arrFiles = scandir($vDir);
 			foreach ($arrFiles as $kFile => $vFile) {
 				//echo "\t$vFile";
-				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
-					$fechaCreacion = (explode('.',basename($vFile)))[0];
-					array_push($arrFilesBuscados, array(
-						'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
-						'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
-						'uModificacion' => filemtime($vDir.'/'.$vFile),
-						'fechaCreación' => $fechaCreacion
-					));
+				if (basename($vFile) != 'index.html'){
+					if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
+						$arrFileName = (explode('-', basename($vFile)));
+						echo basename($vFile)."\n";
+						$fechaCreacion = $arrFileName[0].'-'.$arrFileName[1].'-'.$arrFileName[2];
+						array_push($arrFilesBuscados, array(
+							'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
+							'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
+							'uModificacion' => filemtime($vDir.'/'.$vFile),
+							'fechaCreación' => $fechaCreacion
+						));
+					}
 				}
 				//echo "\n";
 			}
@@ -44,18 +49,36 @@
 	}
 
     # Obtiene el título del artículo extrayendolo del contenido .html
-	function getTitleFromHtml($text){
-		$r = preg_match("/<title>(.*)<\/title>/", $text, $arrTitle);
+	function getTitleFromHtml($htmlContent){
+		$r = preg_match("/<title>(.*)<\/title>/", $htmlContent, $arrTitle);
 		$title = trim($arrTitle[1]);
 		return $title;
 	}
 
 	# Obtiene el título de un artículo extrayendolo del contenido .md
-	function getTitleFromMd($text){
-		$r = preg_match("/# *(.*)/", $text, $arrData);
+	function getTitleFromMd($mdContent){
+		$r = preg_match("/# *(.*)/", $mdContent, $arrData);
 		$data = trim($arrData[1]);
 		return $data;
 	}
+	
+  # Return array with information about the first image used in the article
+  # 	[0] full search
+  # 	[1] URL of the image
+  # 	[2] ALT of the image
+  function getImageFromHtml($htmlContent){
+		$r = preg_match('/<img src="(.*)" alt="(.*)"/', $htmlContent, $arrFound);
+		return $arrFound;
+  }
+
+  function getFirstsParagraphs($htmlContent, $nParagraph){
+		$r = preg_match_all('/<p>(.*)<\/p>/', $htmlContent, $arrFound);
+		$text = '';
+		for($i=0; $i<sizeof($arrFound) && $i<$nParagraph; $i++){
+			$text.= '<p>'.$arrFound[1][$i].'</p>';
+		}
+		return $text;
+  }
 
   # Dado un fichero html reemplaza su extensión .html por .md
   # y le añade la ruta absoluta y la devuelve

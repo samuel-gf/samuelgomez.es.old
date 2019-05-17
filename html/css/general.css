@@ -181,6 +181,20 @@ img{
   margin-right: auto;
 }
 
+/* Item in index.html */
+.liIndex{
+		margin-bottom: 2rem;
+		min-height: 200px;
+}
+
+img.miniIndex{
+		max-height: 200px;
+		max-width: 400px;
+		display: inline;
+		float: right;
+		padding-left: 2rem;
+}
+
 figcaption{
 	text-align: right;
 	font-size: 0.5rem;

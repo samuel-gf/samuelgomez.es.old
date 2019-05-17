@@ -5,6 +5,9 @@
 	setlocale(LC_ALL,"es_ES");
 	date_default_timezone_set('Europe/Madrid');
 
+	const MAX_ARTICLES_INDEX = 10;
+	const N_FIRSTS_PARAGRAPHS_INDEX = 2;
+
     const ROOT = __DIR__;
 	const BASE_URL = 'http://samuelgomez.es';
 	const SRC = ROOT.'/src';

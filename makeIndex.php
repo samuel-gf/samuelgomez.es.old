@@ -24,16 +24,23 @@ usort($arrFilesHtml, function($a, $b) {
 		});
 $strArticulos = "<article><h1>Últimos artículos</h1>\n<ul>";
 
-# Por cada artículo obtén el título y la fecha
-$nArticulos = 0;
+# Por cada artículo obtén el título, la fecha, el principio del texto...
+$nArticles = 0;
 foreach ($arrFilesHtml as $kHtml => $vHtml) {
 	if(basename($vHtml['ficheroRutaRelativa'])!='index.html'){
-		$nArticulos++;
-		if ($nArticulos == 11) break;
-		$contenido_html = file_get_contents($vHtml['ficheroRutaAbsoluta']);
-		$titulo = getTitleFromHtml($contenido_html);
-		$titulo_html = '<li><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$titulo.'</a></li>';
-		$strArticulos .= $titulo_html;
+		$nArticles++;
+		if ($nArticles == MAX_ARTICLES_INDEX+1) break;
+		$content_html = file_get_contents($vHtml['ficheroRutaAbsoluta']);
+		$title = getTitleFromHtml($content_html);
+		$arrImage = getImageFromHtml($content_html);
+		$firstsParagraphs = getFirstsParagraphs($content_html, N_FIRSTS_PARAGRAPHS_INDEX);
+		$title_html = '<div class="liIndex">';
+		$title_html .= '<h2><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h2>';
+		$title_html .= (sizeof($arrImage)>0)?'<img src="'.$arrImage[1].'" alt="'.$arrImage[2].'" class="miniIndex">':'';
+		$title_html .= $firstsParagraphs;
+		$title_html .= '<a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">Leer más ...</a>';
+		$title_html .= '</div>';
+		$strArticulos .= $title_html;
 	}
 }
 
