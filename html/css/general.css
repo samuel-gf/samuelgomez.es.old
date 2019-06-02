@@ -4,20 +4,7 @@
 /*.color-primary-1 { color: #FF9200 }	    Color Opuesto */
 
 
-@font-face {
-    /*font-family: SourceSansPro-Regular;*/
-    /*src: url("../woff/SourceSansPro-Regular.woff") format("woff");*/
-
-}
-
-@font-face {
-    /*font-family: SourceSansPro-Semibold;*/
-	/*src: url("../woff/SourceSansPro-Semibold.woff") format("woff");*/
-}
-
-
 html{
-	/*font-family: SourceSansPro-Regular;*/
 	font-family: sans-serif;
 	font-size: 1rem;
 }
@@ -34,6 +21,7 @@ body {
 p {				/* Modo móvil */
 	display: block;
 	margin: 1.5rem 0;
+	line-height: 1.5;
 }
 
 p > strong{
@@ -77,7 +65,6 @@ body header #logoTop{
 	display: block;
 	float: left;
 	width:85%;
-	/*max-height: 50px;*/
 	max-width: 200px;
 }
 
@@ -175,7 +162,7 @@ time {
 	color: #777777;
 }
 
-img{
+img{	/* Móvil	*/
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -187,12 +174,9 @@ img{
 		min-height: 200px;
 }
 
-img.miniIndex{
-		max-height: 200px;
-		max-width: 400px;
-		display: inline;
-		float: right;
-		padding-left: 2rem;
+img.miniIndex{	/* Móvil */
+	max-width: 95%;
+	text-align: center;
 }
 
 figcaption{
