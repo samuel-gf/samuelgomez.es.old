@@ -8,8 +8,8 @@
 	# Retorna una URL amigable a partir de un string 
     function strToUrl($str){
         $str = mb_strtolower(trim($str));
-        $str = str_replace(array(   'á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', ' '),
-                              array('a', 'e', 'i', 'o', 'u', 'n', '', '-'), $str);
+        $str = str_replace(array(   'á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', ' ', ':'),
+                              array('a', 'e', 'i', 'o', 'u', 'n', '', '-', '-'), $str);
         return $str;
 	}
 
@@ -27,24 +27,24 @@
 			//echo "Entro en $vDir\n";
 			$arrFiles = scandir($vDir);
 			foreach ($arrFiles as $kFile => $vFile) {
-				//echo "\t$vFile";
-				if (basename($vFile) != 'index.html'){
-					if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
-						$arrFileName = (explode('-', basename($vFile)));
-						echo basename($vFile)."\n";
+				//echo "\t$vFile\n";
+				if ($vFile != '.' && $vFile != '..' && pathinfo($vFile, PATHINFO_EXTENSION) == $ext){
+					$arrFileName = (explode('-', basename($vFile)));
+					// Si el fichero a procesar no tiene una fecha en su nombre no puedo coger la fecha
+					$fechaCreacion = "";
+					if (is_numeric(substr(basename($vFile), 0, 1))){
 						$fechaCreacion = $arrFileName[0].'-'.$arrFileName[1].'-'.$arrFileName[2];
-						array_push($arrFilesBuscados, array(
-							'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
-							'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
-							'uModificacion' => filemtime($vDir.'/'.$vFile),
-							'fechaCreación' => $fechaCreacion
-						));
 					}
+					array_push($arrFilesBuscados, array(
+						'ficheroRutaRelativa' => str_replace($root, '', $vDir).'/'.$vFile,
+						'ficheroRutaAbsoluta' => $vDir.'/'.$vFile,
+						'uModificacion' => filemtime($vDir.'/'.$vFile),
+						'fechaCreación' => $fechaCreacion
+					));
 				}
 				//echo "\n";
 			}
 		}
-		//die();
 		return $arrFilesBuscados;
 	}
 

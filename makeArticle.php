@@ -41,9 +41,6 @@
 		$fAbsoluteHtml = $new_absolute_html;
 	}
 
-  	# Replace fields in $tmpArticle
-	$tmplArticle = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplArticle);
-	
 	# Modifica el fichero .md con los datos de la plantilla pero mantiene la fecha original
 	/*$tmplArticle = "---\ntitle: $title\nauthor: ".AUTOR."\ndate: $fechaCreacion\nkeywords: $sTags\n---\n\n".$tmplArticle;
 	$fArticulo = fopen($fAbsoluteMd, 'w');
@@ -73,10 +70,12 @@
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplFoot);
 	$tmplFoot = str_replace('{{HTML_NAME}}',$fRelativeHtml,$tmplFoot);
 
-	# Agrega la plantilla cabecera y pie al .html
+	# Remplaza campos en el fichero final
 	$htmlArticle = file_get_contents($fAbsoluteHtml);
 	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{2}\-[0-9]{2}(?!\-)/s","<time datetime='$fechaCreacion' pubdate='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
+	$htmlArticle = str_replace('%7B%7BBASE_IMG%7D%7D',str_repeat('../',$numDir).'img/',$htmlArticle); // {{BASE_IMG}} será remplazado por la carpeta que contenga las imágenes
 
+	# Combina los tres ficheros header, article y foot
 	$articulo = "<article>\n".$htmlArticle."\n</article>\n";
 	$fArticulo = fopen($fAbsoluteHtml, 'w');
 	fwrite($fArticulo, $tmplHeader);
