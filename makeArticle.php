@@ -1,7 +1,8 @@
 <?php
-	# makeArticle 1.0
+	# makeArticle 1.01
     require("const.php");
     require("libGeneral.php");
+	setlocale(LC_ALL, 'es_ES.UTF-8');
 	
 	# Recibe como parámetro la ruta relativa del .html a construir
   	$fRelativeHtml = $argv[1];
@@ -21,7 +22,7 @@
 	# Obtiene las etiquetas o keywords
 	$arrTags = array();
 	preg_match_all('/[^(]#([^\s#]+)/', $tmplArticle, $arrTags);
-	$sTags = rtrim(implode(', ', $arrTags[1]), ', ');	// List separated commas of tags
+	$sTags = implode(' ', array_unique($arrTags[0], SORT_LOCALE_STRING));
 
   	# Obtiene la fecha de creación del artículo a partir del nombre del .md  
 	$arrFecha_tmp = explode('-',basename($fAbsoluteMd));
@@ -33,7 +34,6 @@
 		$tsFileMd = strtotime("now");
 	}
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
-	setlocale(LC_ALL, 'es_ES.UTF-8');
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
 	$dateOfFileName = strftime('%G-%m-%d', $tsFileMd);
 
@@ -68,7 +68,7 @@
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplFoot);
 	$tmplFoot = str_replace('{{HTML_NAME}}',$fRelativeHtml,$tmplFoot);
 
-	# Remplaza campos en el fichero final
+	# Remplaza campos en el fichero final article
 	$htmlArticle = file_get_contents($fAbsoluteHtml);
 	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{2}\-[0-9]{2}(?!\-)/s","<time datetime='$dateOfFileName' pubdate='$dateOfFileName'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
 	$htmlArticle = str_replace('%7B%7BBASE_IMG%7D%7D',str_repeat('../',$numDir).'img/',$htmlArticle); // remplaza {{BASE_IMG}}

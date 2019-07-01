@@ -1,4 +1,5 @@
 <?php
+# makeIndex.php 1.0
 require("const.php");
 require("libGeneral.php");
 
@@ -22,7 +23,7 @@ $arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas ro
 usort($arrFilesHtml, function($a, $b) {
 		return ($a['fechaCreación'] > $b['fechaCreación'])?-1:1;
 		});
-$strArticulos = "<article><h1>Últimos artículos</h1>\n<ul>";
+$strArticulos = "<h4>Últimos artículos</h4>\n<ul>";
 
 # Por cada artículo obtén el título, la fecha, el principio del texto...
 $nArticles = 0;
@@ -33,6 +34,9 @@ foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		$content_html = file_get_contents($vHtml['ficheroRutaAbsoluta']);
 		$title = getTitleFromHtml($content_html);
 		$arrImage = getImageFromHtml($content_html);
+		if (array_key_exists(1, $arrImage)){
+			$arrImage[1] = str_replace('../', '', $arrImage[1]);	// Adapta la URL de la imagen a la raíz
+		}
 		$firstsParagraphs = getFirstsParagraphs($content_html, N_FIRSTS_PARAGRAPHS_INDEX);
 		$title_html = '<div class="liIndex">';
 		$title_html .= '<h2><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h2>';
@@ -47,6 +51,6 @@ foreach ($arrFilesHtml as $kHtml => $vHtml) {
 // Escribe index.html en disco
 $fArticulo = fopen(HTML.'/index.html', 'w');
 fwrite($fArticulo, $tmplHeader);
-fwrite($fArticulo, "$strArticulos</ul></article>");
+fwrite($fArticulo, "$strArticulos</ul>\n");
 fwrite($fArticulo, $tmplFoot);
 fclose($fArticulo);

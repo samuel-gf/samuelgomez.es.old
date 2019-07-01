@@ -8,4 +8,6 @@ The huge Large Synoptic Survey Telescope (LSST) that is currently under construc
 
 The project has commited to making all data public 24 hours after they are taken.
 
+I think this can be a reallistic war horse for the Citizen Science Community
+
 #LSST #citizenScienceCommunity
