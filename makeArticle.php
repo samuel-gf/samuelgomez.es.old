@@ -27,8 +27,7 @@
 	$arrFecha_tmp = explode('-',basename($fAbsoluteMd));
 	$tsFileMd = false;
 	if (count($arrFecha_tmp)>=3){
-		$fechaCreacion = $arrFecha_tmp[0].'-'.$arrFecha_tmp[1].'-'.$arrFecha_tmp[2];
-		$tsFileMd = strtotime($fechaCreacion);
+		$tsFileMd = strtotime($arrFecha_tmp[0].'-'.$arrFecha_tmp[1].'-'.$arrFecha_tmp[2]);
 	}	
 	if (!$tsFileMd)	{	// If file_name.md does not contain a date
 		$tsFileMd = strtotime("now");
@@ -36,10 +35,11 @@
 	$dateOfFileShort = date('d/m/Y H:i',$tsFileMd);
 	setlocale(LC_ALL, 'es_ES.UTF-8');
 	$dateOfFileLong = strftime('%e de %B de %G', $tsFileMd);
+	$dateOfFileName = strftime('%G-%m-%d', $tsFileMd);
 
   	# Cambia el nombre del archivo fuente .md acorde al título del artículo solo si ha cambiado
-	$new_absolute_md = dirname($fAbsoluteMd).'/'.$fechaCreacion.'-'.strToUrl($title).'.md';
-	$new_absolute_html = dirname($fAbsoluteHtml).'/'.$fechaCreacion.'-'.strToUrl($title).'.html';
+	$new_absolute_md = dirname($fAbsoluteMd).'/'.$dateOfFileName.'-'.strToUrl($title).'.md';
+	$new_absolute_html = dirname($fAbsoluteHtml).'/'.$dateOfFileName.'-'.strToUrl($title).'.html';
 	if ($fAbsoluteMd!=$new_absolute_md){
 		//echo "Renombrado $fAbsoluteMd por $new_absolute_md";
 		rename($fAbsoluteMd, $new_absolute_md);
@@ -70,7 +70,7 @@
 
 	# Remplaza campos en el fichero final
 	$htmlArticle = file_get_contents($fAbsoluteHtml);
-	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{2}\-[0-9]{2}(?!\-)/s","<time datetime='$fechaCreacion' pubdate='$fechaCreacion'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
+	$htmlArticle = preg_replace("/[0-9]{4}\-[0-9]{2}\-[0-9]{2}(?!\-)/s","<time datetime='$dateOfFileName' pubdate='$dateOfFileName'>$dateOfFileLong</time>", $htmlArticle);	// Pone a la fecha las etiquetas <time></time>
 	$htmlArticle = str_replace('%7B%7BBASE_IMG%7D%7D',str_repeat('../',$numDir).'img/',$htmlArticle); // remplaza {{BASE_IMG}}
 
 	# Combina los tres ficheros header, article y foot
