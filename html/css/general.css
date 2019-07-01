@@ -2,7 +2,7 @@
 /*.color-primary-0 { color: #006aff }	Color principal */
 /*.color-primary-0b{ color: #003B8C }	Color azul oscuro */
 /*.color-primary-1 { color: #FF9200 }	    Color Opuesto */
-
+@charset "utf-8";
 
 html{
 	font-family: sans-serif;
@@ -207,18 +207,16 @@ article > p:last-of-type{
 
 /* Añade la palabra etiqueta delante de las etiquetas */
 article > p:last-of-type::before{
-	content: "Etiquetas ";
+	content: "Tags";
 	/*font-family: SourceSansPro-Semibold;*/
 	color: #006aff;
 	margin-right: 0.4rem;
 }
 
 /*	Pie de página */
-footer{
+footer{	/* M */
 	border-top: 1px dashed #777777;
 	color: #777777;
-	margin: 0 1rem 2rem 1rem;
-	padding: 1rem 0 1rem 0;
 }
 
 
@@ -271,6 +269,11 @@ footer{
 
 	.katex-html{	/* Modo escritorio */
 			font-size: 1.1rem !important;
+	}
+
+	footer{
+		margin: 0 1rem 2rem 1rem;
+		padding: 1rem 0 1rem 0;
 	}
 }
 
