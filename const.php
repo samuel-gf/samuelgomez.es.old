@@ -22,3 +22,5 @@
 
 	const SRC_EXT = '.md';
 	const AUTOR = 'Samuel Gómez';
+
+	const NO_HTML_FILES = "img,css,js,rq";	// Directorios dentro del directorio raíz HTML que no contienen archivos .html

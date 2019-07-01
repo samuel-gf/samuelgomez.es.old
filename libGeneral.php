@@ -13,6 +13,22 @@
         return $str;
 	}
 
+	# Esta lista permite transformar una palabra sin tilde a otra con tilde
+	function conTilde($sinTilde){
+		global $arrCategoriasPalabras;
+		return array_key_exists($sinTilde, $arrCategoriasPalabras)?$arrCategoriasPalabras[$sinTilde]:$sinTilde;
+	}
+
+	# Transform an hyphen separated words to well writen
+	function no_hyphen($s){
+		$ret = '';
+		$arrWords = explode('-',$s);
+		foreach($arrWords as $word){
+			$ret .= ' '.conTilde(mb_strtolower($word));
+		}		
+		return ltrim($ret);
+	}
+
 	# Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array 
 	# No devuelve ficheros index.html
 	function getArrFiles($root, $ext, $includeRoot=false){
@@ -110,54 +126,54 @@
     return $tmplArticle;
   }
 
-	# https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
-	function getMenu($srcDir){
-		global $arrCategoriasPalabras;
-		$ret = '';
-		$arrAllDirs = getDirectorios($srcDir);
-		//rDebug($arrAllDirs);	die();
-		sort($arrAllDirs);
-		$actNumDirectorios = -1;
-		foreach ($arrAllDirs as $k => $vDirRelativo) {	// Cada $vDirRelativo es una ruta
-			$antNumDirectorios = $actNumDirectorios;
-			$actNumDirectorios = substr_count($vDirRelativo, '/');
-			$relNumDirectorios = $actNumDirectorios-$antNumDirectorios;	// Variación relativa
+  # Obtiene el TOC (Table Of Content), para ello, se mueve directorio por directorio mirando los archivos que 
+  # tiene a su alcance y en caso de encontrar un directorio, llama a la función getFilesInDirectory que 
+  # a su vez se llamará a sí misma de manera recursiva hasta cubrir todos los archivos .html
+  # La función getToc evita entrar por una lista de directorios prohibidos que recibe por parámetro en forma de cadena
+  $arrFileTree = array();	/* Variable global para las dos siguientes funciones */
+  function getToc($sForbiddenDir){
+	global $arrFileTree;
+	$arrForbiddenDir = explode(',',$sForbiddenDir);
+	# Estudio los directorios de primer nivel que cuelgan de HTML
+	foreach(glob(HTML."/*") as $filename){
+		if (is_dir($filename) && !in_array(basename($filename),$arrForbiddenDir)){
+				array_push($arrFileTree, array('name'=>basename($filename),
+						'fAbsoluteHtml'=>$filename.'/index.html',
+						'is_dir'=>true,
+						'level'=>0));
+			getFilesInDirectory($filename, 0);
+		} 
+	}
+	return $arrFileTree;
+  }
 
-			$arrHtmlFiles = glob(HTML.'/'.$vDirRelativo.'/*.html');
-			$nFicherosHtml = sizeof($arrHtmlFiles);
-
-			$arrCategoriasDir = explode('/', $vDirRelativo);	// Cada elemento del array es un directorio (perteneciente a la ruta completa)
-			$nombre_categoria = '';
-			$arrCategoriaPalabras = explode('-', end($arrCategoriasDir));
-			foreach ($arrCategoriaPalabras as $kPalabra => $vPalabra) {	// Cada palabra
-				$nombre_categoria.=array_key_exists($vPalabra, $arrCategoriasPalabras)?$arrCategoriasPalabras[strtolower($vPalabra)]:$vPalabra;
-				$nombre_categoria.=' ';
-			}
-			$nombre_categoria = rtrim($nombre_categoria, ' > ');
-			//echo $vDirRelativo."($antNumDirectorios, $actNumDirectorios, $relNumDirectorios)\n";
-
-			$tabulaciones = str_repeat("\t", $actNumDirectorios);
-			if ($relNumDirectorios==1){	// Incrementa un direcotorio
-				$ret .= str_repeat("$tabulaciones", $actNumDirectorios)."<ol>\n";
-			}
-			if ($relNumDirectorios==0){
-				$ret .= str_repeat("\t", $antNumDirectorios)."</li>\n";
-			}
-			if ($relNumDirectorios==-1){
-				$ret .= str_repeat("\t", $antNumDirectorios)."</li></ol>\n";
-			}
-			# Si es un directorio no vacío pon enlaces, en caso contrario una línea sin enlace
-			if ($nFicherosHtml > 0){
-				$ret.="$tabulaciones\t<li><a href='./$vDirRelativo/index.html'>".mb_ucfirst($nombre_categoria)."</a>\n";
-			} else {
-				$ret.="$tabulaciones\t<li>".mb_ucfirst($nombre_categoria)."\n";
+  # Estudio los archivos .html que cuelgan en un segundo y posteriores niveles y los almaceno
+  # en $arrFileTree que es un archivo global. Esta función trabaja junto con getToc
+  function getFilesInDirectory($absDir, $dirLevel){
+	  global $arrFileTree;
+	  	# Estudio los archivos *.html
+	    $dirLevel++;
+		foreach(glob("$absDir/*.html") as $fAbsoluteHtml){
+			$basename = basename($fAbsoluteHtml);
+			if ($basename != "index.html"){
+				array_push($arrFileTree, array('name'=>getTitleFromHtml(file_get_contents($fAbsoluteHtml)),
+						'fAbsoluteHtml'=>$fAbsoluteHtml,
+						'is_dir'=>false,
+						'level'=>$dirLevel));
 			}
 		}
-		$ret .= "\t</li></ol>\n";
-		//echo $ret; 
-		return $ret;
+		# Estudio los directorios
+		foreach(glob("$absDir/*") as $filename){
+			if (is_dir($filename)){
+				array_push($arrFileTree, array('name'=>basename($filename),
+						'fAbsoluteHtml'=>$filename.'/index.html',
+						'is_dir'=>true,
+						'level'=>$dirLevel));
+				getFilesInDirectory($filename, $dirLevel);
+			}
+		}
 	}
-
+		
 	# 
     function mb_str_pad($str, $pad_len, $pad_str = ' ', $dir = STR_PAD_RIGHT, $encoding = NULL){
         $encoding = $encoding === NULL ? mb_internal_encoding() : $encoding;

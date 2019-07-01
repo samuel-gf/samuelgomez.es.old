@@ -24,7 +24,7 @@ nav ol{
 nav li{
 	list-style-position: inside;
 	color: black;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-align: left;
 }
 
@@ -36,4 +36,30 @@ nav ol li::before{
 
 nav li a{
 	color: #006aff;
+}
+
+.menulevel0 {
+	list-style: none;
+}
+
+.menulevel0 a{
+	color: black;	
+}
+
+.menulevel1{
+	padding-left: 2rem;
+	list-style: none;
+}
+
+.menulevel1 a{
+}
+
+.menulevel2{
+	padding-left: 4rem;
+	list-style: none;
+}
+
+.menulevel3{
+	padding-left: 6rem;
+	list-style: none;
 }

@@ -14,7 +14,7 @@ html/index.html: $(MD) $(TEMPLATES)
 html/contacto.html: pages/contact.php $(TEMPLATES)
 	php makeContact.php
 
-html/menu.html:
+html/menu.html:	$(MD) makeMenu.php libGeneral.php
 	php makeMenu.php
 
 html/sitemap.xml: $(HTML)

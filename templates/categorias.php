@@ -1,5 +1,5 @@
 <?php
-# Esta lista permite transformar una palabra sin tilde a otra con tilde
+
 $arrCategoriasPalabras = array(
 	'discusion' => 'discusión',
 	'fisica' => 'física',
@@ -12,3 +12,5 @@ $arrCategoriasPalabras = array(
 	'resolucion' => 'resolución',
 	'tecnologia' => 'tecnología'
 );
+
+

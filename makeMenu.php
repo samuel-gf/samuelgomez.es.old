@@ -1,4 +1,5 @@
 <?php
+	# makeMenu.php 1.0
     require("const.php");
     require("libGeneral.php");
 	require("templates/categorias.php");
@@ -21,7 +22,19 @@
 	$menu.= "<ul>\n";
 	$menu.= '<li><a href="contacto.html">Contacto</a></li><hr/>'."\n";
 	$menu.= "</ul>\n";
-	$menu.= getMenu(SRC).'</nav>';
+	$arrMenu = getToc(NO_HTML_FILES);	// Es un array con los directorios de HTML que no contienen archivos .html como js,img,css
+	foreach ($arrMenu as $fItem){
+		$level = $fItem['level'];
+		if ($fItem['is_dir']){
+			$menu.= '<li class="menulevel'.$fItem['level'].'">';
+			$menu.= mb_strtoupper(no_hyphen($fItem['name'])).'</li>'."\n";
+		} else {
+			$menu.= '<li class="menulevel'.$fItem['level'].'">';
+			$menu.= '<a href="'.$fItem['fAbsoluteHtml'].'">'.$fItem['name'].'</a></li>'."\n";
+			}
+	}
+
+	$menu.= '</nav>';
 
 	# Escribe el menu en el disco
 	$fMenu = fopen(HTML.'/menu.html', 'w');
