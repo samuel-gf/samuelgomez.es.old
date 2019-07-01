@@ -30,7 +30,7 @@
 			$menu.= mb_strtoupper(no_hyphen($fItem['name'])).'</li>'."\n";
 		} else {
 			$menu.= '<li class="menulevel'.$fItem['level'].'">';
-			$menu.= '<a href="'.$fItem['fAbsoluteHtml'].'">'.$fItem['name'].'</a></li>'."\n";
+			$menu.= '<a href="'.$fItem['fRelativeHtml'].'">'.$fItem['name'].'</a></li>'."\n";
 			}
 	}
 

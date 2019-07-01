@@ -29,6 +29,11 @@
 		return ltrim($ret);
 	}
 
+	# Transforma una ruta absoluta en relativa
+	function getRelativeFromAbsolutePath($fAbsolutePath){
+		return str_replace(HTML.'/', '', $fAbsolutePath);
+	}
+
 	# Devuelve un array con todos los ficheros de la extensión $ext y cierta información en forma de array 
 	# No devuelve ficheros index.html
 	function getArrFiles($root, $ext, $includeRoot=false){
@@ -139,6 +144,7 @@
 		if (is_dir($filename) && !in_array(basename($filename),$arrForbiddenDir)){
 				array_push($arrFileTree, array('name'=>basename($filename),
 						'fAbsoluteHtml'=>$filename.'/index.html',
+						'fRelativeHtml'=>getRelativeFromAbsolutePath($filename).'/index.html',
 						'is_dir'=>true,
 						'level'=>0));
 			getFilesInDirectory($filename, 0);
@@ -158,6 +164,7 @@
 			if ($basename != "index.html"){
 				array_push($arrFileTree, array('name'=>getTitleFromHtml(file_get_contents($fAbsoluteHtml)),
 						'fAbsoluteHtml'=>$fAbsoluteHtml,
+						'fRelativeHtml'=>getRelativeFromAbsolutePath($fAbsoluteHtml),
 						'is_dir'=>false,
 						'level'=>$dirLevel));
 			}
@@ -167,6 +174,7 @@
 			if (is_dir($filename)){
 				array_push($arrFileTree, array('name'=>basename($filename),
 						'fAbsoluteHtml'=>$filename.'/index.html',
+						'fRelativeHtml'=>getRelativeFromAbsolutePath($filename).'/index.html',
 						'is_dir'=>true,
 						'level'=>$dirLevel));
 				getFilesInDirectory($filename, $dirLevel);
