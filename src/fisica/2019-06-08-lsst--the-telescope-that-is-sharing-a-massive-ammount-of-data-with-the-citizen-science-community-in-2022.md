@@ -1,3 +1,6 @@
+---
+description: Let's have a review about this important device known as the Large Synoptic Survey Telescope LSST
+---
 # LSST: The telescope that is sharing a massive ammount of data with the citizen science community in 2022
 
 2019-06-08

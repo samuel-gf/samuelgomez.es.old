@@ -24,6 +24,10 @@
 	preg_match_all('/[^(]#([^\s#]+)/', $tmplArticle, $arrTags);
 	$sTags = implode(' ', array_unique($arrTags[0], SORT_LOCALE_STRING));
 
+	# Obtiene metadata
+	preg_match('/description:\s* (.*)/', $tmplArticle, $arrDescription);
+	$description = array_key_exists(1, $arrDescription)?$arrDescription[1]:'';
+
   	# Obtiene la fecha de creación del artículo a partir del nombre del .md  
 	$arrFecha_tmp = explode('-',basename($fAbsoluteMd));
 	$tsFileMd = false;
@@ -63,8 +67,13 @@
 	$tmplHeader = str_replace('{{INFO}}',$tmplInfo,$tmplHeader);
 	$tmplHeader = str_replace('{{MENU}}','<a id="nav-toggle" href="'.str_repeat('../',$numDir).'menu.html">&#9776;</a>',$tmplHeader);
 	$tmplHeader = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplHeader);
-
-	# Reemplaza campos en la plantilla foot
+	if (!empty($description)){
+		$tmplHeader = str_replace('{{META_DESCRIPTION}}','<meta name="description" content="'.$description.'"/>', $tmplHeader);
+	} else {
+		$tmplHeader = str_replace('{{META_DESCRIPTION}}','', $tmplHeader);
+	}
+		
+		# Reemplaza campos en la plantilla foot
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplFoot);
 	$tmplFoot = str_replace('{{HTML_NAME}}',$fRelativeHtml,$tmplFoot);
 
