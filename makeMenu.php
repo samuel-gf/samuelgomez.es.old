@@ -11,6 +11,7 @@
 	$tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
 	$tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
 	$tmplHeader = str_replace('{{MENU}}','',$tmplHeader);
+	$tmplHeader = str_replace('{{META_DESCRIPTION}}', "<meta name='description' content='".trim(strip_tags($info))."'/>", $tmplHeader);
 
 	# Lee el contenido del pie
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');

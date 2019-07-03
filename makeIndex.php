@@ -17,6 +17,7 @@ $tmplHeader = str_replace('{{TÍTULO PÁGINA}}','Últimos artículos. '.AUTOR,$t
 $tmplHeader = str_replace('{{INFO}}',$info,$tmplHeader);
 $tmplHeader = str_replace('{{MENU}}', '<a id="nav-toggle" href="./menu.html">&#9776;</a>',$tmplHeader); 
 $tmplHeader = str_replace('{{BASE_DIR}}','',$tmplHeader);
+$tmplHeader = str_replace('{{META_DESCRIPTION}}', "<meta name='description' content='".trim(strip_tags($info))."'/>", $tmplHeader);
 
 # Obtiene todos los .html y los ordena por fecha de más moderno a más antiguo en un array $arrFilesHtml
 $arrFilesHtml = getArrFiles(HTML, 'html', $includeRoot=false);	// No incluyas root pq se incluiría a sí mismo
@@ -39,7 +40,7 @@ foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		}
 		$firstsParagraphs = getFirstsParagraphs($content_html, N_FIRSTS_PARAGRAPHS_INDEX);
 		$title_html = '<div class="liIndex">';
-		$title_html .= '<h2><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h2>';
+		$title_html .= '<h1><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h1>';
 		$title_html .= (sizeof($arrImage)>0)?'<img src="'.$arrImage[1].'" alt="'.$arrImage[2].'" class="miniIndex">':'';
 		$title_html .= $firstsParagraphs;
 		$title_html .= '<a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">Leer más ...</a>';
