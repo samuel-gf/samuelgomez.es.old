@@ -121,6 +121,18 @@
 	<priority>1</priority>
 </url>
 <url>
+	<loc>http://samuelgomez.es/carrera-espacial/2019-07-03-celebra-mundial-del-50-aniversario-de-la-llegada-del-hombre-a-la-luna.html</loc>
+	<lastmod>2019-07-03</lastmod>
+	<changefreq>yearly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>http://samuelgomez.es/carrera-espacial/index.html</loc>
+	<lastmod>2019-07-03</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
 	<loc>http://samuelgomez.es/matematicas/2018-10-12-los-numeros-estan-en-todas-partes.html</loc>
 	<lastmod>2019-07-03</lastmod>
 	<changefreq>yearly</changefreq>

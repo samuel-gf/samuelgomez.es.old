@@ -2,29 +2,36 @@
 
 ## Referencias de uso de Markdown
 
-### Un enlace interno
-- Referencia interna [ecuación 1](#ec1)
-- Punto de destino **(1)**<a name="ec1"></a>
+- Una imagen `![Comentario]({{BASE_IMG}}imagen.jpg)`
+- Una imagen con estilo propio `![Comentario]({{BASE_IMG}}imagen_con_estilo.jpg){.miEstilo}`
+	El estilo puede ser: .leftImg, .rightImg, .wideImg
+- Referencia interna [ecuación 1](#ec1) 
+	y su punto de destino **(1)**<a name="ec1"></a>
 
-## Niveles de cabecera
-h1	Título del artículo o del ejercicio
+
 
 ## Sustituciones realizadas por mi script php
 ### Fecha
 Puedes poner:
+
 - {{FECHA}} y se sustituirá por el valor de la fecha de hoy
+- {{BASE_IMG}}2019/mi_imagen.jpg	para sustituir por el directorio que contiene las imágenes
 - yyyy-mm-dd es el otro formato. Se sustituirá por un formato humano más legible
 
+
+
 ## Fuentes de imágenes libres
-- ![Observatorio Europeo del Sur](https://www.eso.org/public/images/)
 
-## Array de ficheros .html obtenidos con getArrFiles()
- [0] => Array
-        (
-            [título] => No te rindas en las clases de ciencias
-            [ficheroRutaRelativa] => /vida/2019-03-25.no-te-rindas-en-las-clases-de-ciencias.html
-            [ficheroRutaAbsoluta] => /home/samuel/Web/samuelgomez.es/html/vida/2019-03-25.no-te-rindas-en-las-clases-de-ciencias.html
-            [uModificacion] => 1553539874
-            [fechaCreación] => 2019-03-25
-        )
+- [Observatorio Europeo del Sur](https://www.eso.org/public/images/)
+- [Imágenes de la NASA](https://www.nasa.gov/multimedia/imagegallery/index.html)
 
+
+## Búscar un patrón en un conjunto de ficheros de texto
+Busca y dice el nombre del archivo y la línea que lo contiene
+`ack PATRON`
+
+
+## Combinar varias imágenes en horizontal (o en vertical)
+
+- `convert +append *.jpg final_horizontal.jpg`
+- `convert -append *.jpg final_vertical.jpg`

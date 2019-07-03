@@ -15,8 +15,8 @@
 
 	# Esta lista permite transformar una palabra sin tilde a otra con tilde
 	function conTilde($sinTilde){
-		global $arrCategoriasPalabras;
-		return array_key_exists($sinTilde, $arrCategoriasPalabras)?$arrCategoriasPalabras[$sinTilde]:$sinTilde;
+		global $arrPalabrasClave;
+		return array_key_exists($sinTilde, $arrPalabrasClave)?$arrPalabrasClave[$sinTilde]:$sinTilde;
 	}
 
 	# Transform an hyphen separated words to well writen
@@ -93,9 +93,9 @@
   }
 
   function getFirstsParagraphs($htmlContent, $nParagraph){
-		$r = preg_match_all('/<p>(.*)<\/p>/', $htmlContent, $arrFound);
+		$r = preg_match_all('/<p>([^<].*)<\/p>/', $htmlContent, $arrFound);
 		$text = '';
-		for($i=0; $i<sizeof($arrFound) && $i<$nParagraph; $i++){
+		for($i=0; $i<count($arrFound[1]) && $i<$nParagraph; $i++){
 			$text.= '<p>'.$arrFound[1][$i].'</p>';
 		}
 		return $text;

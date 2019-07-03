@@ -43,7 +43,7 @@ foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		$title_html .= '<h1><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h1>';
 		$title_html .= (sizeof($arrImage)>0)?'<img src="'.$arrImage[1].'" alt="'.$arrImage[2].'" class="miniIndex">':'';
 		$title_html .= $firstsParagraphs;
-		$title_html .= '<a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">Leer más ...</a>';
+		$title_html .= '<p class="leerMas"><a href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">Leer más ...</a></p>';
 		$title_html .= '</div>'."\n\n";
 		$strArticulos .= $title_html;
 	}

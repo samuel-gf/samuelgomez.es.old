@@ -1,6 +1,6 @@
 <?php
 
-$arrCategoriasPalabras = array(
+$arrPalabrasClave = array(
 	'discusion' => 'discusión',
 	'fisica' => 'física',
 	'informatica' => 'informática',
