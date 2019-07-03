@@ -1,7 +1,7 @@
 ---
 description: Participa del 50 aniversario de la llegada del hombre a la Luna construyendo tu propio cohete
 ---
-# Celebra mundial del 50 aniversario de la llegada del hombre a la Luna
+# Únete a la celebración  mundial del 50 aniversario de la llegada del hombre a la Luna
 
 2019-07-03
 

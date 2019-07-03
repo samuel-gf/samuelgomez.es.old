@@ -92,11 +92,13 @@ body header a#nav-toggle{
 h1, h2, h3{
 	/*font-family: SourceSansPro-Semibold;*/
 	color: #006aff;
+	clear: both;
 }
 
 h1 {
 	border-bottom: 1px solid #FF9200;
 	font-size: 1.6rem;
+	margin: 0 0 1rem 0;
 }
 
 
@@ -114,7 +116,6 @@ h2 {
 	font-weight: bolder;
 	color: black;
 	padding: 1rem 0 2rem 0;
-	clear: both;
 }
 
 h3 {
@@ -193,8 +194,8 @@ figcaption{
 
 /* Item in index.html */
 .liIndex{
-		margin-bottom: 5rem;
-		min-height: 200px;
+		padding-bottom: 3rem;
+		min-height: 20rem;
 }
 
 .liIndex time{
@@ -202,6 +203,7 @@ figcaption{
 
 img.miniIndex{	/* Móvil */
 	max-width: 50%;
+	max-height: 16rem;
 	padding: 0 1rem 0 0;
 	text-align: center;
 	float: left;

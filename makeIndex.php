@@ -2,6 +2,7 @@
 # makeIndex.php 1.0
 require("const.php");
 require("libGeneral.php");
+setlocale(LC_ALL, 'es_ES.UTF-8');
 
 # Carga la plantilla INFO
 $info = file_get_contents(TEMPLATES.'/info.php');
@@ -40,6 +41,8 @@ foreach ($arrFilesHtml as $kHtml => $vHtml) {
 		}
 		$firstsParagraphs = getFirstsParagraphs($content_html, N_FIRSTS_PARAGRAPHS_INDEX);
 		$title_html = '<div class="liIndex">';
+		
+		$title_html.= '<time>'.strftime('%e de %B de %G', strtotime($vHtml['fechaCreación'])).'</time>';
 		$title_html .= '<h1><a class="enlacePermanente" href="'.mb_substr($vHtml['ficheroRutaRelativa'],1).'">'.$title.'</a></h1>';
 		$title_html .= (sizeof($arrImage)>0)?'<img src="'.$arrImage[1].'" alt="'.$arrImage[2].'" class="miniIndex">':'';
 		$title_html .= $firstsParagraphs;
