@@ -10,8 +10,9 @@
 		$sitemapTxt.="<url>\n";
 		$sitemapTxt.="\t<loc>".BASE_URL.$arrFileHtml['ficheroRutaRelativa']."</loc>\n";
 		$sitemapTxt.="\t<lastmod>".date("Y-m-d", $arrFileHtml['uModificacion'])."</lastmod>\n";
-		if (preg_match("/index[0-9]*\.html/", basename($arrFileHtml['ficheroRutaRelativa']))){
-			$sitemapTxt.="\t<changefreq>monthly</changefreq>\n";	// Páginas de categorías index.html
+		$arrWeeklyUpdated = array('index.html', 'menu.html');
+		if (in_array(basename($arrFileHtml['ficheroRutaRelativa']), $arrWeeklyUpdated)){
+			$sitemapTxt.="\t<changefreq>weekly</changefreq>\n";	// index.html, menu.html	
 			$sitemapTxt.="\t<priority>1</priority>\n";
 		} else {
 			$sitemapTxt.="\t<changefreq>yearly</changefreq>\n";

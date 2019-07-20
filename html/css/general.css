@@ -89,16 +89,17 @@ body header a#nav-toggle{
 }*/
 
 /********************************************* Cabeceras *********************************/
-h1, h2, h3{
+h1, h2, h3, h4{
 	/*font-family: SourceSansPro-Semibold;*/
-	color: #006aff;
 	clear: both;
+	font-weight: bolder;
 }
 
 h1 {
 	border-bottom: 1px solid #FF9200;
 	font-size: 1.6rem;
 	margin: 0 0 1rem 0;
+	color: #006aff;
 }
 
 
@@ -114,18 +115,14 @@ h1:first-child{
 
 h2 {
 	font-weight: bolder;
-	color: black;
 	padding: 1rem 0 2rem 0;
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-weight: bold;
 }
 
-h4 {
-	font-size: 1rem;
-	color: black;
-}
+
 
 /***************************************** FIN de /cabeceras **********************************/
 

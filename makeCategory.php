@@ -1,9 +1,11 @@
 <?php
+	# makeCategory.php	1.0
     require("const.php");
     require("libGeneral.php");
 
 	# Lee el contenido de las plantillas
 	$tmplHeaderOriginal = file_get_contents(TEMPLATES.'/header.php');
+	
 	# Remplaza campos en la plantilla header
 	$info = file_get_contents(TEMPLATES.'/info.php');
 	$tmplFoot = file_get_contents(TEMPLATES.'/foot.php');

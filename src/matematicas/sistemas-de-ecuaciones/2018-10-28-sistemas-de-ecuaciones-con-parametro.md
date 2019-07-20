@@ -1,4 +1,9 @@
-# Discutir el sistema de ecuaciones en función del parámetro
+---
+description: Ejercicios resueltos de 2º de Bachillerato sobre sistemas de ecuaciones con parámetro
+---
+# Sistemas de ecuaciones con parámetro
+
+## 1. Discutir el sistema de ecuaciones en función del parámetro
 $$
 \left.
 \begin{array}{cccccc}

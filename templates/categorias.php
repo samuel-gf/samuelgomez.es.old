@@ -2,6 +2,7 @@
 
 $arrPalabrasClave = array(
 	'discusion' => 'discusión',
+	'exploracion' => 'exploración',
 	'fisica' => 'física',
 	'informatica' => 'informática',
 	'matematica' => 'matemática',

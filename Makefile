@@ -9,7 +9,7 @@ html/%.html: src/%.md $(TEMPLATES)
 
 html/index.html: $(MD) $(TEMPLATES)
 	php makeIndex.php
-	php makeCategory.php
+	# php makeCategory.php
 
 html/contacto.html: pages/contact.php $(TEMPLATES)
 	php makeContact.php

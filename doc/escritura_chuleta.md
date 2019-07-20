@@ -1,5 +1,14 @@
 # Documentación del proyecto
 
+## Cabeceras
+
+- h1 Título del artículo o apartado "ejercicios resueltos"
+- h2 Subapartado del artículo, o enunciado del ejercicio
+- h3 Subapartado dentro de un ejercicio, lo que viene a ser un caso concreto o un apartado
+- h4 
+- h5 Título colocado sobre h1 que se suele emlear como un complemento al título principal, por ejemplo "Últimos artículos"
+
+
 ## Referencias de uso de Markdown
 
 - Una imagen `![Comentario]({{BASE_IMG}}imagen.jpg)`
