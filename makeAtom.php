@@ -30,7 +30,13 @@ foreach($arrFilesHtml as $fHtml){
 	$atom.= "\t<div xmlns='http://www.w3.org/1999/xhtml'>\n";
 	$arrImg = getImageFromHtml($content_html);
 	if (array_key_exists(1, $arrImg)) {
-		$atom.= "\t<img src='".$arrImg[1]."' />\n";
+		$url_img = '';
+		if (strpos($arrImg[1], '../') === false){
+			$url_img = $arrImg[1];	// Imagen hospedada en otro servidor
+		} else {
+			$url_img = BASE_URL."/".str_replace('../', '', $arrImg[1]);	// Imagen hospedada en este servidor
+		}
+		$atom.= "\t<img src='$url_img' alt='".$arrImg[2]."'/>\n";
 	}
 	$atom.= "\t".getFirstsParagraphs($content_html, 50)."\n";
 	$atom.= "\t</div></content>\n";

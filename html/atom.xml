@@ -4,7 +4,7 @@
 <subtitle>Un sitio para la ciencia y la tecnología</subtitle>
 <link href="http://samuelgomez.es/atom.xml" rel="self" />
 <id>http://samuelgomez.es/</id>
-<updated>2019-07-20T19:48:31Z</updated>
+<updated>2019-07-20T20:15:28Z</updated>
 <entry>
 	<title>Hacer matemáticas es para mí comparable a</title>
 	<link href='http://samuelgomez.es/opinion/matematicas/2019-07-20-hacer-matematicas-es-para-mi-comparable-a.html' />
@@ -13,7 +13,7 @@
 	<id>http://samuelgomez.es/opinion/matematicas/2019-07-20-hacer-matematicas-es-para-mi-comparable-a.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='../../img/2019/mates_paso_cebra.jpg' />
+	<img src='http://samuelgomez.es/img/2019/mates_paso_cebra.jpg' alt='Manuscrito del texto de este artículo'/>
 	<p>He querido plasmar en el siguiente párrafo mi opinión sobre las eternas matemáticas.</p><p>Tras muchos años profundizando en el fascinante mundo de las matemáticas he llegado a la conclusión de que realizar operaciones matemáticas es muy similar a cruzar un paso de cebra saltando de franja en franja y que resolver un problemas es como jugar al escondite</p><p>#matemáticas #pasoDeCebra #escondite #juego</p>
 	</div></content>
 </entry>
@@ -25,7 +25,7 @@
 	<id>http://samuelgomez.es/exploracion-espacial/2019-07-03-unete-a-la-celebracion--mundial-del-50-aniversario-de-la-llegada-del-hombre-a-la-luna.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://www.nasa.gov/sites/default/files/thumbnails/image/apollo_50th_full_color_300dpi.png' />
+	<img src='https://www.nasa.gov/sites/default/files/thumbnails/image/apollo_50th_full_color_300dpi.png' alt='Apolo 50 aniversario'/>
 	<p>Parece mentira pero ya ha transcurrido medio siglo desde la llegada del primer hombre a la Luna. Para conmemorar el histórico evento, la NASA ya tiene programada la celebrará de este 50 aniversario.</p><p>Fue la misión Apolo 11 la que llevó al comandante Neil Amstrong a poner el pie en nuestro satélite en nombre de la humanidad. Me siento entusiasmado con todo lo que hay planificado.</p><p>La NASA también aprovecharán para y mostrar al mundo cual es la actual situación de la exploración espacial tanto de la Luna como de Marte. Se realizará una transmisión en directo de unas dos horas el viernes 19 de julio y también se llevarán a cabo eventos por todo Estados Unidos desde el 16 de julio hasta el 20 de julio incluidos.</p><p>El 16 de julio de 1969, los astronautas Neil Armstrong, Buzz Aldrin y Michael Collins despegaron de la Plataforma de lanzamiento 39A en el Centro Espacial Kennedy de la NASA en Florida en un viaje a la Luna y a la historia de la humanidad. Cuatro días después, mientras Collins orbitaba alrededor de la Luna en el módulo de comando, Armstrong y Aldrin aterrizaron el módulo lunar del Apolo 11, denominado Águila, en el Mar de la Tranquilidad de la Luna, convirtiéndose en los primeros humanos en pisar la superficie lunar.</p><p>Los aspectos más destacados de los eventos en los que participa la NASA incluyen:</p><p>Los astronautas del Apolo 11, Buzz Aldrin y Michael Collins se reunirán en la histórica plataforma de lanzamiento donde el Apolo 11 comenzó su misión hace 50 años para una sesión de preguntas y respuestas con el Director del Centro Kennedy Bob Cabana, comenzando a las 9:15 am EDT, seguido de una visita al Centro de control de lanzamiento y la Sala de disparo 1 para conectarse con los controladores de lanzamiento de la era de Apolo y aquellos que lanzarán las misiones Artemisa que forman parte del enfoque de la Luna de Marte de los Estados Unidos para la exploración del espacio humano.</p><p>Este evento se transmitirá en vivo en la televisión de la NASA y en el sitio web de la agencia.</p><p>A las 8:32 am CDT, al mismo tiempo que la misión Apolo 11 despegó de Florida hace 50 años, el US Space &amp; Rocket Center, desea batir un nuevo récord consistente en el lanzamiento del máximo número de cohetes espaciales caseros.</p><p>Como podéis ver en las fotografía, cualquier tipo de cohete está permitido, no es necesario que alcance la órbita de la luna. Este será sin duda un evento muy divertido que podrá ser seguido a nivel mundial</p><p>Para participar podéis registraros en el <a href="https://rocketcenter.com/apollo50/GlobalLaunch">evento de lanzamiento mundial</a>.</p><p>El servicio Postal de los EE. UU. Celebrará el 50 aniversario del Apolo 11 y los primeros pasos de la humanidad en la Luna con dos sellos dedicados.</p><p>Existen más eventos dedicados al aniversario, pero desde mi punto de vista son bastante más locales a nivel nacional para Estados Unidos. Podéis ver <a href="https://www.nasa.gov/press-release/nasa-celebrates-50th-anniversary-of-historic-moon-landing-with-live-tv-broadcast/">más información sobre la celebración del 50 aniversario</a></p><p>#apolo #artemisa #50aniversarioApolo</p>
 	</div></content>
 </entry>
@@ -37,7 +37,7 @@
 	<id>http://samuelgomez.es/fisica/2019-06-08-lsst--the-telescope-that-is-sharing-a-massive-ammount-of-data-with-the-citizen-science-community-in-2022.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='../img/logo/LSST.png' />
+	<img src='http://samuelgomez.es/img/logo/LSST.png' alt='Logo of the LSST telescope'/>
 	<p>The huge Large Synoptic Survey Telescope (LSST) that is currently under construction.</p><p>The project has commited to making all data public 24 hours after they are taken.</p><p>I think this can be a powerfull war horse for the Citizen Science Community.</p><p>#LSST #citizenScienceCommunity</p>
 	</div></content>
 </entry>
@@ -49,7 +49,7 @@
 	<id>http://samuelgomez.es/informatica/2019-04-10-encuesta-de-stack-overflow-de-2019.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png' />
+	<img src='https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png' alt='Stack Overflow'/>
 	<p>Anualmente, el popular sitio de internet <a href="https://stackoverflow.com/">Stack Overflow</a> realiza una <a href="https://insights.stackoverflow.com/survey/2019">encuesta mundial</a> a sus usuarios donde realiza preguntas tanto profesionales como de índole personal de manera anónima. Con dichos resultados se han confeccionado una serie de diagramas muy interesantes. Paso a comentar los que me han llamado la atención.</p><p>Aquí la experiencia me decía que la mayoría de los programadores se habrían formado por su cuenta y así resulta ser. <a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-other-types-of-education">Más de 85% se habían formado por su cuenta</a> para aprender algún nuevo lenguaje de programación u obtener alguna habilidad relacionada con su trabajo.</p><p>#progamación #StackOverflow #encuesta</p>
 	</div></content>
 </entry>
@@ -72,7 +72,7 @@
 	<id>http://samuelgomez.es/opinion/musica/2019-04-05-banda-sonora-de-el-ultimo-mohicano.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://images-na.ssl-images-amazon.com/images/I/81yGSabsVjL._SY355_.jpg' />
+	<img src='https://images-na.ssl-images-amazon.com/images/I/81yGSabsVjL._SY355_.jpg' alt='Portada del disco con la banda sonora Él último mohicano'/>
 	<p>Una de mis aficiones es escuchar música. Lo hago mientras leo, corrijo, conduzco o hago ciencia y tecnología.</p><p>Entre mi repertorio musical tengo bastantes <strong>bandas sonoras</strong> y una que siempre me ha gustado bastante es la banda sonora de la películo <em>El último mohicano</em>.</p><p>Debo reconocer que la música de fondo me inspira y me da fuerza. Se trata de esos momentos en los que uno necesita esa automotivación. Es la música la que conduce mi trabajo y me ayuda a sentirme lleno de vitalidad de nuevo.</p><p>Puedes adquirir la banda sonora en las siguientes tiendas. Si tienes algún lugar alternativo donde adquirir el álbum no dudes en escribirme para que lo pueda compartir en este blog.</p><p>Es posible que puedas obtener la banda sonora que te recomiendo por otros medios pero te recomiendo acudir a una fuente de audio de alta calidad para poder disfrutar el sonido.</p><p>#bandaSonora #elUltimoMohicano #épica #héroe</p>
 	</div></content>
 </entry>
@@ -84,7 +84,7 @@
 	<id>http://samuelgomez.es/informatica/2019-04-02-my-experience-with-katex-in-my-personal-blog.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://katex.org/img/og_logo.png' />
+	<img src='https://katex.org/img/og_logo.png' alt='KaTeX logo'/>
 	<p>I have been using KaTeX for almos half a year and now I can share my ideas about this fast javascript library.</p><p>First of all <strong>time</strong>. This es the key as I have spent 0.3 seconds while my intel core i3 renders the <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">test page</a> with KaTeX but I spent 2.5 seconds rendering with MathJax.</p><p>So KaTeX is <span class="math inline">\(\text{ratio}=\frac{2.5}{0.3}=8.3\)</span> times faster than MathJax. I suppose this is not an inconvenient if you have just two or three formulae but in my personal website I need to share as much as I need to teach mathematics properly, so the decision was not hard to take.</p><p>Second, <strong>print quality</strong>. After all, we all want our web sites to be presented as beautiful as possible. As KaTeX uses the original layout of Donald Knuth, the creator of LaTeX, the results are awesome.</p><p>Finally, <strong>possibilities</strong>. Althought I do not use this feature, but KaTeX can be pre-rendered in the server so I can send the expressions as plain HTML.</p><p>#KaTeX #blog #speed #printQuality #possibilities</p>
 	</div></content>
 </entry>
@@ -96,7 +96,7 @@
 	<id>http://samuelgomez.es/informatica/2019-04-01-usar-lynx-como-navegador-de-internet.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://lynx.browser.org/lynx.png' />
+	<img src='https://lynx.browser.org/lynx.png' alt='Lynx browser: El navegador en modo texto'/>
 	<p>Empleo con frecuencia el navegador <a href="https://lynx.browser.org/">lynx</a> y lo hago porque creo que existen muchas capas en la web.</p><p>La mayoría de los usuarios solo ven la capa superficial. Aquella que muchos quieren que veas. Se trata de una capa llena de publicidad, cookies de rastreo, captación de clientes, etc…</p><p>Existe otra web, que funciona a otro ritmo y que se encuentra por debajo de la anterior.</p><p>Esta web puede ser visitada con la ayuda de un navegador que solo admita texto como el caso de lynx. Sé que existen otros muchos navegadores de modo texto, pero este es uno de los primeros que conocí, y con él me quedé.</p><p>Estoy satisfecho con la opción que he elegido y en caso de necesitar emerger a la superficie de la web siempre puedo emplear firefox o algún otro navegador gráfico.</p><p>#lynx #navegador #browser #texto</p>
 	</div></content>
 </entry>
@@ -119,7 +119,7 @@
 	<id>http://samuelgomez.es/fisica/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='https://cdn.eso.org/images/screen/eso1737a.jpg' />
+	<img src='https://cdn.eso.org/images/screen/eso1737a.jpg' alt='Recreación artística del objeto Oumuamua'/>
 	<p>El siempre interesante objeto extrasolar <a href="https://es.wikipedia.org/wiki/1I/ʻOumuamua">Oumuamua</a> tiene una serie de características que lo hacen especialmente singular, o al menos, aún no hemos encontrado otros objetos con características parecidas. Dicho objeto es el primero de su clase, ya que es la primera vez que encontramos algo de origen interestelar en el Sistema Solar.</p><p>Lo cierto es que un reciente <a href="https://arxiv.org/abs/1810.11490">paper</a> publicado por científicos del <a href="https://www.cfa.harvard.edu">Centro de Astrofísica Smithsonian de Hardvard</a> trata de descubrir las razones por las cuales este objeto viajero tiene una aceleración tan peculiar. Su relación de masa y área sería aproximadamente de <span class="math inline">\(0,1 g \cdot cm^{-2}\)</span> y sería de una superficie delgada de entre 0,3 y 0,9 mm.</p><p>Los autores tratan de explicar su aceleración por un exceso de aceleración radial. Dicha aceleración es propia de cometas que, no nos olvidemos, desprenden material que se evapora. Pero estudios recientes apuntan a que el objeto interestelar no es un cometa activo.</p><p>Así pues, el paper estudia la posibilidad de que el exceso de aceleración provenga de la presión de la radiación solar. Para formalizar cálculos realiza una estimación del área y grosor del viajero.</p><p>Tras un interesante desarrollo matemático el documento científico se pregunta que clase de objeto podría tener tal relación de masa y área y menciona que el objeto no ha podido ser visualizado de manera que se desconoce su geometría exacta. Especula entonces con otras geometrías posibles tales como un cono o un elipsoide hueco.</p><p>Finalmente compara la supuesta relación de masa y área de Oumuamua con los asteroides y cometas del Sistema Solar conocidos y es entonces cuando el papel especula con que el objeto podría ser <em>artíficial</em> aunque siempre como un hipótesis.</p><p>Habla de que podría ser un resto de una vela solar flotando en el espacio interestelar. Se atreven incluso los autores a compararlo con las velas solares diseñadas en la Tierra en el proyecto <a href="https://es.wikipedia.org/wiki/IKAROS">IKAROS</a></p><p>#Oumuamua #Hardvard #origenDesconocido</p>
 	</div></content>
 </entry>
@@ -175,7 +175,7 @@
 	<id>http://samuelgomez.es/matematicas/determinantes/2018-10-13-propiedades-de-los-determinantes.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='../../img/2019/determinantes.jpg' />
+	<img src='http://samuelgomez.es/img/2019/determinantes.jpg' alt='Determinantes'/>
 	<p>Sabiendo que:</p><p>Calcular el valor de:</p><p>Saco el factor <span class="math inline">\(\frac{1}{4}\)</span> de la tercera fila <span class="math inline">\(F_3\)</span></p><p>Aplicando una combinación lineal a la segunda fila <span class="math inline">\(F_2 = F_2+2\cdot F_1\)</span></p><p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p><p>#2ºBachillerato #determinante #matriz</p>
 	</div></content>
 </entry>
