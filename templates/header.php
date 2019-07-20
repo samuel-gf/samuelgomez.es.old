@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/general.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/menu.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/contacto.css">
-
+	<link rel="alternate" type="application/atom+xml" title="SamuelGomez.es - Atom" href="http://samuelgomez.es/atom.xml" />
 	<link rel='shortcut icon' type='image/x-icon' href='{{BASE_DIR}}img/favicon.ico' />
 	<link rel="icon" type="image/png" sizes="48x48"   href="{{BASE_DIR}}img/favicon.ico" />
 	<link rel="icon" type="image/png" sizes="96x96"   href="{{BASE_DIR}}img/favicon-96x96.png" />
