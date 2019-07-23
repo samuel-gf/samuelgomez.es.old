@@ -5,7 +5,7 @@ description: Participa del 50 aniversario de la llegada del hombre a la Luna con
 
 2019-07-03
 
-![Apolo 50 aniversario](https://www.nasa.gov/sites/default/files/thumbnails/image/apollo_50th_full_color_300dpi.png)
+![Apolo 50 aniversario]({{BASE_IMG}}}2019/apollo_50th.jpg)
 
 Parece mentira pero ya ha transcurrido medio siglo desde la llegada del primer hombre a la Luna. Para conmemorar
 el histórico evento, la NASA ya tiene programada la celebrará de este 50 aniversario.

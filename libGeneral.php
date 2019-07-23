@@ -8,8 +8,8 @@
 	# Retorna una URL amigable a partir de un string 
     function strToUrl($str){
         $str = mb_strtolower(trim($str));
-        $str = str_replace(array(   'á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', ' ', ':'),
-                              array('a', 'e', 'i', 'o', 'u', 'n', '', '-', '-'), $str);
+        $str = str_replace(array(   'á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', '?', ' ', ':'),
+                              array('a', 'e', 'i', 'o', 'u', 'n', '', ''  , '-', '-'), $str);
         return $str;
 	}
 

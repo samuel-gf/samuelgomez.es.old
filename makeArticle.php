@@ -73,7 +73,8 @@
 		$tmplHeader = str_replace('{{META_DESCRIPTION}}','', $tmplHeader);
 	}
 		
-		# Reemplaza campos en la plantilla foot
+	# Reemplaza campos en la plantilla foot
+	$fRelativeHtml = dirname($fRelativeHtml).'/'.strToUrl(basename($fRelativeHtml));
 	$tmplFoot = str_replace('{{BASE_DIR}}',str_repeat('../',$numDir),$tmplFoot);
 	$tmplFoot = str_replace('{{HTML_NAME}}',$fRelativeHtml,$tmplFoot);
 
