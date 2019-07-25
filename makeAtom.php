@@ -38,7 +38,7 @@ foreach($arrFilesHtml as $fHtml){
 		}
 		$atom.= "\t<img src='$url_img' alt='".$arrImg[2]."'/>\n";
 	}
-	$atom.= "\t".getFirstsParagraphs($content_html, 50)."\n";
+	$atom.= "\t".getContentFromHtml($content_html)."\n";
 	$atom.= "\t</div></content>\n";
 	$atom.= "</entry>\n";	
 }

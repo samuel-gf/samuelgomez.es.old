@@ -4,7 +4,7 @@
 <subtitle>Un sitio para la ciencia y la tecnología</subtitle>
 <link href="http://samuelgomez.es/atom.xml" rel="self" />
 <id>http://samuelgomez.es/</id>
-<updated>2019-07-23T20:17:32Z</updated>
+<updated>2019-07-25T14:13:40Z</updated>
 <entry>
 	<title>¿Por qué la NASA no ha mandado astronautas a la Luna en décadas?</title>
 	<link href='http://samuelgomez.es/exploracion-espacial/2019-07-23-por-que-la-nasa-no-ha-mandado-astronautas-a-la-luna-en-decadas.html' />
@@ -14,7 +14,36 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/2019/SLS.jpg' alt='Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo'/>
-	<p>En la época en la que los primeros seres humanos llegamos a la Luna el presupuesto de la NASA era enorme, cerca del 4% de todos el gasto público de Estados Unidos. Si te paras a pensarlo, es una barbaridad de dinero.</p><p>Era la eṕoca de la <a href="https://es.wikipedia.org/wiki/Guerra_Fr%C3%ADa">Guerra Fría</a> y los políticos no se cortaban en asignar presupuesto a la NASA puesto que muchas de sus invenciones, más allá de la exploración espacial, podían tener un fin militar como por ejemplo el lanzamiento de misiles intercontinentales. No se escatimaban esfuerzos en el desarrollo de cualquier cosa que pudiera tener un objetivo bélico.</p><p>Poco después de que llegasen seres humanos a la Luna surgió la primera crísis del petroleo, a principios de los años setenta, y además Estados Unidos se metió de lleno en la <a href="https://es.wikipedia.org/wiki/Guerra_de_Vietnam">Guerra de Vietnam</a>. Ambas situaciones crearon una crísis económica sin precedentes en el país que cortaron radicalmente el presupuesto de la NASA.</p><p>Una década después, Estados Unidos comenzó a mejorar su situación económica, estamos ya en los años ochenta. El presupuesto de la NASA se sigue reduciendo. Estados Unidos destina un amplio presupuesto a proyectos militares, como por ejemplo el conocido como proyecto <em>Star Wars</em> o <a href="https://es.wikipedia.org/wiki/Iniciativa_de_Defensa_Estrat%C3%A9gica">Guerra de las Galaxias</a> consistente en disponer de un sistema capaz de defenderse de los misiles soviéticos antes de que cayeran en territorio estadounidense.</p><p>A finales de los años ochenta la carrera espacial ya no tenía sentido, pues ya no había competición con la Unión Soviética debido a que la URSS se había derrumbado económicamente y había desaparecido como país.</p><p>El presupuesto de la NASA es por ese entonces muy reducido y se plantean como objetivo misiones mucho más baratas que el envío de seres humanos a la Luna. En su lugar la NASA envía robots a diferentes cuerpos celestes debido a que resulta mucho más económico y seguro que mandar pesonas.</p><p>A principio de los años 2000 llega la <a href="https://es.wikipedia.org/wiki/Burbuja_puntocom">crísis de las punto com</a> y se sigue reduciendo el presupuesto para la exploración espacial. Estados Unidos vive un nuevo periódo de crísis económica.</p><p>En 2007 llega el <a href="https://es.wikipedia.org/wiki/Lehman_Brothers">colapso financiero con la crísis de Leman Brothers</a> y esto sigue impidiendo que la NASA obtenga el inmenso presupuesto del que disponía en los años sesenta.</p><p>En la actualidad la idea de regresar a la Luna parece que va cobrando sentido de nuevo, pero hay un serio problema, la NASA tiene los planos de un proyecto obsoleto de los años sesenta para el cual no hay nadie con experiencia. Los cohetes Saturno V que usaron las misiones Apolo tienen más de tres millones de piezas que deben funcionar coordinadas entre ellas, y no existe ya ninguna persona con experiencia en la construcción de dichos cohetes. La NASA tiene gente muy inteligente pero son totalmente novatos en la construcción de cohetes Saturno.</p><p>La NASA ha puesto a un amplio grupo de técnicos a estudiar los antiguos planos obsoletos de las misiones Apolo para reinventar toda la tecnología pero de manera moderno. Por ejemplo, el ordenador de la misión Apolo 11 fue en su tiempo revolucionario, pero hoy en día estaría totalmente obsoleto, es más, tu móvil probablemente tenga más potencia que aquel viejo ordenador.</p><p>Lo dicho, que la NASA está haciendo un rediseño de aquellos planos obsoletos en un proyecto denominado <a href="https://es.wikipedia.org/wiki/Sistema_de_lanzamiento_espacial">SLS</a>. Además, existen varias empresas privadas que están desarrollando tecnología para viajes espaciales, aunque de momento, la mayoría trabajan sobre todo en órbitas bajas, que nos son suficientes como para llegar a la Luna en un conjunto de misiones denominados <a href="https://danielmarin.naukas.com/2019/05/22/programa-artemisa-al-detalle-como-planea-la-nasa-volver-a-la-luna-en-2024/">Artemisa</a> para poner una mujer en la superficie de la Luna en el año 2024.</p><p>#Luna #NASA #apolo #apollo #artemisa</p>
+	
+<p><time datetime='2019-07-23' pubdate='2019-07-23'>23 de julio de 2019</time></p>
+<figure>
+<img src="../img/2019/SLS.jpg" alt="Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo" /><figcaption>Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo</figcaption>
+</figure>
+<h2 id="versión-corta">Versión corta</h2>
+<ul>
+<li>Una vez conseguido deja de ser una prioridad que apenas ofrece nuevos beneficios</li>
+<li>El presupuesto de la NASA se reduce una barbaridad (ver <a href="#presupuesto_nasa">gráfico del presupuesto</a>)</li>
+<li>La tecnología de las misiones Apolo se queda obsoleta porque la NASA deja de darle soporte y mantenimiento</li>
+<li>Como consecuencia de la anterior se quedan sin expertos en cohetes Saturno que permitían llevar seres humanos a la Luna</li>
+<li>Se acaba la Guerra Fría y deja de haber competición con la URSS</li>
+<li>Se desarrolla la tecnología de robots y entonces resulta más barato enviar robots que personas</li>
+</ul>
+<h2 id="versión-larga">Versión larga</h2>
+<p>En la época en la que los primeros seres humanos llegamos a la Luna el presupuesto de la NASA era enorme, cerca del 4% de todos el gasto público de Estados Unidos. Si te paras a pensarlo, es una barbaridad de dinero.</p>
+<p>Era la eṕoca de la <a href="https://es.wikipedia.org/wiki/Guerra_Fr%C3%ADa">Guerra Fría</a> y los políticos no se cortaban en asignar presupuesto a la NASA puesto que muchas de sus invenciones, más allá de la exploración espacial, podían tener un fin militar como por ejemplo el lanzamiento de misiles intercontinentales. No se escatimaban esfuerzos en el desarrollo de cualquier cosa que pudiera tener un objetivo bélico.</p>
+<p>Poco después de que llegasen seres humanos a la Luna surgió la primera crísis del petroleo, a principios de los años setenta, y además Estados Unidos se metió de lleno en la <a href="https://es.wikipedia.org/wiki/Guerra_de_Vietnam">Guerra de Vietnam</a>. Ambas situaciones crearon una crísis económica sin precedentes en el país que cortaron radicalmente el presupuesto de la NASA.</p>
+<p>Una década después, Estados Unidos comenzó a mejorar su situación económica, estamos ya en los años ochenta. El presupuesto de la NASA se sigue reduciendo. Estados Unidos destina un amplio presupuesto a proyectos militares, como por ejemplo el conocido como proyecto <em>Star Wars</em> o <a href="https://es.wikipedia.org/wiki/Iniciativa_de_Defensa_Estrat%C3%A9gica">Guerra de las Galaxias</a> consistente en disponer de un sistema capaz de defenderse de los misiles soviéticos antes de que cayeran en territorio estadounidense.</p>
+<p>A finales de los años ochenta la carrera espacial ya no tenía sentido, pues ya no había competición con la Unión Soviética debido a que la URSS se había derrumbado económicamente y había desaparecido como país.</p>
+<p>El presupuesto de la NASA es por ese entonces muy reducido y se plantean como objetivo misiones mucho más baratas que el envío de seres humanos a la Luna. En su lugar la NASA envía robots a diferentes cuerpos celestes debido a que resulta mucho más económico y seguro que mandar pesonas.</p>
+<p><a name="presupuesto_nasa"></a> <img src="../img/2019/presupuesto_nasa.png" alt="Presupuesto de la NASA a lo largo de las últimas décadas" /></p>
+<p>A principio de los años 2000 llega la <a href="https://es.wikipedia.org/wiki/Burbuja_puntocom">crísis de las punto com</a> y se sigue reduciendo el presupuesto para la exploración espacial. Estados Unidos vive un nuevo periódo de crísis económica.</p>
+<p>En 2007 llega el <a href="https://es.wikipedia.org/wiki/Lehman_Brothers">colapso financiero con la crísis de Leman Brothers</a> y esto sigue impidiendo que la NASA obtenga el inmenso presupuesto del que disponía en los años sesenta.</p>
+<p>En la actualidad la idea de regresar a la Luna parece que va cobrando sentido de nuevo, pero hay un serio problema, la NASA tiene los planos de un proyecto obsoleto de los años sesenta para el cual no hay nadie con experiencia. Los cohetes Saturno V que usaron las misiones Apolo tienen más de tres millones de piezas que deben funcionar coordinadas entre ellas, y no existe ya ninguna persona con experiencia en la construcción de dichos cohetes. La NASA tiene gente muy inteligente pero son totalmente novatos en la construcción de cohetes Saturno.</p>
+<p>La NASA ha puesto a un amplio grupo de técnicos a estudiar los antiguos planos obsoletos de las misiones Apolo para reinventar toda la tecnología pero de manera moderno. Por ejemplo, el ordenador de la misión Apolo 11 fue en su tiempo revolucionario, pero hoy en día estaría totalmente obsoleto, es más, tu móvil probablemente tenga más potencia que aquel viejo ordenador.</p>
+<p>Lo dicho, que la NASA está haciendo un rediseño de aquellos planos obsoletos en un proyecto denominado <a href="https://es.wikipedia.org/wiki/Sistema_de_lanzamiento_espacial">SLS</a>. Además, existen varias empresas privadas que están desarrollando tecnología para viajes espaciales, aunque de momento, la mayoría trabajan sobre todo en órbitas bajas, que nos son suficientes como para llegar a la Luna en un conjunto de misiones denominados <a href="https://danielmarin.naukas.com/2019/05/22/programa-artemisa-al-detalle-como-planea-la-nasa-volver-a-la-luna-en-2024/">Artemisa</a> para poner una mujer en la superficie de la Luna en el año 2024.</p>
+<p>#Luna #NASA #apolo #apollo #artemisa</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -26,7 +55,45 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/logo/rss.png' alt='Logotipo de RSS Real Simple Syndication'/>
-	<p>Esta semana estaba escribiendo el código que me permitiese generar un <em>feed atom</em> de mi blog personal y me di cuenta de que emplear <em>xml</em> era extremadamente engorroso en los tiempos que corren.</p><p>Habitualmente escribo mis artículos en <em>markdown</em> y posteriormente los exporto a <em>html</em> mediante <em>pandoc</em>. Veo multitud de ventajas al usar <em>markdown</em>.</p><p>Entonces experimento un momento <em>eureka</em> cuando me di cuenta de que un formato tan sencillo, tan libre, tan abierto como es <em>markdown</em> sería perfecto para poner información en la red que pudiese ser procesada por máquinas y que nos permita a los lectores escapar del <em>algoritmo</em>.</p><p>This week I was coding to generate my own <em>atom feed</em> for my personal blog and I remmembered the difficulty of <em>xml code</em>.</p><p>I usually write my post using <em>markdown</em> and then I export them to <em>html</em> with <em>pandoc</em>. I see many advantages using <em>markdown</em>.</p><p>Then I felt an <em>eureka effect</em> as I realized that a so simple format, so free (as in freedom), so open as <em>markdown</em> would be perfect to share information. It could be processed by machines and it would let us escape the <em>algorithm</em>.</p><p>#markDown #rss #atom #feed</p>
+	
+<p><time datetime='2019-07-21' pubdate='2019-07-21'>21 de julio de 2019</time></p>
+<figure>
+<img src="../img/logo/rss.png" alt="Logotipo de RSS Real Simple Syndication" /><figcaption>Logotipo de RSS Real Simple Syndication</figcaption>
+</figure>
+<p>Esta semana estaba escribiendo el código que me permitiese generar un <em>feed atom</em> de mi blog personal y me di cuenta de que emplear <em>xml</em> era extremadamente engorroso en los tiempos que corren.</p>
+<p>Habitualmente escribo mis artículos en <em>markdown</em> y posteriormente los exporto a <em>html</em> mediante <em>pandoc</em>. Veo multitud de ventajas al usar <em>markdown</em>.</p>
+<p>Entonces experimento un momento <em>eureka</em> cuando me di cuenta de que un formato tan sencillo, tan libre, tan abierto como es <em>markdown</em> sería perfecto para poner información en la red que pudiese ser procesada por máquinas y que nos permita a los lectores escapar del <em>algoritmo</em>.</p>
+<p><strong>¿Cómo podría hacerse esto?</strong> Fácil, tan solo debemos escribir un archivo llamado <em>index.md</em> que contenga el listado de artículos como el ejemplo que aparece abajo. También tienes un <a href="../img/2019/meneame.md">ejemplo de markdown que sustituye un feed rss</a></p>
+<pre><code># First post
+
+2019 07 20
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, 
+augue vulputate dapibus mollis, neque dolor ultricies tortor, eu faucibus 
+nisi mauris nec dui. Suspendisse dictum, ex vel molestie posuere, 
+dui urna congue neque, sit amet interdum diam mi eu libero. In hac habitasse platea dictumst.
+
+[Read more](https://example.com/first-post)
+
+
+# Second post
+
+2019 07 21
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, 
+augue vulputate dapibus mollis, neque dolor ultricies tortor, eu faucibus 
+nisi mauris nec dui. Suspendisse dictum, ex vel molestie posuere, 
+dui urna congue neque, sit amet interdum diam mi eu libero. In hac habitasse platea dictumst.
+
+[Read more](https://example.com/second-post)</code></pre>
+<h2 id="markdown-as-a-replacement-for-rss">Markdown as a replacement for RSS</h2>
+<p>This week I was coding to generate my own <em>atom feed</em> for my personal blog and I remmembered the difficulty of <em>xml code</em>.</p>
+<p>I usually write my post using <em>markdown</em> and then I export them to <em>html</em> with <em>pandoc</em>. I see many advantages using <em>markdown</em>.</p>
+<p>Then I felt an <em>eureka effect</em> as I realized that a so simple format, so free (as in freedom), so open as <em>markdown</em> would be perfect to share information. It could be processed by machines and it would let us escape the <em>algorithm</em>.</p>
+<p><strong>How can we do this?</strong> Easy, just write a file named <em>index.md</em> with the content of the previous example. You can also see this <a href="../img/2019/meneame.md">example of markdown replacing a rss feed</a></p>
+<p>#markDown #rss #atom #feed</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -38,7 +105,16 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/2019/mates_paso_cebra.jpg' alt='Manuscrito del texto de este artículo'/>
-	<p>He querido plasmar en el siguiente párrafo mi opinión sobre las eternas matemáticas.</p><p>Tras muchos años profundizando en el fascinante mundo de las matemáticas he llegado a la conclusión de que realizar operaciones matemáticas es muy similar a cruzar un paso de cebra saltando de franja en franja y que resolver un problemas es como jugar al escondite</p><p>#matemáticas #pasoDeCebra #escondite #juego</p>
+	
+<figure>
+<img src="../../img/2019/mates_paso_cebra.jpg" alt="Manuscrito del texto de este artículo" /><figcaption>Manuscrito del texto de este artículo</figcaption>
+</figure>
+<p><time datetime='2019-07-20' pubdate='2019-07-20'>20 de julio de 2019</time></p>
+<p>He querido plasmar en el siguiente párrafo mi opinión sobre las eternas matemáticas.</p>
+<p>Tras muchos años profundizando en el fascinante mundo de las matemáticas he llegado a la conclusión de que realizar operaciones matemáticas es muy similar a cruzar un paso de cebra saltando de franja en franja y que resolver un problemas es como jugar al escondite</p>
+<p>#matemáticas #pasoDeCebra #escondite #juego</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -50,7 +126,36 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/%7D2019/apollo_50th.jpg' alt='Apolo 50 aniversario'/>
-	<p>Parece mentira pero ya ha transcurrido medio siglo desde la llegada del primer hombre a la Luna. Para conmemorar el histórico evento, la NASA ya tiene programada la celebrará de este 50 aniversario.</p><p>Fue la misión Apolo 11 la que llevó al comandante Neil Amstrong a poner el pie en nuestro satélite en nombre de la humanidad. Me siento entusiasmado con todo lo que hay planificado.</p><p>La NASA también aprovecharán para y mostrar al mundo cual es la actual situación de la exploración espacial tanto de la Luna como de Marte. Se realizará una transmisión en directo de unas dos horas el viernes 19 de julio y también se llevarán a cabo eventos por todo Estados Unidos desde el 16 de julio hasta el 20 de julio incluidos.</p><p>El 16 de julio de 1969, los astronautas Neil Armstrong, Buzz Aldrin y Michael Collins despegaron de la Plataforma de lanzamiento 39A en el Centro Espacial Kennedy de la NASA en Florida en un viaje a la Luna y a la historia de la humanidad. Cuatro días después, mientras Collins orbitaba alrededor de la Luna en el módulo de comando, Armstrong y Aldrin aterrizaron el módulo lunar del Apolo 11, denominado Águila, en el Mar de la Tranquilidad de la Luna, convirtiéndose en los primeros humanos en pisar la superficie lunar.</p><p>Los aspectos más destacados de los eventos en los que participa la NASA incluyen:</p><p>Los astronautas del Apolo 11, Buzz Aldrin y Michael Collins se reunirán en la histórica plataforma de lanzamiento donde el Apolo 11 comenzó su misión hace 50 años para una sesión de preguntas y respuestas con el Director del Centro Kennedy Bob Cabana, comenzando a las 9:15 am EDT, seguido de una visita al Centro de control de lanzamiento y la Sala de disparo 1 para conectarse con los controladores de lanzamiento de la era de Apolo y aquellos que lanzarán las misiones Artemisa que forman parte del enfoque de la Luna de Marte de los Estados Unidos para la exploración del espacio humano.</p><p>Este evento se transmitirá en vivo en la televisión de la NASA y en el sitio web de la agencia.</p><p>A las 8:32 am CDT, al mismo tiempo que la misión Apolo 11 despegó de Florida hace 50 años, el US Space &amp; Rocket Center, desea batir un nuevo récord consistente en el lanzamiento del máximo número de cohetes espaciales caseros.</p><p>Como podéis ver en las fotografía, cualquier tipo de cohete está permitido, no es necesario que alcance la órbita de la luna. Este será sin duda un evento muy divertido que podrá ser seguido a nivel mundial</p><p>Para participar podéis registraros en el <a href="https://rocketcenter.com/apollo50/GlobalLaunch">evento de lanzamiento mundial</a>.</p><p>El servicio Postal de los EE. UU. Celebrará el 50 aniversario del Apolo 11 y los primeros pasos de la humanidad en la Luna con dos sellos dedicados.</p><p>Existen más eventos dedicados al aniversario, pero desde mi punto de vista son bastante más locales a nivel nacional para Estados Unidos. Podéis ver <a href="https://www.nasa.gov/press-release/nasa-celebrates-50th-anniversary-of-historic-moon-landing-with-live-tv-broadcast/">más información sobre la celebración del 50 aniversario</a></p><p>#apolo #artemisa #50aniversarioApolo</p>
+	
+<p><time datetime='2019-07-03' pubdate='2019-07-03'> 3 de julio de 2019</time></p>
+<figure>
+<img src="../img/%7D2019/apollo_50th.jpg" alt="Apolo 50 aniversario" /><figcaption>Apolo 50 aniversario</figcaption>
+</figure>
+<p>Parece mentira pero ya ha transcurrido medio siglo desde la llegada del primer hombre a la Luna. Para conmemorar el histórico evento, la NASA ya tiene programada la celebrará de este 50 aniversario.</p>
+<p>Fue la misión Apolo 11 la que llevó al comandante Neil Amstrong a poner el pie en nuestro satélite en nombre de la humanidad. Me siento entusiasmado con todo lo que hay planificado.</p>
+<p>La NASA también aprovecharán para y mostrar al mundo cual es la actual situación de la exploración espacial tanto de la Luna como de Marte. Se realizará una transmisión en directo de unas dos horas el viernes 19 de julio y también se llevarán a cabo eventos por todo Estados Unidos desde el 16 de julio hasta el 20 de julio incluidos.</p>
+<p>El 16 de julio de 1969, los astronautas Neil Armstrong, Buzz Aldrin y Michael Collins despegaron de la Plataforma de lanzamiento 39A en el Centro Espacial Kennedy de la NASA en Florida en un viaje a la Luna y a la historia de la humanidad. Cuatro días después, mientras Collins orbitaba alrededor de la Luna en el módulo de comando, Armstrong y Aldrin aterrizaron el módulo lunar del Apolo 11, denominado Águila, en el Mar de la Tranquilidad de la Luna, convirtiéndose en los primeros humanos en pisar la superficie lunar.</p>
+<p>Los aspectos más destacados de los eventos en los que participa la NASA incluyen:</p>
+<h2 id="de-julio---reflexión-de-lanzamiento-de-apolo-11-en-la-rampa-de-lanzamiento-39a">16 de julio - Reflexión de lanzamiento de Apolo 11 en la rampa de lanzamiento 39A</h2>
+<p>Los astronautas del Apolo 11, Buzz Aldrin y Michael Collins se reunirán en la histórica plataforma de lanzamiento donde el Apolo 11 comenzó su misión hace 50 años para una sesión de preguntas y respuestas con el Director del Centro Kennedy Bob Cabana, comenzando a las 9:15 am EDT, seguido de una visita al Centro de control de lanzamiento y la Sala de disparo 1 para conectarse con los controladores de lanzamiento de la era de Apolo y aquellos que lanzarán las misiones Artemisa que forman parte del enfoque de la Luna de Marte de los Estados Unidos para la exploración del espacio humano.</p>
+<p>Este evento se transmitirá en vivo en la televisión de la NASA y en el sitio web de la agencia.</p>
+<h2 id="de-julio-el-mayor-número-de-cohetes-caseros-a-nivel-mundial">16 de julio: el mayor número de cohetes caseros a nivel mundial</h2>
+<figure>
+<img src="../img/2019/cohetes_caseros.jpg" alt="Cohetes caseros" class="wideImg" /><figcaption>Cohetes caseros</figcaption>
+</figure>
+<p>A las 8:32 am CDT, al mismo tiempo que la misión Apolo 11 despegó de Florida hace 50 años, el US Space &amp; Rocket Center, desea batir un nuevo récord consistente en el lanzamiento del máximo número de cohetes espaciales caseros.</p>
+<p>Como podéis ver en las fotografía, cualquier tipo de cohete está permitido, no es necesario que alcance la órbita de la luna. Este será sin duda un evento muy divertido que podrá ser seguido a nivel mundial</p>
+<p>Para participar podéis registraros en el <a href="https://rocketcenter.com/apollo50/GlobalLaunch">evento de lanzamiento mundial</a>.</p>
+<h2 id="de-julio-sello-dedicado-al-aterrizaje-lunar-1969-del-servicio-postal-de-ee.-uu.">19 de julio: Sello dedicado al Aterrizaje Lunar 1969 del Servicio Postal de EE. UU.</h2>
+<p>El servicio Postal de los EE. UU. Celebrará el 50 aniversario del Apolo 11 y los primeros pasos de la humanidad en la Luna con dos sellos dedicados.</p>
+<figure>
+<img src="https://www.nasa.gov/sites/default/files/thumbnails/image/usps19sta041a.jpg" alt="Sello 50 aniversario del hombre en la Luna" /><figcaption>Sello 50 aniversario del hombre en la Luna</figcaption>
+</figure>
+<p><a href="https://about.usps.com/newsroom/national-releases/2019/0610ma-first-moon-landing-stamps.htm">Información sobre los sellos dedicados al 50 aniversario de la llegada del hombre a la Luna</a></p>
+<p>Existen más eventos dedicados al aniversario, pero desde mi punto de vista son bastante más locales a nivel nacional para Estados Unidos. Podéis ver <a href="https://www.nasa.gov/press-release/nasa-celebrates-50th-anniversary-of-historic-moon-landing-with-live-tv-broadcast/">más información sobre la celebración del 50 aniversario</a></p>
+<p>#apolo #artemisa #50aniversarioApolo</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -62,7 +167,17 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/logo/LSST.png' alt='Logo of the LSST telescope'/>
-	<p>The huge Large Synoptic Survey Telescope (LSST) that is currently under construction.</p><p>The project has commited to making all data public 24 hours after they are taken.</p><p>I think this can be a powerfull war horse for the Citizen Science Community.</p><p>#LSST #citizenScienceCommunity</p>
+	
+<p><time datetime='2019-06-08' pubdate='2019-06-08'> 8 de junio de 2019</time></p>
+<figure>
+<img src="../img/logo/LSST.png" alt="Logo of the LSST telescope" /><figcaption>Logo of the LSST telescope</figcaption>
+</figure>
+<p>The huge Large Synoptic Survey Telescope (LSST) that is currently under construction.</p>
+<p>The project has commited to making all data public 24 hours after they are taken.</p>
+<p>I think this can be a powerfull war horse for the Citizen Science Community.</p>
+<p>#LSST #citizenScienceCommunity</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -74,7 +189,32 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png' alt='Stack Overflow'/>
-	<p>Anualmente, el popular sitio de internet <a href="https://stackoverflow.com/">Stack Overflow</a> realiza una <a href="https://insights.stackoverflow.com/survey/2019">encuesta mundial</a> a sus usuarios donde realiza preguntas tanto profesionales como de índole personal de manera anónima. Con dichos resultados se han confeccionado una serie de diagramas muy interesantes. Paso a comentar los que me han llamado la atención.</p><p>Aquí la experiencia me decía que la mayoría de los programadores se habrían formado por su cuenta y así resulta ser. <a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-other-types-of-education">Más de 85% se habían formado por su cuenta</a> para aprender algún nuevo lenguaje de programación u obtener alguna habilidad relacionada con su trabajo.</p><p>#progamación #StackOverflow #encuesta</p>
+	
+<figure>
+<img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" alt="Stack Overflow" /><figcaption>Stack Overflow</figcaption>
+</figure>
+<p>Anualmente, el popular sitio de internet <a href="https://stackoverflow.com/">Stack Overflow</a> realiza una <a href="https://insights.stackoverflow.com/survey/2019">encuesta mundial</a> a sus usuarios donde realiza preguntas tanto profesionales como de índole personal de manera anónima. Con dichos resultados se han confeccionado una serie de diagramas muy interesantes. Paso a comentar los que me han llamado la atención.</p>
+<h2 id="aficionados-a-programar">Aficionados a programar</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-years-since-learning-to-code">El 80% de los encuestados tenían como afición la programación</a> aunque aquellas personas que tenían hijos u otras responsabilidades declararon que habían tenido que reducir drásticamente o eliminar por completo el tiempo dedicado a la programación.</p>
+<h2 id="desarrolladores-experimentados">Desarrolladores experimentados</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-years-coding-professionally">Un 0,2% de los encuestados tenían a sus espaldas 50 años desarrollando código</a>. Cerca de un 10% tenían más de 25 años de experiencia programando. Aquí me incluiría yo como programador, tanto aficionado como profesional, si bien es cierto, que en la actualidad programo poco pero con ese toque que solo los años frente al teclado te proporcionan.</p>
+<h2 id="desarrolladores-jóvenes">Desarrolladores jóvenes</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-writing-that-first-line-of-code">Casi el 9% de los progamadores habían escrito su primera línea de código antes de los 10 años</a>. Aquí me incluiría yo. La mayoría parecía haber comenzado a programar en el rango de edades comprendidas entre los 12 a los 18 años</p>
+<h2 id="educación-formal">Educación formal</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-educational-attainment">En torno al 70% de los encuestados habían obtenido al menos un grado universitario</a>. Me llama la atención el dato de 0,6% que nunca habían obtenido ni tan siquiera el título de educación primaria. Un porcentaje cercano al 10% únicamente había estudiado educación secundaria.</p>
+<h2 id="formación-en-el-lenguaje-de-programación">Formación en el lenguaje de programación</h2>
+<p>Aquí la experiencia me decía que la mayoría de los programadores se habrían formado por su cuenta y así resulta ser. <a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-other-types-of-education">Más de 85% se habían formado por su cuenta</a> para aprender algún nuevo lenguaje de programación u obtener alguna habilidad relacionada con su trabajo.</p>
+<h2 id="raza-y-etnia">Raza y etnia</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-race-and-ethnicity">El 70% de los encuestados eran descendientes de europeos</a>, es decir, occidentales tal y como yo lo entiendo. Únicamente el 12% de los encuestados resultaron ser asiáticos y el 7% latinoaméricanos.</p>
+<h2 id="orientación-sexual">Orientación sexual</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-sexual-orientation">Esta pregunta</a>, así abiertamente, habría sido incnstitucional en España. Desconozco la situación legal en Estados Unidos al respecto, pero lo cierto es que era una de las preguntas del cuestionario y fue respondido por más de 76.000 personas. Me llama la atención que mientras que el 93% de los encuestados se declararon heterosexuales, le siguieron el grupo de bisexuales con un 5,5% y un 2,7% de homosexuales.</p>
+<h2 id="edad">Edad</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-age-and-experience-by-country">La mayoría de los encuestados</a> tenían entre 20 y 39 años, siendo el rango que recogió más personas el comprendido entre 25 y 29 personas. Esto deja un 75% de personas con edades inferiores a los 35 años. Me ha llamado la atención estas cifras porque parece que deja fuera un grupo amplio de programadores con edades superiores a los 40 años ¿dónde están esos programadores?¿han dejado de serlo para dedicarse a otra cosa?</p>
+<h2 id="tendrán-nuestros-hijos-una-mejor-vida-que-la-que-hemos-vivido-nosotros">Tendrán nuestros hijos una mejor vida que la que hemos vivido nosotros</h2>
+<p><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-will-people-born-today-have-a-better-life-than-their-parents">Esta parte de la encuesta se dividió por países</a>. En el caso de España, solo el 55% respondió que sí mientras que en China el porcentaje que respondió que sí estuvo en el 81%. En el otro extremo, tan solo el 40% de los franceses opinaban que sus hijos tendrían un mejor panorama para el futuro que la actual generación.</p>
+<p>#progamación #StackOverflow #encuesta</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -85,7 +225,35 @@
 	<id>http://samuelgomez.es/informatica/2019-04-09-math-on-the-web-seasoned-with-markdown.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>Yeahh, so you are looking for a solution to write math fastly. So here is your recipe:</p><p>So, you can write the previous text in virtually any kind of plain text code editor. I am using <a href="https://www.vim.org/">vim</a> write now, but you can use whatever you want.</p><p>Ok, let’s go again, but now with maths</p><p>As you can see the last line of our code is a math expression written in other language called LaTeX. This is a common way to write math using a computer. Ok, let’s go to the next step of the tutorial.</p><p>There are many cheat-sheet. I recommend you <a href="https://davidhamann.de/2017/06/12/latex-cheat-sheet/">the David Hamman’s cheat sheet</a> to begin.</p><p>Finally, you must transform your markdown file to other format. It is important to translate it to a universal format like pdf. In my experience <a href="https://pandoc.org/">Pandoc</a> is the best tool. It can transform your previous file with three lines to a pdf file with the header, the line of text and the math expression.</p><p>This is the command line I use to transform my code to <strong>pdf</strong></p><p>After this I get my PDF, but if I need an <strong>html</strong> file I write in the command line:</p><p>Pandoc is the perfect tool to transform my markdown file to other formats like pdf or html for the web.</p><p>You can see a real example of <a href="http://samuelgomez.es/EvAU/2017/2018-10-22-matematicas-madrid-evau-2017-modelo-opcion-a.html">math on the web</a>. Good luck and improved effort.</p><p>#markdown #html #math #lightweight #katex #latex #pandoc</p>
+	
+<p>Yeahh, so you are looking for a solution to write math fastly. So here is your recipe:</p>
+<h2 id="markdown">Markdown</h2>
+<p><a href="https://www.markdownguide.org/">Markdown</a> is your main ingredient. This is a lightweight and super easy markup language that you can use and learn in just five minutes. Don’t you believe me? Let’s see an example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu"># This is the title</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">This is a simple text just to show you how it works ... hello world!</a></code></pre></div>
+<p>So, you can write the previous text in virtually any kind of plain text code editor. I am using <a href="https://www.vim.org/">vim</a> write now, but you can use whatever you want.</p>
+<p>Ok, let’s go again, but now with maths</p>
+<h2 id="katex">KaTeX</h2>
+<p><a href="https://katex.org/">KaTeX</a> is the fastest library to write math on the web I have found. So let’s add some math to our markdown code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu"># This is the title</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">This is a simple text just to show you how it works ... hello world!</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">$$b=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</a></code></pre></div>
+<p>As you can see the last line of our code is a math expression written in other language called LaTeX. This is a common way to write math using a computer. Ok, let’s go to the next step of the tutorial.</p>
+<h2 id="latex">LaTeX</h2>
+<p><a href="https://www.latex-project.org/">LaTeX</a> is a high-quality typesetting setting to produce technical and scientific documents. It is also a common language among mathematicians and physicists who want to produce math with the computer. The old discussion <strong>Word vs LaTeX</strong> is an never ended issue, but I recommend you to learn LaTeX if you want really to write math using your computer.</p>
+<p>There are many cheat-sheet. I recommend you <a href="https://davidhamann.de/2017/06/12/latex-cheat-sheet/">the David Hamman’s cheat sheet</a> to begin.</p>
+<h2 id="pandoc">Pandoc</h2>
+<p>Finally, you must transform your markdown file to other format. It is important to translate it to a universal format like pdf. In my experience <a href="https://pandoc.org/">Pandoc</a> is the best tool. It can transform your previous file with three lines to a pdf file with the header, the line of text and the math expression.</p>
+<p>This is the command line I use to transform my code to <strong>pdf</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="ex">pandoc</span> my_file.md -f markdown+tex_math_dollars-fancy-list --katex -o my_file.pdf</a></code></pre></div>
+<p>After this I get my PDF, but if I need an <strong>html</strong> file I write in the command line:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="ex">pandoc</span> my_file.md -f markdown+tex_math_dollars-fancylist --katex -o my_file.html</a></code></pre></div>
+<p>Pandoc is the perfect tool to transform my markdown file to other formats like pdf or html for the web.</p>
+<h2 id="a-real-example">A real example</h2>
+<p>You can see a real example of <a href="http://samuelgomez.es/EvAU/2017/2018-10-22-matematicas-madrid-evau-2017-modelo-opcion-a.html">math on the web</a>. Good luck and improved effort.</p>
+<p>#markdown #html #math #lightweight #katex #latex #pandoc</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -97,7 +265,42 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://images-na.ssl-images-amazon.com/images/I/81yGSabsVjL._SY355_.jpg' alt='Portada del disco con la banda sonora Él último mohicano'/>
-	<p>Una de mis aficiones es escuchar música. Lo hago mientras leo, corrijo, conduzco o hago ciencia y tecnología.</p><p>Entre mi repertorio musical tengo bastantes <strong>bandas sonoras</strong> y una que siempre me ha gustado bastante es la banda sonora de la películo <em>El último mohicano</em>.</p><p>Debo reconocer que la música de fondo me inspira y me da fuerza. Se trata de esos momentos en los que uno necesita esa automotivación. Es la música la que conduce mi trabajo y me ayuda a sentirme lleno de vitalidad de nuevo.</p><p>Puedes adquirir la banda sonora en las siguientes tiendas. Si tienes algún lugar alternativo donde adquirir el álbum no dudes en escribirme para que lo pueda compartir en este blog.</p><p>Es posible que puedas obtener la banda sonora que te recomiendo por otros medios pero te recomiendo acudir a una fuente de audio de alta calidad para poder disfrutar el sonido.</p><p>#bandaSonora #elUltimoMohicano #épica #héroe</p>
+	
+<figure>
+<img src="https://images-na.ssl-images-amazon.com/images/I/81yGSabsVjL._SY355_.jpg" alt="Portada del disco con la banda sonora Él último mohicano" /><figcaption>Portada del disco con la banda sonora Él último mohicano</figcaption>
+</figure>
+<p>Una de mis aficiones es escuchar música. Lo hago mientras leo, corrijo, conduzco o hago ciencia y tecnología.</p>
+<p>Entre mi repertorio musical tengo bastantes <strong>bandas sonoras</strong> y una que siempre me ha gustado bastante es la banda sonora de la películo <em>El último mohicano</em>.</p>
+<p>Debo reconocer que la música de fondo me inspira y me da fuerza. Se trata de esos momentos en los que uno necesita esa automotivación. Es la música la que conduce mi trabajo y me ayuda a sentirme lleno de vitalidad de nuevo.</p>
+<h2 id="análisis-por-pistas">Análisis por pistas</h2>
+<ol>
+<li><em>Main title</em> Marca la pauta para todo el disco. La canción está diciendo <em>soy un espíritu libre</em></li>
+<li><em>Elk hunt</em> es la segunda pista y me sugiere <em>soy un superviviente</em></li>
+<li><em>The kiss</em> parece decir <em>tengo experiencia y aún así puedo crecer y ser mejor</em></li>
+<li><em>The glade</em> parece decir <em>soy real, soy delicado</em></li>
+<li><em>Fort battle</em> Dice <em>si quieres pelea la tendrás, soy decidido y no me rindo</em></li>
+<li><em>Promentory</em> Me sugiere la idea <em>He recorrido un largo camino para llegar hasta aquí</em></li>
+<li><em>Munro’s Office</em> Es <em>la calma tras la tormenta</em></li>
+<li><em>Massacre/Canoes</em> Parece querer decir <em>Drama</em></li>
+<li><em>Top of the world</em> Es algo así como <em>recobrarse y ponerse en pie tras la caída</em></li>
+<li><em>The courier</em> Dice <em>Voy a volver a desafiarte y esta vez triunfaré</em></li>
+<li><em>Cora</em> Parece explicar <em>Soy compasivo</em></li>
+<li><em>River walk and discovery</em> Detalla en su melodía <em>el río discurriendo</em></li>
+<li><em>Parlay</em> Muestra algo así como <em>Te estoy observando, estoy aquí, acechando, ten cuidado</em></li>
+<li><em>The british arrival</em> Explica <em>He regresado con éxito</em></li>
+<li><em>Pieces of a story</em> Dice <em>todo ha terminado</em></li>
+<li><em>I will find you</em> Es una pista que rompe la mayoría del esquema anterior y dice <em>se acabó la película</em></li>
+</ol>
+<h2 id="dónde-conseguir-la-banda-sonora">Dónde conseguir la banda sonora</h2>
+<p>Puedes adquirir la banda sonora en las siguientes tiendas. Si tienes algún lugar alternativo donde adquirir el álbum no dudes en escribirme para que lo pueda compartir en este blog.</p>
+<ul>
+<li><a href="https://itunes.apple.com/es/album/last-of-the-mohicans-original-motion-picture-soundtrack/307374929">Banda sonora en Apple iTunes</a></li>
+<li><a href="https://www.amazon.es/Mohicans-Original-Motion-Picture-Soundtrack/dp/B008WE3IDM/ref=sr_1_5?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=el+%C3%BAltimo+mohicano&amp;qid=1554461098&amp;s=gateway&amp;sr=8-5">Banda sonora en Amazon</a></li>
+</ul>
+<p>Es posible que puedas obtener la banda sonora que te recomiendo por otros medios pero te recomiendo acudir a una fuente de audio de alta calidad para poder disfrutar el sonido.</p>
+<p>#bandaSonora #elUltimoMohicano #épica #héroe</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -109,7 +312,18 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://katex.org/img/og_logo.png' alt='KaTeX logo'/>
-	<p>I have been using KaTeX for almos half a year and now I can share my ideas about this fast javascript library.</p><p>First of all <strong>time</strong>. This es the key as I have spent 0.3 seconds while my intel core i3 renders the <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">test page</a> with KaTeX but I spent 2.5 seconds rendering with MathJax.</p><p>So KaTeX is <span class="math inline">\(\text{ratio}=\frac{2.5}{0.3}=8.3\)</span> times faster than MathJax. I suppose this is not an inconvenient if you have just two or three formulae but in my personal website I need to share as much as I need to teach mathematics properly, so the decision was not hard to take.</p><p>Second, <strong>print quality</strong>. After all, we all want our web sites to be presented as beautiful as possible. As KaTeX uses the original layout of Donald Knuth, the creator of LaTeX, the results are awesome.</p><p>Finally, <strong>possibilities</strong>. Althought I do not use this feature, but KaTeX can be pre-rendered in the server so I can send the expressions as plain HTML.</p><p>#KaTeX #blog #speed #printQuality #possibilities</p>
+	
+<figure>
+<img src="https://katex.org/img/og_logo.png" alt="KaTeX logo" /><figcaption>KaTeX logo</figcaption>
+</figure>
+<p>I have been using KaTeX for almos half a year and now I can share my ideas about this fast javascript library.</p>
+<p>First of all <strong>time</strong>. This es the key as I have spent 0.3 seconds while my intel core i3 renders the <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">test page</a> with KaTeX but I spent 2.5 seconds rendering with MathJax.</p>
+<p>So KaTeX is <span class="math inline">\(\text{ratio}=\frac{2.5}{0.3}=8.3\)</span> times faster than MathJax. I suppose this is not an inconvenient if you have just two or three formulae but in my personal website I need to share as much as I need to teach mathematics properly, so the decision was not hard to take.</p>
+<p>Second, <strong>print quality</strong>. After all, we all want our web sites to be presented as beautiful as possible. As KaTeX uses the original layout of Donald Knuth, the creator of LaTeX, the results are awesome.</p>
+<p>Finally, <strong>possibilities</strong>. Althought I do not use this feature, but KaTeX can be pre-rendered in the server so I can send the expressions as plain HTML.</p>
+<p>#KaTeX #blog #speed #printQuality #possibilities</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -121,7 +335,32 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://lynx.browser.org/lynx.png' alt='Lynx browser: El navegador en modo texto'/>
-	<p>Empleo con frecuencia el navegador <a href="https://lynx.browser.org/">lynx</a> y lo hago porque creo que existen muchas capas en la web.</p><p>La mayoría de los usuarios solo ven la capa superficial. Aquella que muchos quieren que veas. Se trata de una capa llena de publicidad, cookies de rastreo, captación de clientes, etc…</p><p>Existe otra web, que funciona a otro ritmo y que se encuentra por debajo de la anterior.</p><p>Esta web puede ser visitada con la ayuda de un navegador que solo admita texto como el caso de lynx. Sé que existen otros muchos navegadores de modo texto, pero este es uno de los primeros que conocí, y con él me quedé.</p><p>Estoy satisfecho con la opción que he elegido y en caso de necesitar emerger a la superficie de la web siempre puedo emplear firefox o algún otro navegador gráfico.</p><p>#lynx #navegador #browser #texto</p>
+	
+<figure>
+<img src="https://lynx.browser.org/lynx.png" alt="Lynx browser: El navegador en modo texto" /><figcaption>Lynx browser: El navegador en modo texto</figcaption>
+</figure>
+<p>Empleo con frecuencia el navegador <a href="https://lynx.browser.org/">lynx</a> y lo hago porque creo que existen muchas capas en la web.</p>
+<p>La mayoría de los usuarios solo ven la capa superficial. Aquella que muchos quieren que veas. Se trata de una capa llena de publicidad, cookies de rastreo, captación de clientes, etc…</p>
+<p>Existe otra web, que funciona a otro ritmo y que se encuentra por debajo de la anterior.</p>
+<p>Esta web puede ser visitada con la ayuda de un navegador que solo admita texto como el caso de lynx. Sé que existen otros muchos navegadores de modo texto, pero este es uno de los primeros que conocí, y con él me quedé.</p>
+<h2 id="ventajas-de-usar-un-navegador-en-modo-texto">Ventajas de usar un navegador en modo texto</h2>
+<ol>
+<li>Voy directamente a la información que me interesa</li>
+<li>No soy rastreado con la misma facilidad que con un navegador en modo gráfico</li>
+<li>No tengo publicidad que me moleste</li>
+<li>Mi cabeza trabaja menos en tratar de descifrar donde está la información</li>
+</ol>
+<h2 id="desventajas-de-usar-un-navegador-en-modo-texto">Desventajas de usar un navegador en modo texto</h2>
+<ol>
+<li>No puedo ver imágenes</li>
+<li>No puedo ver vídeos</li>
+<li>No puedo acceder a algunas páginas que necesitan javascript</li>
+</ol>
+<h2 id="conclusión">Conclusión</h2>
+<p>Estoy satisfecho con la opción que he elegido y en caso de necesitar emerger a la superficie de la web siempre puedo emplear firefox o algún otro navegador gráfico.</p>
+<p>#lynx #navegador #browser #texto</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -132,7 +371,15 @@
 	<id>http://samuelgomez.es/opinion/estudio/2019-03-25-no-te-rindas-en-las-clases-de-ciencias.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>En mi día a día como profesor me encuentro que una de las dificultades a las que se enfrentan los alumnos de ciencias durante las clases es no entender el cien por cien de lo que se explica en clase. Si a eso añadimos el sentimiento de culpa o de inferioridad frente a la incertidumbre nos encontramos un panorama desalentador.</p><p>Es algo bastante común estar en un aula de ciencias y sentir como están explicando algo en la pizarra que resulta difícil de entender. Quizá no lo sigues a la primera, quizá ese día estás cansado, quizá ese día no has podido preparar la lección con anterioridad, … entonces miras a tu alrededor, <strong>ves que la mayoría de la gente sigue la clase y no pregunta</strong>.</p><p>No te agobies, la mayoría de los estudiantes han pasado algún momento como el que estás viviendo. En primer lugar no te agobies, ten paciencia. En clase quédate con todo lo que puedas. Toma todos los apuntes que puedas y después de las clases ponte al día.</p><p>Quizá no puedas ponerte al día en un día, quizá necesites más tiempo, pero no te agobies, la clave está en no tirar la toalla. Eso sí, aprovecha tu tiempo, estudia por las tardes, estudia los fines de semana, estudia los días festivos y si no te rindes y trabajas duro lo puedes sacar. Quizá tardes más tiempo, pero <strong>no te rindas</strong>.</p><p>#noTeRindas #estudia #ciencias</p>
+	
+<p>En mi día a día como profesor me encuentro que una de las dificultades a las que se enfrentan los alumnos de ciencias durante las clases es no entender el cien por cien de lo que se explica en clase. Si a eso añadimos el sentimiento de culpa o de inferioridad frente a la incertidumbre nos encontramos un panorama desalentador.</p>
+<p>Es algo bastante común estar en un aula de ciencias y sentir como están explicando algo en la pizarra que resulta difícil de entender. Quizá no lo sigues a la primera, quizá ese día estás cansado, quizá ese día no has podido preparar la lección con anterioridad, … entonces miras a tu alrededor, <strong>ves que la mayoría de la gente sigue la clase y no pregunta</strong>.</p>
+<h2 id="un-consejo">Un consejo</h2>
+<p>No te agobies, la mayoría de los estudiantes han pasado algún momento como el que estás viviendo. En primer lugar no te agobies, ten paciencia. En clase quédate con todo lo que puedas. Toma todos los apuntes que puedas y después de las clases ponte al día.</p>
+<p>Quizá no puedas ponerte al día en un día, quizá necesites más tiempo, pero no te agobies, la clave está en no tirar la toalla. Eso sí, aprovecha tu tiempo, estudia por las tardes, estudia los fines de semana, estudia los días festivos y si no te rindes y trabajas duro lo puedes sacar. Quizá tardes más tiempo, pero <strong>no te rindas</strong>.</p>
+<p>#noTeRindas #estudia #ciencias</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -144,7 +391,24 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://cdn.eso.org/images/screen/eso1737a.jpg' alt='Recreación artística del objeto Oumuamua'/>
-	<p>El siempre interesante objeto extrasolar <a href="https://es.wikipedia.org/wiki/1I/ʻOumuamua">Oumuamua</a> tiene una serie de características que lo hacen especialmente singular, o al menos, aún no hemos encontrado otros objetos con características parecidas. Dicho objeto es el primero de su clase, ya que es la primera vez que encontramos algo de origen interestelar en el Sistema Solar.</p><p>Lo cierto es que un reciente <a href="https://arxiv.org/abs/1810.11490">paper</a> publicado por científicos del <a href="https://www.cfa.harvard.edu">Centro de Astrofísica Smithsonian de Hardvard</a> trata de descubrir las razones por las cuales este objeto viajero tiene una aceleración tan peculiar. Su relación de masa y área sería aproximadamente de <span class="math inline">\(0,1 g \cdot cm^{-2}\)</span> y sería de una superficie delgada de entre 0,3 y 0,9 mm.</p><p>Los autores tratan de explicar su aceleración por un exceso de aceleración radial. Dicha aceleración es propia de cometas que, no nos olvidemos, desprenden material que se evapora. Pero estudios recientes apuntan a que el objeto interestelar no es un cometa activo.</p><p>Así pues, el paper estudia la posibilidad de que el exceso de aceleración provenga de la presión de la radiación solar. Para formalizar cálculos realiza una estimación del área y grosor del viajero.</p><p>Tras un interesante desarrollo matemático el documento científico se pregunta que clase de objeto podría tener tal relación de masa y área y menciona que el objeto no ha podido ser visualizado de manera que se desconoce su geometría exacta. Especula entonces con otras geometrías posibles tales como un cono o un elipsoide hueco.</p><p>Finalmente compara la supuesta relación de masa y área de Oumuamua con los asteroides y cometas del Sistema Solar conocidos y es entonces cuando el papel especula con que el objeto podría ser <em>artíficial</em> aunque siempre como un hipótesis.</p><p>Habla de que podría ser un resto de una vela solar flotando en el espacio interestelar. Se atreven incluso los autores a compararlo con las velas solares diseñadas en la Tierra en el proyecto <a href="https://es.wikipedia.org/wiki/IKAROS">IKAROS</a></p><p>#Oumuamua #Hardvard #origenDesconocido</p>
+	
+<p><time datetime='2018-11-03' pubdate='2018-11-03'> 3 de noviembre de 2018</time></p>
+<figure>
+<img src="https://cdn.eso.org/images/screen/eso1737a.jpg" alt="Recreación artística del objeto Oumuamua" /><figcaption>Recreación artística del objeto Oumuamua</figcaption>
+</figure>
+<p>El siempre interesante objeto extrasolar <a href="https://es.wikipedia.org/wiki/1I/ʻOumuamua">Oumuamua</a> tiene una serie de características que lo hacen especialmente singular, o al menos, aún no hemos encontrado otros objetos con características parecidas. Dicho objeto es el primero de su clase, ya que es la primera vez que encontramos algo de origen interestelar en el Sistema Solar.</p>
+<p>Lo cierto es que un reciente <a href="https://arxiv.org/abs/1810.11490">paper</a> publicado por científicos del <a href="https://www.cfa.harvard.edu">Centro de Astrofísica Smithsonian de Hardvard</a> trata de descubrir las razones por las cuales este objeto viajero tiene una aceleración tan peculiar. Su relación de masa y área sería aproximadamente de <span class="math inline">\(0,1 g \cdot cm^{-2}\)</span> y sería de una superficie delgada de entre 0,3 y 0,9 mm.</p>
+<p>Los autores tratan de explicar su aceleración por un exceso de aceleración radial. Dicha aceleración es propia de cometas que, no nos olvidemos, desprenden material que se evapora. Pero estudios recientes apuntan a que el objeto interestelar no es un cometa activo.</p>
+<p>Así pues, el paper estudia la posibilidad de que el exceso de aceleración provenga de la presión de la radiación solar. Para formalizar cálculos realiza una estimación del área y grosor del viajero.</p>
+<figure>
+<img src="https://cdn.eso.org/images/screen/eso1737c.jpg" alt="Órbita de Oumuamua" /><figcaption>Órbita de Oumuamua</figcaption>
+</figure>
+<p>Tras un interesante desarrollo matemático el documento científico se pregunta que clase de objeto podría tener tal relación de masa y área y menciona que el objeto no ha podido ser visualizado de manera que se desconoce su geometría exacta. Especula entonces con otras geometrías posibles tales como un cono o un elipsoide hueco.</p>
+<p>Finalmente compara la supuesta relación de masa y área de Oumuamua con los asteroides y cometas del Sistema Solar conocidos y es entonces cuando el papel especula con que el objeto podría ser <em>artíficial</em> aunque siempre como un hipótesis.</p>
+<p>Habla de que podría ser un resto de una vela solar flotando en el espacio interestelar. Se atreven incluso los autores a compararlo con las velas solares diseñadas en la Tierra en el proyecto <a href="https://es.wikipedia.org/wiki/IKAROS">IKAROS</a></p>
+<p>#Oumuamua #Hardvard #origenDesconocido</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -155,7 +419,145 @@
 	<id>http://samuelgomez.es/matematicas/sistemas-de-ecuaciones/2018-10-28-sistemas-de-ecuaciones-con-parametro.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>Calculamos el rango de <span class="math inline">\(A\)</span> a partir de sus determinantes. Sabemos que el rango de <span class="math inline">\(A\)</span> es 3 porque es de 3x3, excepto cuando su determinante sea 0, buscamos este caso</p><p>Obtenemos que si <span class="math inline">\(\lambda\)</span> es 0 o 2 el deteminante vale 0 <span class="math display">\[\lambda \in \{0, 2\} \rightarrow |A| = 0 \]</span></p><p>Ahora sabemos que en estos dos casos el rango de <span class="math inline">\(\lambda\)</span> no es 3 pero ¿cuál es entonces su rango?</p><p>Buscamos el siguiente número menor, probamos con rango 2 para ello busco una matriz de 2x2 que obtengo de la matriz <span class="math inline">\(A\)</span></p><p>Luego he descubierto que la matriz <span class="math inline">\(A\)</span> sí es rango 2 independientemente del valor de <span class="math inline">\(\lambda\)</span></p><p>Ahora estudiaré el rango de la matriz ampliada <span class="math inline">\(A^*\)</span> para los casos λ=0 y λ=2</p><p>Hago el determinante pero sustituyo el valor de λ por el valor 0. Como es la matriz ampliada elijo tres columnas de las cuatro posibles. En este caso elijo las columnas 1, 2 y 4</p><p>Luego para λ=0 el Rango de <span class="math inline">\(A^*\)</span> es 3</p><p>He buscado todos los determinantes posibles a partir de elegir tres columnas de las cuatro posibles. No he encontrado ninguna que dé un valor diferente de cero, luego no puede ser de rango 3. Probaré a ver si es de rango 2, para ello selecciono un determinante de 2x2. En principio sería rango 2 salvo que el determinante valga 0</p><p>Como el resultado no es nulo el rango es 2</p><p>Construyo una tabla con los datos obtenidos hasta ahora</p><p>Donde S.I. significa sistema incompatible; S.C.D. sistema compatible determinado y S.C.I. es sistema compatible indeterminado</p><p>Esta última columna la obtenemos aplicando el teorema de Rouche-Fröbenius</p><p>#SistemaDeEcuaciones #2ºbachillerato #determinante #Rouche-Fröbenius</p>
+	
+<h2 id="discutir-el-sistema-de-ecuaciones-en-función-del-parámetro">1. Discutir el sistema de ecuaciones en función del parámetro</h2>
+<p><span class="math display">\[
+\left.
+\begin{array}{cccccc}
+    x&amp;+y&amp;-z&amp;=&amp;\lambda \\
+    \lambda x&amp;+2y&amp;-z&amp;=&amp;3\lambda \\
+    2x&amp;+\lambda y &amp;-z&amp;=&amp;6
+\end{array}
+\right\}
+\]</span></p>
+<p><strong>Solución</strong> Escribimos el sistema de ecuaciones como matriz <span class="math inline">\(A\)</span></p>
+<p><span class="math display">\[
+A= \left(
+\begin{array}{cccc}
+    1       &amp; 1 &amp; -1 \\
+    \lambda &amp; 2 &amp;-1  \\
+    2       &amp;   \lambda &amp; -1
+\end{array}
+\right)
+\]</span></p>
+<p>Calculamos el rango de <span class="math inline">\(A\)</span> a partir de sus determinantes. Sabemos que el rango de <span class="math inline">\(A\)</span> es 3 porque es de 3x3, excepto cuando su determinante sea 0, buscamos este caso</p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{ccc}
+    1       &amp; 1 &amp; -1 \\
+    \lambda &amp; 2 &amp;-1  \\
+    2       &amp;   \lambda &amp; -1
+\end{array}
+\right| = -\lambda^2+2\lambda=0
+\]</span></p>
+<p>Obtenemos que si <span class="math inline">\(\lambda\)</span> es 0 o 2 el deteminante vale 0 <span class="math display">\[\lambda \in \{0, 2\} \rightarrow |A| = 0 \]</span></p>
+<p>Ahora sabemos que en estos dos casos el rango de <span class="math inline">\(\lambda\)</span> no es 3 pero ¿cuál es entonces su rango?</p>
+<p>Buscamos el siguiente número menor, probamos con rango 2 para ello busco una matriz de 2x2 que obtengo de la matriz <span class="math inline">\(A\)</span></p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{cc}
+    1 &amp; -1 \\
+    2 &amp; -1
+\end{array}
+\right| = 1 \not= 0
+\]</span></p>
+<p>Luego he descubierto que la matriz <span class="math inline">\(A\)</span> sí es rango 2 independientemente del valor de <span class="math inline">\(\lambda\)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(\lambda\)</span></th>
+<th style="text-align: center;">Rango(A)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">otro</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Ahora estudiaré el rango de la matriz ampliada <span class="math inline">\(A^*\)</span> para los casos λ=0 y λ=2</p>
+<p><span class="math display">\[
+A= \left(
+\begin{array}{ccc|c}
+    1       &amp; 1 &amp; -1 &amp; \lambda \\
+    \lambda &amp; 2 &amp;-1 &amp; 3\lambda \\
+    2       &amp;   \lambda &amp; -1 &amp; 6
+\end{array}
+\right)
+\]</span></p>
+<h3 id="si-lambda-0">Si <span class="math inline">\(\lambda = 0\)</span></h3>
+<p>Hago el determinante pero sustituyo el valor de λ por el valor 0. Como es la matriz ampliada elijo tres columnas de las cuatro posibles. En este caso elijo las columnas 1, 2 y 4</p>
+<p><span class="math display">\[
+|A^*|= \left|
+\begin{array}{ccc}
+    1 &amp; 1 &amp; 0 \\
+    0 &amp; 2   &amp; 0  \\
+    2 &amp; 0 &amp; 6
+\end{array}
+\right| = 12 \not= 0
+\]</span></p>
+<p>Luego para λ=0 el Rango de <span class="math inline">\(A^*\)</span> es 3</p>
+<p><span class="math display">\[\lambda=0 \rightarrow \text{Rango}(A^*)=3\]</span></p>
+<h3 id="si-lambda2">Si <span class="math inline">\(\lambda=2\)</span></h3>
+<p>He buscado todos los determinantes posibles a partir de elegir tres columnas de las cuatro posibles. No he encontrado ninguna que dé un valor diferente de cero, luego no puede ser de rango 3. Probaré a ver si es de rango 2, para ello selecciono un determinante de 2x2. En principio sería rango 2 salvo que el determinante valga 0</p>
+<p><span class="math display">\[
+|A|= \left|
+\begin{array}{cc}
+    1 &amp; -2 \\
+    2 &amp; \phantom{-}6
+\end{array}
+\right| = 10 \not= 0
+\]</span></p>
+<p>Como el resultado no es nulo el rango es 2</p>
+<p>Construyo una tabla con los datos obtenidos hasta ahora</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(\lambda\)</span></th>
+<th style="text-align: center;">Rango(A)</th>
+<th style="text-align: center;">Rango(<span class="math inline">\(A^*\)</span>)</th>
+<th style="text-align: center;">Nº incógnitas</th>
+<th style="text-align: center;">Sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.I.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.C.I.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">otro</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S.C.D.</td>
+</tr>
+</tbody>
+</table>
+<p>Donde S.I. significa sistema incompatible; S.C.D. sistema compatible determinado y S.C.I. es sistema compatible indeterminado</p>
+<p>Esta última columna la obtenemos aplicando el teorema de Rouche-Fröbenius</p>
+<p>#SistemaDeEcuaciones #2ºbachillerato #determinante #Rouche-Fröbenius</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -166,7 +568,183 @@
 	<id>http://samuelgomez.es/EvAU/2017/2018-10-22-matematicas-madrid-evau-2017-modelo-opcion-a.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>Dadas las matrices:</p><p>Calcular el valor de B en función de los valores de m</p><p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p><p>Acabamos de comprobar que el rango de <span class="math inline">\(B\)</span> es al menos dos independientemente del valor de <span class="math inline">\(m\)</span>. Veamos ahora si podría ser de rango 3 mediante su determinante</p><p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">\(m\)</span> el determinante se anula</p><p>Obtenemos los resultados 1 y <span class="math inline">\(\frac{1}{2}\)</span>. Llegamos a la conclusión de que si <span class="math inline">\(m\)</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p><p>Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></p><p>Buscamos la inversa de <span class="math inline">\(A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)\)</span></p><p>Tenemos varias formas de encontrar la inversa <span class="math inline">\(A^{-1}\)</span>. En este caso vamos a emplear la fórmula</p><p>Para poder usarla debemos obtener el determinante <span class="math inline">\(|A|\)</span></p><p>Así pues, obtenemos la matriz de adjuntos</p><p>Ahora vamos a calcular la traspuesta de esta misma</p><p>Y finalmente la inversa a partir de la fórmula que llamaremos <strong>(1)</strong><a name="ec1"></a></p><p>También debemos obtener <span class="math inline">\(A^2\)</span></p><p>Finalmente sustituimos en la fórmula del enunciado</p><p>Y el resultado final es</p><p>Como vemos, esta expresión es la misma que la <a href="#ec1">ecuación 1</a> por lo tanto, comprobamos que sí que se cumple la igualdad</p><p>#EvAU #2ºBachillerato #determinante #matriz</p>
+	
+<p>Dadas las matrices:</p>
+<p><span class="math display">\[
+A=
+\left(
+\begin{array}{ccc}
+    1 &amp; -1 &amp; 1 \\
+    1 &amp; 0 &amp; -1 \\
+    -1 &amp; 2 &amp; 2 \\
+\end{array}
+\right)
+\;\;\;\;
+B=
+\left(
+\begin{array}{ccc}
+    1 &amp; 2 &amp; m \\
+    2 &amp; 4 &amp; 1 \\
+    m &amp; 2 &amp; -1 \\
+\end{array}
+\right)
+\;\;\;\;
+C=
+\left(
+\begin{array}{ccc}
+    1 &amp; 1 &amp; -1 \\
+    -1 &amp; 2 &amp; 1 \\
+    1 &amp; -2 &amp; 0 \\
+\end{array}
+\right)
+\]</span></p>
+<h2 id="primer-ejercicio">Primer ejercicio</h2>
+<p>Calcular el valor de B en función de los valores de m</p>
+<p><strong>Solución</strong> Vamos a emplear el método de los determinantes, para ello, primero probamos con un determinante pequeño, por ejemplo, de 2x2, y para ellos elegimos los términos que elementos de la matriz que más nos convenga. Por ejemplo, elegimos los cuatro de abajo a la derecha porque no tienen la incógnita <span class="math inline">\(m\)</span></p>
+<p>Comprobamos cuanto vale su determinante. Si su determinante es distinto de cero entonces la matriz es al menos de rango 2, <span class="math inline">\(\text{Rango}(B)&gt;=2\)</span></p>
+<p><span class="math display">\[
+|B|=
+\left|
+\begin{array}{cc}
+    4 &amp; 1 \\
+    2 &amp; -1 \\
+\end{array}
+\right|
+=-4-4=-8
+\]</span></p>
+<p>Acabamos de comprobar que el rango de <span class="math inline">\(B\)</span> es al menos dos independientemente del valor de <span class="math inline">\(m\)</span>. Veamos ahora si podría ser de rango 3 mediante su determinante</p>
+<p><span class="math display">\[
+|B|=
+\left|
+\begin{array}{ccc}
+    1 &amp; 2 &amp; m \\
+    2 &amp; 4 &amp; 1 \\
+    m &amp; 2 &amp; -1 \\
+\end{array}
+\right|
+=-4m^2+6m-2
+\]</span></p>
+<p>Lo igualamos a cero porque nuestro objetivo es averiguar para que valor de <span class="math inline">\(m\)</span> el determinante se anula</p>
+<p><span class="math display">\[-4m^2+6m-2=0\]</span></p>
+<p>Obtenemos los resultados 1 y <span class="math inline">\(\frac{1}{2}\)</span>. Llegamos a la conclusión de que si <span class="math inline">\(m\)</span> toma alguno de esos valores el determinante se anula (vale 0) y por lo tanto la matriz no puede ser de rango 3.</p>
+<p><strong>Conclusión</strong> Si <span class="math inline">\(m\)</span> toma el valor 1 o <span class="math inline">\(\frac{1}{2}\)</span> el rango de la matriz será 2, en caso contrario será de rango 3. En lenguaje matemático se dice:</p>
+<p><span class="math display">\[\text{Rango}(B)=\begin{cases}
+      2 &amp; \text{si m} \in \{1, \frac{1}{2}\} \\
+      3 &amp; \text{para otros valores de m}
+   \end{cases}\]</span></p>
+<h2 id="segundo-ejercicio">Segundo ejercicio</h2>
+<p>Calcular la matriz inversa de <span class="math inline">\(A\)</span> y comprobar que verifica <span class="math inline">\(A^{-1}=\frac{1}{5}(A^2+3c)\)</span></p>
+<p><strong>Solución</strong></p>
+<p>Buscamos la inversa de <span class="math inline">\(A=\left(  \begin{array}{ccc}  1 &amp; -1 &amp; 1 \\  1 &amp; 0 &amp; -1 \\  -1 &amp; 2 &amp; 2 \\  \end{array}  \right)\)</span></p>
+<p>Tenemos varias formas de encontrar la inversa <span class="math inline">\(A^{-1}\)</span>. En este caso vamos a emplear la fórmula</p>
+<p><span class="math display">\[A^{-1}=\frac{1}{|A|}\cdot adj(A)^T\]</span></p>
+<p>Para poder usarla debemos obtener el determinante <span class="math inline">\(|A|\)</span></p>
+<p><span class="math display">\[|A|=\left|
+\begin{array}{ccc}
+    1 &amp; -1 &amp; 1 \\
+    1 &amp; 0 &amp; -1 \\
+    -1 &amp; 2 &amp; 2 \\
+\end{array}
+\right|
+=5\]</span></p>
+<p>Ahora vamos a calcular la adjunta <span class="math inline">\(adj(A)\)</span> <span class="math display">\[
+\begin{array}{lll}
+        \phantom{-}\left|\begin{array}{cc} 0 &amp; -1 \\ 2 &amp; 2 \end{array}\right|=2\hspace{1cm} &amp;
+        -\left|\begin{array}{cc} 1 &amp; -1 \\ -1 &amp; 2 \end{array}\right|=-1\hspace{1cm}&amp;
+        \phantom{-}\left|\begin{array}{cc} 1 &amp; 0 \\ -1 &amp; 2 \end{array}\right| = 2
+         \\      \\
+        -\left|\begin{array}{cc} -1 &amp; 1 \\ 2 &amp; 2 \end{array}\right|=4\hspace{1cm} &amp;
+        \phantom{-}\left|\begin{array}{cc} 1 &amp; 1 \\ -1 &amp; 2 \end{array}\right|=3\hspace{1cm} &amp;
+        -\left|\begin{array}{cc} 1 &amp; -1 \\ -1 &amp; 2 \end{array}\right|=-1
+         \\      \\
+        \phantom{-}\left|\begin{array}{cc} -1 &amp; 1 \\ 0 &amp; -1 \end{array}\right|=1\hspace{1cm} &amp;
+        -\left|\begin{array}{cc} 1 &amp; 1 \\ 1 &amp; -1 \end{array}\right|=2\hspace{1cm} &amp;
+        \phantom{-}\left|\begin{array}{cc} 1 &amp; -1 \\ 1 &amp; 0 \end{array}\right|=1
+         \\      \\
+\end{array}\]</span></p>
+<p>Así pues, obtenemos la matriz de adjuntos</p>
+<p><span class="math display">\[adj(A)=\left(
+\begin{array}{rrr}
+    2 &amp; -1 &amp; 2 \\
+    4 &amp; 3 &amp; -1 \\
+    \phantom{-}1 &amp; 2 &amp; 1
+\end{array}
+\right)\]</span></p>
+<p>Ahora vamos a calcular la traspuesta de esta misma</p>
+<p><span class="math display">\[adj(A)^T=\left(
+\begin{array}{rrr}
+    2 &amp; 4 &amp; 1 \\
+    -1 &amp; 3 &amp; 2 \\
+    2 &amp; -1 &amp; \phantom{-}1
+\end{array}
+\right)\]</span></p>
+<p>Y finalmente la inversa a partir de la fórmula que llamaremos <strong>(1)</strong><a name="ec1"></a></p>
+<p><span class="math display">\[A^{-1}=\frac{1}{|A|}adj(A)^T=\frac{1}{5}
+\left(\begin{array}{rrr}
+    2 &amp; 4 &amp; 1 \\
+    -1 &amp; 3 &amp; 2 \\
+    2 &amp; -1 &amp; \phantom{-}1
+\end{array}
+\right)\]</span></p>
+<p>También debemos obtener <span class="math inline">\(A^2\)</span></p>
+<p><span class="math display">\[A^2=
+\left(
+\begin{array}{rrr}
+    1 &amp; -1 &amp; 1 \\
+    1 &amp; 0 &amp; -1 \\
+    -1 &amp; 2 &amp; 2 \\
+\end{array}
+\right)
+\cdot
+\left(
+\begin{array}{rrr}
+    1 &amp; -1 &amp; 1 \\
+    1 &amp; 0 &amp; -1 \\
+    -1 &amp; 2 &amp; 2 \\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{rrr}
+    -1 &amp; 1 &amp; 4 \\
+    2 &amp; -3 &amp; -1 \\
+    -1 &amp; 5 &amp; 1 \\
+\end{array}
+\right)
+\]</span></p>
+<p>Finalmente sustituimos en la fórmula del enunciado</p>
+<p><span class="math display">\[\frac{1}{5}(A^2+3C)=\frac{1}{5}
+\left[
+    \left(
+    \begin{array}{rrr}
+        -1 &amp; 1 &amp; 4 \\
+        2 &amp; -3 &amp; -1 \\
+        -1 &amp; 5 &amp; 1 \\
+    \end{array}
+    \right)
+    +
+    \left(
+    \begin{array}{rrr}
+        3 &amp; 3 &amp; -3 \\
+        -3 &amp; 6 &amp; 3 \\
+        3 &amp; -6 &amp; 0 \\
+    \end{array}
+    \right)
+\right]\]</span></p>
+<p>Y el resultado final es</p>
+<p><span class="math display">\[\frac{1}{5}(A^2+3C)=\frac{1}{5}
+\left(
+    \begin{array}{rrr}
+        2  &amp; 4 &amp; 1\\
+        -1 &amp; 3 &amp; 2\\
+        2  &amp;-1 &amp; 1
+    \end{array}
+\right)
+\]</span></p>
+<p>Como vemos, esta expresión es la misma que la <a href="#ec1">ecuación 1</a> por lo tanto, comprobamos que sí que se cumple la igualdad</p>
+<p>#EvAU #2ºBachillerato #determinante #matriz</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -177,7 +755,21 @@
 	<id>http://samuelgomez.es/informatica/2018-10-21-katex-vs-mathjax.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas muy útiles para representar matemáticas en la web.</p><p>Debo aclarar que antes de usar estas dos me decanté por <a href="https://es.wikipedia.org/wiki/MathML">MathML</a> pero desgraciadamente <a href="https://www.quora.com/Why-did-Chrome-drop-MathML-support">Google Chrome no tiene soporte para MathML</a> con lo cual no me quedó más remedio que estudiar las opciones que os voy a presentar.</p><p>Ambas librerías permiten escribir código <a href="https://www.latex-project.org">LaTeX</a> y transformarlo en tiempo real a un formato matemático mediante JavaScript.</p><p>Tras experimentar con ambos, he decidido quedarme con KaTeX para este sitio web ya que no emplea cookies y deseo crear un sitio web totalmente limpio. Además KaTeX me ofrece mayor velocidad y eso es importante porque deseo emplear muchas expresiones matemáticas.</p><p>Uno de los puntos fuertes de este sitio web es que es en su mayoría estático, esto implica que es ligero y rápido de cargar y visualizar, incluso en un equipo antiguo.</p><p>#KaTeX #MathJaX #librería #web</p>
+	
+<p><time datetime='2018-10-21' pubdate='2018-10-21'>21 de octubre de 2018</time></p>
+<p><span class="math display">\[e^{i\pi}+1=0\]</span></p>
+<p>Para el desarrollo de mi sitio personal he probado ambas librerías javascript y debo decir que he notado alguna que otra diferencia en su uso. Ambas son herramientas muy útiles para representar matemáticas en la web.</p>
+<p>Debo aclarar que antes de usar estas dos me decanté por <a href="https://es.wikipedia.org/wiki/MathML">MathML</a> pero desgraciadamente <a href="https://www.quora.com/Why-did-Chrome-drop-MathML-support">Google Chrome no tiene soporte para MathML</a> con lo cual no me quedó más remedio que estudiar las opciones que os voy a presentar.</p>
+<p>Ambas librerías permiten escribir código <a href="https://www.latex-project.org">LaTeX</a> y transformarlo en tiempo real a un formato matemático mediante JavaScript.</p>
+<ul>
+<li><p><a href="https://katex.org">KaTeX</a> ofrece la posibilidad de transformar fórmulas con gran rápidez. En realidad parece ser que <a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">es más rápido que su rival MathJax</a> pero <a href="https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support">no soporta todas las funciones</a></p></li>
+<li><p><a href="https://www.mathjax.org">MathJax</a> parece ser un proyecto que tiene un mayor soporte por parte de la comunidad de desarrolladores y esto significa que puede representar más y mejores expresiones matemática que su rival KaTeX</p></li>
+</ul>
+<p>Tras experimentar con ambos, he decidido quedarme con KaTeX para este sitio web ya que no emplea cookies y deseo crear un sitio web totalmente limpio. Además KaTeX me ofrece mayor velocidad y eso es importante porque deseo emplear muchas expresiones matemáticas.</p>
+<p>Uno de los puntos fuertes de este sitio web es que es en su mayoría estático, esto implica que es ligero y rápido de cargar y visualizar, incluso en un equipo antiguo.</p>
+<p>#KaTeX #MathJaX #librería #web</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -188,7 +780,133 @@
 	<id>http://samuelgomez.es/EvAU/2015/2018-10-20-matematicas-madrid-evau-2015-septiembre-opcion-b.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>Hallar el valor del determinante sabiendo que:</p><p>Calcular el valor de estos dos determinantes:</p><p>Saco factor común 5 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p><p>Aplico la combinación lineal a la 1ª columna <span class="math inline">\(C_1 = C_1+2 \cdot C_3\)</span></p><p>Saco factor común 2 a la primera columna <span class="math inline">\(C_1\)</span></p><p>Intercambio la segunda columna <span class="math inline">\(C_2\)</span> por la tercera columna <span class="math inline">\(C_3\)</span> y obtenemos el mismo determinante que me daba el enunciado</p><p>Sustituyo el determinante que conozco y obtengo la solución</p><p>Ahora saco el factor 2 de la segunda file <span class="math inline">\(F_2\)</span></p><p>Cambio la segunda fila <span class="math inline">\(F_2\)</span> por la tercera <span class="math inline">\(F_3\)</span></p><p>Sustituyo el valor del determinante que conozco por el enunciado para obtener el enunciado</p><p>#EvAU #2ºBachillerato #determinante #matriz</p>
+	
+<p>Hallar el valor del determinante sabiendo que:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    a &amp; b &amp; c \\
+    d &amp; e &amp; f \\
+    1 &amp; 2 &amp; 3 \\
+\end{array}
+\right| = 3
+\]</span></p>
+<p>Calcular el valor de estos dos determinantes:</p>
+<h2 id="primer-determinante">Primer determinante</h2>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    2a-2b       &amp; c     &amp; 5b    \\
+    2d-2e       &amp; f     &amp; 5e    \\
+    -2          &amp; 3     &amp; 10    \\
+\end{array}
+\right|
+\]</span></p>
+<p><strong>Solución</strong> Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos.</p>
+<p>Saco factor común 5 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
+<p><span class="math display">\[
+5 \cdot
+\left|
+\begin{array}{ccc}
+    2a-2b       &amp; c     &amp; b     \\
+    2d-2e       &amp; f     &amp; e     \\
+    -2          &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplico la combinación lineal a la 1ª columna <span class="math inline">\(C_1 = C_1+2 \cdot C_3\)</span></p>
+<p><span class="math display">\[
+5 \cdot
+\left|
+\begin{array}{ccc}
+    2a      &amp; c     &amp; b     \\
+    2d      &amp; f     &amp; e     \\
+    2       &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Saco factor común 2 a la primera columna <span class="math inline">\(C_1\)</span></p>
+<p><span class="math display">\[
+10 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; c     &amp; b     \\
+    d       &amp; f     &amp; e     \\
+    1       &amp; 3     &amp; 2     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Intercambio la segunda columna <span class="math inline">\(C_2\)</span> por la tercera columna <span class="math inline">\(C_3\)</span> y obtenemos el mismo determinante que me daba el enunciado</p>
+<p><span class="math display">\[
+-10 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    d       &amp; e     &amp; f     \\
+    1       &amp; 2     &amp; 3     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Sustituyo el determinante que conozco y obtengo la solución</p>
+<p><span class="math display">\[-10 \cdot 3 = \boxed{-30}\]</span></p>
+<h2 id="segundo-determinante">Segundo determinante</h2>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; 2c-6  \\
+    2           &amp; 4     &amp; 12    \\
+    d           &amp; e     &amp; 2f    \\
+\end{array}
+\right|
+\]</span></p>
+<p><strong>Solución</strong> Saco el factor 2 de la tercera columna <span class="math inline">\(C_3\)</span> fuera del determinante</p>
+<p><span class="math display">\[
+2 \cdot
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; c-3   \\
+    2           &amp; 4     &amp; 6     \\
+    d           &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Ahora saco el factor 2 de la segunda file <span class="math inline">\(F_2\)</span></p>
+<p><span class="math display">\[
+4 \cdot
+\left|
+\begin{array}{ccc}
+    a-1         &amp; b-2   &amp; c-3   \\
+    1           &amp; 2     &amp; 3     \\
+    d           &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplico la siguiente combinación lineal <span class="math inline">\(F_1=F_1+F_2\)</span> <span class="math display">\[
+4 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    1       &amp; 2     &amp; 3     \\
+    d       &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Cambio la segunda fila <span class="math inline">\(F_2\)</span> por la tercera <span class="math inline">\(F_3\)</span></p>
+<p><span class="math display">\[
+-4 \cdot
+\left|
+\begin{array}{ccc}
+    a       &amp; b     &amp; c     \\
+    d       &amp; e     &amp; f     \\
+    1       &amp; 2     &amp; 3     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Sustituyo el valor del determinante que conozco por el enunciado para obtener el enunciado</p>
+<p><span class="math display">\[-4 \cdot 3 = \boxed{-12}\]</span></p>
+<p>#EvAU #2ºBachillerato #determinante #matriz</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -200,7 +918,66 @@
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='http://samuelgomez.es/img/2019/determinantes.jpg' alt='Determinantes'/>
-	<p>Sabiendo que:</p><p>Calcular el valor de:</p><p>Saco el factor <span class="math inline">\(\frac{1}{4}\)</span> de la tercera fila <span class="math inline">\(F_3\)</span></p><p>Aplicando una combinación lineal a la segunda fila <span class="math inline">\(F_2 = F_2+2\cdot F_1\)</span></p><p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p><p>#2ºBachillerato #determinante #matriz</p>
+	
+<h2 id="hallar-el-valor-del-determinante">1. Hallar el valor del determinante</h2>
+<p>Sabiendo que:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    1 &amp; 1 &amp; 1 \\
+    a &amp; b &amp; c \\
+    d &amp; e &amp; f \\
+\end{array}
+\right| = 2
+\]</span></p>
+<p>Calcular el valor de:</p>
+<p><span class="math display">\[
+\left|
+\begin{array}{ccc}
+    6       &amp; 6     &amp; 6     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d/4     &amp; e/4   &amp; f/4   \\
+\end{array}
+\right|
+\]</span></p>
+<p><strong>Solución</strong> Aplicando exclusivamente las propiedades de los determinantes debemos lograr que el segundo determinante se convierta en algo parecido al que nos da el enunciado que es el único que en realidad conocemos:</p>
+<p>Saco el factor de la fila 1 <span class="math inline">\(F_1\)</span> <span class="math display">\[
+6 \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d/4     &amp; e/4   &amp; f/4   \\
+\end{array}
+\right|
+\]</span></p>
+<p>Saco el factor <span class="math inline">\(\frac{1}{4}\)</span> de la tercera fila <span class="math inline">\(F_3\)</span></p>
+<p><span class="math display">\[
+\frac{6}{4} \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a-2     &amp; b-2   &amp; c-2   \\
+    d   &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Aplicando una combinación lineal a la segunda fila <span class="math inline">\(F_2 = F_2+2\cdot F_1\)</span></p>
+<p><span class="math display">\[
+\frac{3}{2} \cdot
+\left|
+\begin{array}{ccc}
+    1       &amp; 1     &amp; 1     \\
+    a   &amp; b     &amp; c     \\
+    d   &amp; e     &amp; f     \\
+\end{array}
+\right|
+\]</span></p>
+<p>Como conocemos el valor del determinante que tenemos en este momento, simplemente sustituimos por su valor y obtenemos:</p>
+<p><span class="math display">\[\frac{3}{2} \cdot 2 = \boxed{3}\]</span></p>
+<p>#2ºBachillerato #determinante #matriz</p>
+
+
 	</div></content>
 </entry>
 <entry>
@@ -211,7 +988,21 @@
 	<id>http://samuelgomez.es/matematicas/2018-10-12-los-numeros-estan-en-todas-partes.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<p>El universo son números y las matemáticas permiten estudiar, analizar y en ocasiones predecir lo que ocurrirá en el futuro</p><p>#generalidades</p>
+	
+<p><time datetime='2018-10-12' pubdate='2018-10-12'>12 de octubre de 2018</time></p>
+<ul>
+<li>El número de letras que contiene este artículo</li>
+<li>El número de personas que están viendo un vídeo en youtube</li>
+<li>El número de veces que una persona está quejandose a lo largo de un día</li>
+<li>El número de miradas que recibe alguien</li>
+<li>El número de veces que alguien se rasca la nariz</li>
+<li>El número de mensajes que tengo en Whatsapp</li>
+</ul>
+<p><span class="math display">\[e^{i\pi}+1=0\]</span></p>
+<p>El universo son números y las matemáticas permiten estudiar, analizar y en ocasiones predecir lo que ocurrirá en el futuro</p>
+<p>#generalidades</p>
+
+
 	</div></content>
 </entry>
 </feed>

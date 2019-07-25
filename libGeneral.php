@@ -101,6 +101,12 @@
 		return $text;
   }
 
+  function getContentFromHtml($htmlContent){
+	  $r = preg_match('/<article>(.*)<\/h1>(.*)<\/article>/s', $htmlContent, $arrFound);
+	  $text = $arrFound[2];
+	  return $text;
+  }
+
   # Dado un fichero html reemplaza su extensión .html por .md
   # y le añade la ruta absoluta y la devuelve
   function getFullFileNameMdFromHtml($htmlFile){
