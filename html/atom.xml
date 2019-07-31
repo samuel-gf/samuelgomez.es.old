@@ -4,7 +4,105 @@
 <subtitle>Un sitio para la ciencia y la tecnología</subtitle>
 <link href="http://samuelgomez.es/atom.xml" rel="self" />
 <id>http://samuelgomez.es/</id>
-<updated>2019-07-25T14:13:40Z</updated>
+<updated>2019-07-31T19:53:39Z</updated>
+<entry>
+	<title>PHP y sus múltiples ventajas</title>
+	<link href='http://samuelgomez.es/informatica/2019-07-31-php-y-sus-multiples-ventajas.html' />
+	<updated>2019-07-31T00:00:00Z</updated>
+	<author><name>Samuel Gómez</name></author>
+	<id>http://samuelgomez.es/informatica/2019-07-31-php-y-sus-multiples-ventajas.html</id>
+	<content type='xhtml'>
+	<div xmlns='http://www.w3.org/1999/xhtml'>
+	<img src='http://samuelgomez.es/img/logo/php.png' alt='Logo PHP'/>
+	
+<p><time datetime='2019-07-31' pubdate='2019-07-31'>31 de julio de 2019</time></p>
+<figure>
+<img src="../img/logo/php.png" alt="Logo PHP" /><figcaption>Logo PHP</figcaption>
+</figure>
+<p>Tras la encuesta de Stack Overflow de 2019 en la que se declaraba al lenguaje de programación <em>PHP</em> como uno de los más odiados por los programadores me gustaría decir algo: Es mucho mejor de lo que las opiniones recogen.</p>
+<h2 id="en-los-orígenes">En los orígenes</h2>
+<p>Empecé con <em>PHP</em> hace dos décadas sobre el año 2000. En aquel entonces empecé a usar la nueva y maravillosa versión 4.0 que parecía ser un lenguaje maduro. Funcionaba muy bien y me pareció la forma más sencilla de crear una página web dinámica. He de decir que en aquella época me había visto obligado a emplear el <em>lenguaje C</em> para hacer <a href="https://es.wikipedia.org/wiki/Interfaz_de_entrada_com%C3%BAn">CGI</a>, es decir, para recoger datos de un formulario web. También había experimentado con el <a href="https://es.wikipedia.org/wiki/Perl">lenguaje de programación perl</a> con el que empecé en esto de las <em>expresiones regulares</em>.</p>
+<p>PHP supuso un soplo de aire fresco por aquel entonces. Era rápido para aquella época, tanto al ejecutarlo como al programarlo. Me ofreció resultados rápidos en poco tiempo. La mayoría de los servicios de <em>hosting</em> lo empezaron a ofrecer como un estándar.</p>
+<p><a href="https://es.wordpress.org/">Wordpress</a> no tardaría en ser desarrollado y por supuesto, se empleó <em>PHP</em> puesto que era el mejor lenguaje para web que exsistía en aquel entonces.</p>
+<h2 id="hace-diez-años">Hace diez años</h2>
+<p>Hace unos díez años comencé a escuchar las primeras críticas a <em>PHP</em>. Solía venir de desarrolladores de <em>Java</em> que consideraban a <em>PHP</em> algo poco eficiente y complicado. Desde luego, no son soluciones comparables.</p>
+<p>Se decía que <em>PHP</em> era lento, inconsistente y sucio. Lo cierto es que <em>PHP</em> ya no era guay pero seguí trabajando con él y fui testigo de todas las mejoras que le añadieron.</p>
+<h2 id="recientemente">Recientemente</h2>
+<p>Los creadores de <em>PHP</em> recogieron las críticas y lo mejoraron bastante. La velocidad se incrementó hasta un punto impresionante. El servidor requiere menos recursos para correr cualquier programa PHP e incluso he llegado a ver código de <em>PHP</em> compilado. Una modesta <a href="https://www.raspberrypi.org/">Raspberry Pi</a> de 30€ puede ser un servidor de <em>PHP</em> pero no puede hacer de servidor de <em>Java</em>.</p>
+<h2 id="ventajas-de-php-en-2019">Ventajas de PHP en 2019</h2>
+<p>Este lenguaje de programación me sigue flipando y creo que cada día ofrece más ventajas. Paso a darte mi opinión.</p>
+<ul>
+<li>Funciona en un servidor modesto. Aunque sea un PC de hace veinte años</li>
+<li>Es el mejor lenguaje de programación que he probado para manejar expresiones regulares</li>
+<li>Lenguaje muy mejorado que permite una escritura de código limpia y bonita</li>
+<li>Rendimiento extremadamente rápido</li>
+<li>Prácticamente todos los servicios de <em>hosting</em> ofrecen <em>PHP</em> a un precio muy razonable</li>
+<li>Extremadamente fácil de aprender para cualquier novato en progrmación</li>
+<li>Se escriben programas muy rápido debido a que es un lenguaje de muy alto nivel</li>
+<li>Muy compatible con <em>Unicode</em> y además presenta muchas mejoras en este aspecto</li>
+<li>Permite poner a correr un servidor desde la línea de comando con una sola línea de código</li>
+</ul>
+<p>Ciertamente es un lenguaje muy orientado al modelo cliente-servidor web, aunque yo lo he usado también para procesar ficheros de texto con resultados muy buenos. No es un lenguaje para controlar el funcionamiento de un reactor nuclear ni el sistema de tiempo real de un avión.</p>
+<p>Si lo empleas para lo que está pensado acabarás encontrando un lenguaje de programación excelente. Tanto es así que yo aún sigo aprendiendo nuevas cosas y no quiero cambiar.</p>
+<p>#PHP #programación #ventajas #cliente-servidor #web</p>
+
+
+	</div></content>
+</entry>
+<entry>
+	<title>Instalación de wifi Realtek en portátil con Linux</title>
+	<link href='http://samuelgomez.es/informatica/2019-07-30-instalacion-de-wifi-realtek-en-portatil-con-linux.html' />
+	<updated>2019-07-30T00:00:00Z</updated>
+	<author><name>Samuel Gómez</name></author>
+	<id>http://samuelgomez.es/informatica/2019-07-30-instalacion-de-wifi-realtek-en-portatil-con-linux.html</id>
+	<content type='xhtml'>
+	<div xmlns='http://www.w3.org/1999/xhtml'>
+	<img src='http://samuelgomez.es/img/logo/wifi.png' alt='Wifi Logo'/>
+	
+<figure>
+<img src="../img/logo/wifi.png" alt="Wifi Logo" /><figcaption>Wifi Logo</figcaption>
+</figure>
+<p>Estas instrucciones sirven para instalar y hacer funcionar las tarjetas Realtek wifi de la lista:</p>
+<ul>
+<li>rtl8188ee</li>
+<li>rtl8192c, rtl8192ce, rtl8192cu, rtl8192de, rtl8192ee, rtl8192se,</li>
+<li>rtl8723ae, rtl8723be, rtl8723com, rtl8723de</li>
+<li>rtl8821ae</li>
+<li>rtl8822be</li>
+</ul>
+<p>Puedes encontrar toda esta información en inglés en la página oficial de los <a href="https://github.com/lwfinger/rtlwifi_new/">drivers Realtek</a></p>
+<h2 id="mi-caso-de-éxito">Mi caso de éxito</h2>
+<p>Compré un ordenador portátil HP que tenía <em>Windows</em> preinstalado. Quité el sistema operativo de <em>Microsoft</em> e instalé Linux Ubuntu 18.04. Me di cuenta de que la tarjeta wifi Realtek no funcionaba correctamente, así que investigue y no encontré información en Español. Aquí comparto los pasos que llevé a cabo para resolverlo.</p>
+<p>He instalado los drivers de mi tarjeta de red <em>rtl8723de</em> siguiendo los pasos abajo indicados. Instalar una tarjeta de la lista de arriba debe ser parecido, pero cambiando el modelo.</p>
+<ul>
+<li>Accede al terminal de Linux</li>
+<li>Descarga los drivers mediante</li>
+</ul>
+<p><code>git clone https://github.com/lwfinger/rtlwifi_new</code></p>
+<ul>
+<li>A continuación entra en el directorio donde se ha descargado el código fuente, en este casi suele ser <code>rtlwifi_new</code> y compílalo con</li>
+</ul>
+<p><code>make</code></p>
+<ul>
+<li>Ahora instálalo con los permisos de administador</li>
+</ul>
+<p><code>sudo make install</code></p>
+<ul>
+<li>Finalmente inicializa el driver el el ordenador con</li>
+</ul>
+<p><code>sudo modprobe -v rtl8723de ant_sel=2</code></p>
+<p>En este caso, el parámetro <code>ant_sel=2</code> lo uso porque de lo contrario la señal que se recibe mi antena de wifi es débil. Algunas antenas wifi podrían recibir la señal con suficiente intensidad desde el primer momento así que no sería necesario. De todas formas, si lo necesitas, para hacer esta configuración de antena permanente puedes escribir</p>
+<p><code>sudo echo &quot;options rtl8723de ant_sel=2&quot; &gt; /etc/modprobe.d/50-rtl8723de.conf</code></p>
+<p>Pero recuerda que el parámentro <code>ant_sel=2</code> solo es imprescindible si tu antena de wifi no recibe la señal con suficiente intensidad. Para saber si es tu caso puedes escribir en el terminal</p>
+<p><code>DEVICE=$(iw dev | grep Interface | cut -d &quot; &quot; -f2)</code></p>
+<p>y luego</p>
+<p><code>sudo iw dev $DEVICE scan | egrep &quot;SSID|signal|\(on&quot;</code></p>
+<p>Si la señal de tu wifi es inferior a <span class="math inline">\(-60\)</span> entonces es que tu tarjeta no recibe la señal bien y tu red funcionaría lenta o incluso puede que se llegue a perder la señal.</p>
+<p>#wifi #realtek #ubuntu #linux #driver</p>
+
+
+	</div></content>
+</entry>
 <entry>
 	<title>¿Por qué la NASA no ha mandado astronautas a la Luna en décadas?</title>
 	<link href='http://samuelgomez.es/exploracion-espacial/2019-07-23-por-que-la-nasa-no-ha-mandado-astronautas-a-la-luna-en-decadas.html' />

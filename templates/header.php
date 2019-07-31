@@ -31,7 +31,7 @@
 <body>
     <header>
 		<a href="{{BASE_DIR}}index.html"><img id="logoTop"
-			src="{{BASE_DIR}}img/logoS3.png" alt="Logo Samuel Gómez"></a>
+			src="{{BASE_DIR}}img/logoS3.png" alt="Ingeniero Samuel Gómez"></a>
 		{{MENU}}
     </header>
 	<main>

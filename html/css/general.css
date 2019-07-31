@@ -29,10 +29,15 @@ p > strong{
 	padding-right: 0.5rem;
 }
 
+
 pre.sourceCode{
 		background-color: #ddddff;
 		padding: 1rem;
 		font-size: 0.8rem;
+}
+
+code {
+	background-color: #dddddd;
 }
 
 code a{
@@ -40,7 +45,10 @@ code a{
 		margin: 1rem 0;
 }
 
-a{	text-decoration: none; color: #006aff;}
+a {	
+	/*text-decoration: none; */
+	color: #006aff;
+}
 a:visited{color: #006aff;}
 a:hover{color: #FF9200;}
 
@@ -122,9 +130,6 @@ h2 {
 h3 {
 	font-weight: bold;
 }
-
-
-
 /***************************************** FIN de /cabeceras **********************************/
 
 :target {
@@ -224,7 +229,8 @@ ul{
 
 li{
 	list-style-position: inside;
-	padding: 0.5rem 0;
+	padding: 0.5rem 0 0 0;
+	list-style-type: disc;
 }
 
 /* Etiquetas al final del artÃ­culo*/
