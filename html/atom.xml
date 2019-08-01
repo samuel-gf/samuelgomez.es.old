@@ -4,7 +4,7 @@
 <subtitle>Un sitio para la ciencia y la tecnología</subtitle>
 <link href="http://samuelgomez.es/atom.xml" rel="self" />
 <id>http://samuelgomez.es/</id>
-<updated>2019-08-01T11:40:05Z</updated>
+<updated>2019-08-01T11:59:04Z</updated>
 <entry>
 	<title>PHP y sus múltiples ventajas</title>
 	<link href='http://samuelgomez.es/informatica/2019-07-31-php-y-sus-multiples-ventajas.html' />
@@ -13,11 +13,11 @@
 	<id>http://samuelgomez.es/informatica/2019-07-31-php-y-sus-multiples-ventajas.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='http://samuelgomez.es/img/logo/php.png' alt='Logo PHP'/>
+	<img src='http://samuelgomez.es/img/logo/php.png' alt='PHP'/>
 	
 <p><time datetime='2019-07-31' pubdate='2019-07-31'>31 de julio de 2019</time></p>
 <figure>
-<img src="../img/logo/php.png" alt="Logo PHP" /><figcaption>Logo PHP</figcaption>
+<img src="../img/logo/php.png" alt="PHP" /><figcaption>PHP</figcaption>
 </figure>
 <p>Tras la encuesta de Stack Overflow de 2019 en la que se declaraba al lenguaje de programación <em>PHP</em> como uno de los más odiados por los programadores me gustaría decir algo: Es mucho mejor de lo que las opiniones recogen.</p>
 <h2 id="en-los-orígenes">En los orígenes</h2>
@@ -57,10 +57,10 @@
 	<id>http://samuelgomez.es/informatica/2019-07-30-instalacion-de-wifi-realtek-en-portatil-con-linux.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='http://samuelgomez.es/img/logo/wifi.png' alt='Wifi Logo'/>
+	<img src='http://samuelgomez.es/img/logo/wifi.png' alt='Wifi'/>
 	
 <figure>
-<img src="../img/logo/wifi.png" alt="Wifi Logo" /><figcaption>Wifi Logo</figcaption>
+<img src="../img/logo/wifi.png" alt="Wifi" /><figcaption>Wifi</figcaption>
 </figure>
 <p>Estas instrucciones sirven para instalar y hacer funcionar las tarjetas Realtek wifi de la lista:</p>
 <ul>
@@ -99,6 +99,47 @@
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="fu">sudo</span> iw dev <span class="va">$DEVICE</span> scan <span class="kw">|</span> <span class="fu">egrep</span> <span class="st">&quot;SSID|signal|\(on&quot;</span></a></code></pre></div>
 <p>Si la señal de tu wifi es inferior a <span class="math inline">\(-60\)</span> entonces es que tu tarjeta no recibe la señal bien y tu red funcionaría lenta o incluso puede que se llegue a perder la señal.</p>
 <p>#wifi #realtek #ubuntu #linux #driver</p>
+
+
+	</div></content>
+</entry>
+<entry>
+	<title>¿Por qué la NASA no ha mandado astronautas a la Luna en décadas?</title>
+	<link href='http://samuelgomez.es/exploracion-espacial/luna/2019-07-23-por-que-la-nasa-no-ha-mandado-astronautas-a-la-luna-en-decadas.html' />
+	<updated>2019-07-23T00:00:00Z</updated>
+	<author><name>Samuel Gómez</name></author>
+	<id>http://samuelgomez.es/exploracion-espacial/luna/2019-07-23-por-que-la-nasa-no-ha-mandado-astronautas-a-la-luna-en-decadas.html</id>
+	<content type='xhtml'>
+	<div xmlns='http://www.w3.org/1999/xhtml'>
+	<img src='http://samuelgomez.es/img/2019/SLS.jpg' alt='Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo'/>
+	
+<p><time datetime='2019-07-23' pubdate='2019-07-23'>23 de julio de 2019</time></p>
+<figure>
+<img src="../../img/2019/SLS.jpg" alt="Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo" /><figcaption>Cohete SLS. Es el rediseño del Saturno V de las misiones Apollo</figcaption>
+</figure>
+<h2 id="versión-corta">Versión corta</h2>
+<ul>
+<li>Una vez conseguido deja de ser una prioridad que apenas ofrece nuevos beneficios</li>
+<li>El presupuesto de la NASA se reduce una barbaridad (ver <a href="#presupuesto_nasa">gráfico del presupuesto</a>)</li>
+<li>La tecnología de las misiones Apolo se queda obsoleta porque la NASA deja de darle soporte y mantenimiento</li>
+<li>Como consecuencia de la anterior se quedan sin expertos en cohetes Saturno que permitían llevar seres humanos a la Luna</li>
+<li>Se acaba la Guerra Fría y deja de haber competición con la URSS</li>
+<li>Se desarrolla la tecnología de robots y entonces resulta más barato enviar robots que personas</li>
+</ul>
+<h2 id="versión-larga">Versión larga</h2>
+<p>En la época en la que los primeros seres humanos llegamos a la Luna el presupuesto de la NASA era enorme, cerca del 4% de todos el gasto público de Estados Unidos. Si te paras a pensarlo, es una barbaridad de dinero.</p>
+<p>Era la eṕoca de la <a href="https://es.wikipedia.org/wiki/Guerra_Fr%C3%ADa">Guerra Fría</a> y los políticos no se cortaban en asignar presupuesto a la NASA puesto que muchas de sus invenciones, más allá de la exploración espacial, podían tener un fin militar como por ejemplo el lanzamiento de misiles intercontinentales. No se escatimaban esfuerzos en el desarrollo de cualquier cosa que pudiera tener un objetivo bélico.</p>
+<p>Poco después de que llegasen seres humanos a la Luna surgió la primera crísis del petroleo, a principios de los años setenta, y además Estados Unidos se metió de lleno en la <a href="https://es.wikipedia.org/wiki/Guerra_de_Vietnam">Guerra de Vietnam</a>. Ambas situaciones crearon una crísis económica sin precedentes en el país que cortaron radicalmente el presupuesto de la NASA.</p>
+<p>Una década después, Estados Unidos comenzó a mejorar su situación económica, estamos ya en los años ochenta. El presupuesto de la NASA se sigue reduciendo. Estados Unidos destina un amplio presupuesto a proyectos militares, como por ejemplo el conocido como proyecto <em>Star Wars</em> o <a href="https://es.wikipedia.org/wiki/Iniciativa_de_Defensa_Estrat%C3%A9gica">Guerra de las Galaxias</a> consistente en disponer de un sistema capaz de defenderse de los misiles soviéticos antes de que cayeran en territorio estadounidense.</p>
+<p>A finales de los años ochenta la carrera espacial ya no tenía sentido, pues ya no había competición con la Unión Soviética debido a que la URSS se había derrumbado económicamente y había desaparecido como país.</p>
+<p>El presupuesto de la NASA es por ese entonces muy reducido y se plantean como objetivo misiones mucho más baratas que el envío de seres humanos a la Luna. En su lugar la NASA envía robots a diferentes cuerpos celestes debido a que resulta mucho más económico y seguro que mandar pesonas.</p>
+<p><a name="presupuesto_nasa"></a> <img src="../../img/2019/presupuesto_nasa.png" alt="Presupuesto de la NASA a lo largo de las últimas décadas" /></p>
+<p>A principio de los años 2000 llega la <a href="https://es.wikipedia.org/wiki/Burbuja_puntocom">crísis de las punto com</a> y se sigue reduciendo el presupuesto para la exploración espacial. Estados Unidos vive un nuevo periódo de crísis económica.</p>
+<p>En 2007 llega el <a href="https://es.wikipedia.org/wiki/Lehman_Brothers">colapso financiero con la crísis de Leman Brothers</a> y esto sigue impidiendo que la NASA obtenga el inmenso presupuesto del que disponía en los años sesenta.</p>
+<p>En la actualidad la idea de regresar a la Luna parece que va cobrando sentido de nuevo, pero hay un serio problema, la NASA tiene los planos de un proyecto obsoleto de los años sesenta para el cual no hay nadie con experiencia. Los cohetes Saturno V que usaron las misiones Apolo tienen más de tres millones de piezas que deben funcionar coordinadas entre ellas, y no existe ya ninguna persona con experiencia en la construcción de dichos cohetes. La NASA tiene gente muy inteligente pero son totalmente novatos en la construcción de cohetes Saturno.</p>
+<p>La NASA ha puesto a un amplio grupo de técnicos a estudiar los antiguos planos obsoletos de las misiones Apolo para reinventar toda la tecnología pero de manera moderno. Por ejemplo, el ordenador de la misión Apolo 11 fue en su tiempo revolucionario, pero hoy en día estaría totalmente obsoleto, es más, tu móvil probablemente tenga más potencia que aquel viejo ordenador.</p>
+<p>Lo dicho, que la NASA está haciendo un rediseño de aquellos planos obsoletos en un proyecto denominado <a href="https://es.wikipedia.org/wiki/Sistema_de_lanzamiento_espacial">SLS</a>. Además, existen varias empresas privadas que están desarrollando tecnología para viajes espaciales, aunque de momento, la mayoría trabajan sobre todo en órbitas bajas, que nos son suficientes como para llegar a la Luna en un conjunto de misiones denominados <a href="https://danielmarin.naukas.com/2019/05/22/programa-artemisa-al-detalle-como-planea-la-nasa-volver-a-la-luna-en-2024/">Artemisa</a> para poner una mujer en la superficie de la Luna en el año 2024.</p>
+<p>#Luna #NASA #apolo #apollo #artemisa</p>
 
 
 	</div></content>
@@ -152,11 +193,11 @@
 	<id>http://samuelgomez.es/informatica/2019-07-21-markdown-como-sustituto-de-rss-feed.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='http://samuelgomez.es/img/logo/rss.png' alt='Logotipo de RSS Real Simple Syndication'/>
+	<img src='http://samuelgomez.es/img/logo/rss.png' alt='RSS - Real Simple Syndication'/>
 	
 <p><time datetime='2019-07-21' pubdate='2019-07-21'>21 de julio de 2019</time></p>
 <figure>
-<img src="../img/logo/rss.png" alt="Logotipo de RSS Real Simple Syndication" /><figcaption>Logotipo de RSS Real Simple Syndication</figcaption>
+<img src="../img/logo/rss.png" alt="RSS - Real Simple Syndication" /><figcaption>RSS - Real Simple Syndication</figcaption>
 </figure>
 <p>Esta semana estaba escribiendo el código que me permitiese generar un <em>feed atom</em> de mi blog personal y me di cuenta de que emplear <em>xml</em> era extremadamente engorroso en los tiempos que corren.</p>
 <p>Habitualmente escribo mis artículos en <em>markdown</em> y posteriormente los exporto a <em>html</em> mediante <em>pandoc</em>. Veo multitud de ventajas al usar <em>markdown</em>.</p>
@@ -217,6 +258,47 @@ dui urna congue neque, sit amet interdum diam mi eu libero. In hac habitasse pla
 </entry>
 <entry>
 	<title>Únete a la celebración  mundial del 50 aniversario de la llegada del hombre a la Luna</title>
+	<link href='http://samuelgomez.es/exploracion-espacial/luna/2019-07-03-unete-a-la-celebracion--mundial-del-50-aniversario-de-la-llegada-del-hombre-a-la-luna.html' />
+	<updated>2019-07-03T00:00:00Z</updated>
+	<author><name>Samuel Gómez</name></author>
+	<id>http://samuelgomez.es/exploracion-espacial/luna/2019-07-03-unete-a-la-celebracion--mundial-del-50-aniversario-de-la-llegada-del-hombre-a-la-luna.html</id>
+	<content type='xhtml'>
+	<div xmlns='http://www.w3.org/1999/xhtml'>
+	<img src='http://samuelgomez.es/img/%7D2019/apollo_50th.jpg' alt='Apolo 50 aniversario'/>
+	
+<p><time datetime='2019-07-03' pubdate='2019-07-03'> 3 de julio de 2019</time></p>
+<figure>
+<img src="../../img/%7D2019/apollo_50th.jpg" alt="Apolo 50 aniversario" /><figcaption>Apolo 50 aniversario</figcaption>
+</figure>
+<p>Parece mentira pero ya ha transcurrido medio siglo desde la llegada del primer hombre a la Luna. Para conmemorar el histórico evento, la NASA ya tiene programada la celebrará de este 50 aniversario.</p>
+<p>Fue la misión Apolo 11 la que llevó al comandante Neil Amstrong a poner el pie en nuestro satélite en nombre de la humanidad. Me siento entusiasmado con todo lo que hay planificado.</p>
+<p>La NASA también aprovecharán para y mostrar al mundo cual es la actual situación de la exploración espacial tanto de la Luna como de Marte. Se realizará una transmisión en directo de unas dos horas el viernes 19 de julio y también se llevarán a cabo eventos por todo Estados Unidos desde el 16 de julio hasta el 20 de julio incluidos.</p>
+<p>El 16 de julio de 1969, los astronautas Neil Armstrong, Buzz Aldrin y Michael Collins despegaron de la Plataforma de lanzamiento 39A en el Centro Espacial Kennedy de la NASA en Florida en un viaje a la Luna y a la historia de la humanidad. Cuatro días después, mientras Collins orbitaba alrededor de la Luna en el módulo de comando, Armstrong y Aldrin aterrizaron el módulo lunar del Apolo 11, denominado Águila, en el Mar de la Tranquilidad de la Luna, convirtiéndose en los primeros humanos en pisar la superficie lunar.</p>
+<p>Los aspectos más destacados de los eventos en los que participa la NASA incluyen:</p>
+<h2 id="de-julio---reflexión-de-lanzamiento-de-apolo-11-en-la-rampa-de-lanzamiento-39a">16 de julio - Reflexión de lanzamiento de Apolo 11 en la rampa de lanzamiento 39A</h2>
+<p>Los astronautas del Apolo 11, Buzz Aldrin y Michael Collins se reunirán en la histórica plataforma de lanzamiento donde el Apolo 11 comenzó su misión hace 50 años para una sesión de preguntas y respuestas con el Director del Centro Kennedy Bob Cabana, comenzando a las 9:15 am EDT, seguido de una visita al Centro de control de lanzamiento y la Sala de disparo 1 para conectarse con los controladores de lanzamiento de la era de Apolo y aquellos que lanzarán las misiones Artemisa que forman parte del enfoque de la Luna de Marte de los Estados Unidos para la exploración del espacio humano.</p>
+<p>Este evento se transmitirá en vivo en la televisión de la NASA y en el sitio web de la agencia.</p>
+<h2 id="de-julio-el-mayor-número-de-cohetes-caseros-a-nivel-mundial">16 de julio: el mayor número de cohetes caseros a nivel mundial</h2>
+<figure>
+<img src="../../img/2019/cohetes_caseros.jpg" alt="Cohetes caseros" class="wideImg" /><figcaption>Cohetes caseros</figcaption>
+</figure>
+<p>A las 8:32 am CDT, al mismo tiempo que la misión Apolo 11 despegó de Florida hace 50 años, el US Space &amp; Rocket Center, desea batir un nuevo récord consistente en el lanzamiento del máximo número de cohetes espaciales caseros.</p>
+<p>Como podéis ver en las fotografía, cualquier tipo de cohete está permitido, no es necesario que alcance la órbita de la luna. Este será sin duda un evento muy divertido que podrá ser seguido a nivel mundial</p>
+<p>Para participar podéis registraros en el <a href="https://rocketcenter.com/apollo50/GlobalLaunch">evento de lanzamiento mundial</a>.</p>
+<h2 id="de-julio-sello-dedicado-al-aterrizaje-lunar-1969-del-servicio-postal-de-ee.-uu.">19 de julio: Sello dedicado al Aterrizaje Lunar 1969 del Servicio Postal de EE. UU.</h2>
+<p>El servicio Postal de los EE. UU. Celebrará el 50 aniversario del Apolo 11 y los primeros pasos de la humanidad en la Luna con dos sellos dedicados.</p>
+<figure>
+<img src="https://www.nasa.gov/sites/default/files/thumbnails/image/usps19sta041a.jpg" alt="Sello 50 aniversario del hombre en la Luna" /><figcaption>Sello 50 aniversario del hombre en la Luna</figcaption>
+</figure>
+<p><a href="https://about.usps.com/newsroom/national-releases/2019/0610ma-first-moon-landing-stamps.htm">Información sobre los sellos dedicados al 50 aniversario de la llegada del hombre a la Luna</a></p>
+<p>Existen más eventos dedicados al aniversario, pero desde mi punto de vista son bastante más locales a nivel nacional para Estados Unidos. Podéis ver <a href="https://www.nasa.gov/press-release/nasa-celebrates-50th-anniversary-of-historic-moon-landing-with-live-tv-broadcast/">más información sobre la celebración del 50 aniversario</a></p>
+<p>#apolo #artemisa #50aniversarioApolo</p>
+
+
+	</div></content>
+</entry>
+<entry>
+	<title>Únete a la celebración  mundial del 50 aniversario de la llegada del hombre a la Luna</title>
 	<link href='http://samuelgomez.es/exploracion-espacial/2019-07-03-unete-a-la-celebracion--mundial-del-50-aniversario-de-la-llegada-del-hombre-a-la-luna.html' />
 	<updated>2019-07-03T00:00:00Z</updated>
 	<author><name>Samuel Gómez</name></author>
@@ -257,23 +339,45 @@ dui urna congue neque, sit amet interdum diam mi eu libero. In hac habitasse pla
 	</div></content>
 </entry>
 <entry>
-	<title>LSST: The telescope that is sharing a massive ammount of data with the citizen science community in 2022</title>
-	<link href='http://samuelgomez.es/fisica/2019-06-08-lsst--the-telescope-that-is-sharing-a-massive-ammount-of-data-with-the-citizen-science-community-in-2022.html' />
+	<title>LSST: El telescopio que compartirá una cantidad masiva de datos con la comunidad de ciencia ciudadana</title>
+	<link href='http://samuelgomez.es/exploracion-espacial/telescopios/2019-06-08-lsst--el-telescopio-que-compartira-una-cantidad-masiva-de-datos-con-la-comunidad-de-ciencia-ciudadana.html' />
 	<updated>2019-06-08T00:00:00Z</updated>
 	<author><name>Samuel Gómez</name></author>
-	<id>http://samuelgomez.es/fisica/2019-06-08-lsst--the-telescope-that-is-sharing-a-massive-ammount-of-data-with-the-citizen-science-community-in-2022.html</id>
+	<id>http://samuelgomez.es/exploracion-espacial/telescopios/2019-06-08-lsst--el-telescopio-que-compartira-una-cantidad-masiva-de-datos-con-la-comunidad-de-ciencia-ciudadana.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
-	<img src='http://samuelgomez.es/img/logo/LSST.png' alt='Logo of the LSST telescope'/>
+	<img src='http://samuelgomez.es/img/logo/lsst.png' alt='Telescopio LSST'/>
 	
 <p><time datetime='2019-06-08' pubdate='2019-06-08'> 8 de junio de 2019</time></p>
 <figure>
-<img src="../img/logo/LSST.png" alt="Logo of the LSST telescope" /><figcaption>Logo of the LSST telescope</figcaption>
+<img src="../../img/logo/lsst.png" alt="Telescopio LSST" /><figcaption>Telescopio LSST</figcaption>
 </figure>
-<p>The huge Large Synoptic Survey Telescope (LSST) that is currently under construction.</p>
-<p>The project has commited to making all data public 24 hours after they are taken.</p>
-<p>I think this can be a powerfull war horse for the Citizen Science Community.</p>
-<p>#LSST #citizenScienceCommunity</p>
+<p>El inmenso Telescopio LSST está actualmente en construcción. El proyecto se ha comprometido a hacer públicos todos los datos venticuatro horas después de haberlos recogido.</p>
+<p>Esto generará sin lugar a dudas una enorme cantidad de datos que difícilmente podrán ser guardados o almacenados pero que la comunidad científica en general y la comunidad de ciencia ciudadana podrá aprovechar.</p>
+<p>Opino que puede ser uno de los grandes caballos de batalla para los aficionados a la ciencia.</p>
+<p>#LSST #comunidadCienciaCiudadana</p>
+
+
+	</div></content>
+</entry>
+<entry>
+	<title>LSST: El telescopio que compartirá una cantidad masiva de datos con la comunidad de ciencia ciudadana</title>
+	<link href='http://samuelgomez.es/exploracion-espacial/2019-06-08-lsst--el-telescopio-que-compartira-una-cantidad-masiva-de-datos-con-la-comunidad-de-ciencia-ciudadana.html' />
+	<updated>2019-06-08T00:00:00Z</updated>
+	<author><name>Samuel Gómez</name></author>
+	<id>http://samuelgomez.es/exploracion-espacial/2019-06-08-lsst--el-telescopio-que-compartira-una-cantidad-masiva-de-datos-con-la-comunidad-de-ciencia-ciudadana.html</id>
+	<content type='xhtml'>
+	<div xmlns='http://www.w3.org/1999/xhtml'>
+	<img src='http://samuelgomez.es/img/logo/lsst.png' alt='Telescopio LSST'/>
+	
+<p><time datetime='2019-06-08' pubdate='2019-06-08'> 8 de junio de 2019</time></p>
+<figure>
+<img src="../img/logo/lsst.png" alt="Telescopio LSST" /><figcaption>Telescopio LSST</figcaption>
+</figure>
+<p>El inmenso Telescopio LSST está actualmente en construcción. El proyecto se ha comprometido a hacer públicos todos los datos venticuatro horas después de haberlos recogido.</p>
+<p>Esto generará sin lugar a dudas una enorme cantidad de datos que difícilmente podrán ser guardados o almacenados pero que la comunidad científica en general y la comunidad de ciencia ciudadana podrá aprovechar.</p>
+<p>Opino que puede ser uno de los grandes caballos de batalla para los aficionados a la ciencia.</p>
+<p>#LSST #comunidadCienciaCiudadana</p>
 
 
 	</div></content>
@@ -482,10 +586,10 @@ dui urna congue neque, sit amet interdum diam mi eu libero. In hac habitasse pla
 </entry>
 <entry>
 	<title>Teorizando sobre Oumuamua como un objeto artificial</title>
-	<link href='http://samuelgomez.es/fisica/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html' />
+	<link href='http://samuelgomez.es/exploracion-espacial/extrasolar/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html' />
 	<updated>2018-11-03T00:00:00Z</updated>
 	<author><name>Samuel Gómez</name></author>
-	<id>http://samuelgomez.es/fisica/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html</id>
+	<id>http://samuelgomez.es/exploracion-espacial/extrasolar/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html</id>
 	<content type='xhtml'>
 	<div xmlns='http://www.w3.org/1999/xhtml'>
 	<img src='https://cdn.eso.org/images/screen/eso1737a.jpg' alt='Recreación artística del objeto Oumuamua'/>

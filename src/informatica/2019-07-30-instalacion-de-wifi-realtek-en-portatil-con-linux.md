@@ -4,7 +4,7 @@ description: Instalación de la tarjeta de red wifi de portátil HP para Linux U
 
 # Instalación de wifi Realtek en portátil con Linux
 
-![Wifi Logo]({{BASE_IMG}}logo/wifi.png)
+![Wifi]({{BASE_IMG}}logo/wifi.png)
 
 Estas instrucciones sirven para instalar y hacer funcionar las tarjetas Realtek wifi de la lista:
 

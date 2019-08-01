@@ -6,7 +6,7 @@ description: Claves para sustituir paulatinamente los feeds RSS por markdown que
 
 2019-07-21
 
-![Logotipo de RSS Real Simple Syndication]({{BASE_IMG}}logo/rss.png)
+![RSS - Real Simple Syndication]({{BASE_IMG}}logo/rss.png)
 
 Esta semana estaba escribiendo el código que me permitiese generar un *feed atom* de mi
 blog personal y me di cuenta de que emplear *xml* era extremadamente engorroso en los tiempos

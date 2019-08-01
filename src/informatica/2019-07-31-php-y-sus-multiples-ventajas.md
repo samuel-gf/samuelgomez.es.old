@@ -6,7 +6,7 @@ description: Cuento y razono las que para mí son las mejores ventajas del lengu
 
 2019-07-31
 
-![Logo PHP]({{BASE_IMG}}logo/php.png)
+![PHP]({{BASE_IMG}}logo/php.png)
 
 Tras la encuesta de Stack Overflow de 2019 en la que se declaraba al lenguaje de programación *PHP* como
 uno de los más odiados por los programadores me gustaría decir algo: Es mucho mejor de lo que las opiniones
