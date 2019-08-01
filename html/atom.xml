@@ -4,7 +4,7 @@
 <subtitle>Un sitio para la ciencia y la tecnología</subtitle>
 <link href="http://samuelgomez.es/atom.xml" rel="self" />
 <id>http://samuelgomez.es/</id>
-<updated>2019-07-31T19:53:39Z</updated>
+<updated>2019-08-01T11:40:05Z</updated>
 <entry>
 	<title>PHP y sus múltiples ventajas</title>
 	<link href='http://samuelgomez.es/informatica/2019-07-31-php-y-sus-multiples-ventajas.html' />
@@ -78,25 +78,25 @@
 <li>Accede al terminal de Linux</li>
 <li>Descarga los drivers mediante</li>
 </ul>
-<p><code>git clone https://github.com/lwfinger/rtlwifi_new</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">git</span> clone https://github.com/lwfinger/rtlwifi_new</a></code></pre></div>
 <ul>
 <li>A continuación entra en el directorio donde se ha descargado el código fuente, en este casi suele ser <code>rtlwifi_new</code> y compílalo con</li>
 </ul>
-<p><code>make</code></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">make</span></a></code></pre></div>
 <ul>
 <li>Ahora instálalo con los permisos de administador</li>
 </ul>
-<p><code>sudo make install</code></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">sudo</span> make install</a></code></pre></div>
 <ul>
 <li>Finalmente inicializa el driver el el ordenador con</li>
 </ul>
-<p><code>sudo modprobe -v rtl8723de ant_sel=2</code></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="fu">sudo</span> modprobe -v rtl8723de ant_sel=2</a></code></pre></div>
 <p>En este caso, el parámetro <code>ant_sel=2</code> lo uso porque de lo contrario la señal que se recibe mi antena de wifi es débil. Algunas antenas wifi podrían recibir la señal con suficiente intensidad desde el primer momento así que no sería necesario. De todas formas, si lo necesitas, para hacer esta configuración de antena permanente puedes escribir</p>
-<p><code>sudo echo &quot;options rtl8723de ant_sel=2&quot; &gt; /etc/modprobe.d/50-rtl8723de.conf</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="fu">sudo</span> echo <span class="st">&quot;options rtl8723de ant_sel=2&quot;</span> <span class="op">&gt;</span> /etc/modprobe.d/50-rtl8723de.conf</a></code></pre></div>
 <p>Pero recuerda que el parámentro <code>ant_sel=2</code> solo es imprescindible si tu antena de wifi no recibe la señal con suficiente intensidad. Para saber si es tu caso puedes escribir en el terminal</p>
-<p><code>DEVICE=$(iw dev | grep Interface | cut -d &quot; &quot; -f2)</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="va">DEVICE=$(</span><span class="ex">iw</span> dev <span class="kw">|</span> <span class="fu">grep</span> Interface <span class="kw">|</span> <span class="fu">cut</span> -d <span class="st">&quot; &quot;</span> -f2<span class="va">)</span></a></code></pre></div>
 <p>y luego</p>
-<p><code>sudo iw dev $DEVICE scan | egrep &quot;SSID|signal|\(on&quot;</code></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="fu">sudo</span> iw dev <span class="va">$DEVICE</span> scan <span class="kw">|</span> <span class="fu">egrep</span> <span class="st">&quot;SSID|signal|\(on&quot;</span></a></code></pre></div>
 <p>Si la señal de tu wifi es inferior a <span class="math inline">\(-60\)</span> entonces es que tu tarjeta no recibe la señal bien y tu red funcionaría lenta o incluso puede que se llegue a perder la señal.</p>
 <p>#wifi #realtek #ubuntu #linux #driver</p>
 

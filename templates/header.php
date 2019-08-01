@@ -6,6 +6,7 @@
 	{{META_DESCRIPTION}}
     <link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/reset.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/general.css">
+	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/code.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/menu.css">
 	<link rel="stylesheet" type="text/css" href="{{BASE_DIR}}css/contacto.css">
 	<link rel="alternate" type="application/atom+xml" title="SamuelGomez.es - Atom" href="http://samuelgomez.es/atom.xml" />
@@ -31,7 +32,7 @@
 <body>
     <header>
 		<a href="{{BASE_DIR}}index.html"><img id="logoTop"
-			src="{{BASE_DIR}}img/logoS3.png" alt="Ingeniero Samuel Gómez"></a>
+			src="{{BASE_DIR}}img/logoS3.png" alt="Samuel Gómez"></a>
 		{{MENU}}
     </header>
 	<main>

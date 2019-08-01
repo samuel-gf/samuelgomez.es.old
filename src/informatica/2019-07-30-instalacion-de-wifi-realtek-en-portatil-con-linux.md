@@ -28,34 +28,48 @@ una tarjeta de la lista de arriba debe ser parecido, pero cambiando el modelo.
 - Accede al terminal de Linux
 - Descarga los drivers mediante
 
-`git clone https://github.com/lwfinger/rtlwifi_new`
+```bash
+git clone https://github.com/lwfinger/rtlwifi_new
+```
 
 - A continuación entra en el directorio donde se ha descargado el código fuente, en este casi suele ser `rtlwifi_new` y compílalo con
 
-`make`
+```bash
+make
+```
 
 - Ahora instálalo con los permisos de administador
 
-`sudo make install`
+```bash
+sudo make install
+```
 
 - Finalmente inicializa el driver el el ordenador con
 
-`sudo modprobe -v rtl8723de ant_sel=2`
+```bash
+sudo modprobe -v rtl8723de ant_sel=2
+```
 
 En este caso, el parámetro `ant_sel=2` lo uso porque de lo contrario la señal que se recibe mi antena de wifi es
 débil. Algunas antenas wifi podrían recibir la señal con suficiente intensidad desde el primer momento así que no sería
 necesario. De todas formas, si lo necesitas, para hacer esta configuración de antena permanente puedes escribir
 
-`sudo echo "options rtl8723de ant_sel=2" > /etc/modprobe.d/50-rtl8723de.conf`
+```bash
+sudo echo "options rtl8723de ant_sel=2" > /etc/modprobe.d/50-rtl8723de.conf
+```
 
 Pero recuerda que el parámentro `ant_sel=2` solo es imprescindible si tu antena de wifi no recibe la señal
 con suficiente intensidad. Para saber si es tu caso puedes escribir en el terminal
 
-`DEVICE=$(iw dev | grep Interface | cut -d " " -f2)`
+```bash
+DEVICE=$(iw dev | grep Interface | cut -d " " -f2)
+```
 
 y luego
 
-`sudo iw dev $DEVICE scan | egrep "SSID|signal|\(on"`
+```bash
+sudo iw dev $DEVICE scan | egrep "SSID|signal|\(on"
+```
 
 Si la señal de tu wifi es inferior a $-60$ entonces es que tu tarjeta no recibe la señal bien y tu red funcionaría lenta
 o incluso puede que se llegue a perder la señal.
