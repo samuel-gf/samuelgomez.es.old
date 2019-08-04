@@ -1,15 +1,16 @@
 <?php
 
-// Action ordered to the script
+# Action ordered to the script
 $a = array_key_exists('a', $_GET)?$_GET['a']:NULL;
 $htmlCaller = array_key_exists('htmlcaller', $_GET)?$_GET['htmlcaller']:NULL; // Ej: html/matematicas/tecnologia/2018-10-21.katex-vs-mathjax.html
 
-// Remove first directory of the html caller string
+# Remove first directory of the html caller string
 $arrTmp = explode("/", $htmlCaller);
 unset($arrTmp[0]);
 $htmlCaller = implode("/", $arrTmp);
 
-$url = $_SERVER['SCRIPT_URI'];
+#$url = $_SERVER['SCRIPT_URI'];
+$url = $htmlCaller;
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 $clienteIp = $_SERVER['REMOTE_ADDR'];
 $idioma = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
