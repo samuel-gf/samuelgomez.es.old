@@ -1,2 +1,4 @@
 RewriteEngine on
-Redirect "/matematicas/tecnologia-matematica/2018-10-21.katex-vs-mathjax.html" "/informatica/2018-10-21-katex-vs-mathjax.html"
+Redirect 301 "/matematicas/tecnologia-matematica/2018-10-21.katex-vs-mathjax.html" "/informatica/2018-10-21-katex-vs-mathjax.html"
+Redirect 301 "/fisica/2018-11-03.teorizando-sobre-oumuamua-como-un-objeto-artificial.html" "/exploracion-espacial/extrasolar/2018-11-03-teorizando-sobre-oumuamua-como-un-objeto-artificial.html"
+ErrorDocument 404 "/404.html"

@@ -40,10 +40,14 @@ nav li a{
 
 .menulevel0 {
 	list-style: none;
+	border-bottom: 1px solid black;
+	margin-top: 2rem;
+	font-weight: bold;
 }
 
 .menulevel0 a{
 	color: black;	
+	text-decoration: none;
 }
 
 .menulevel1{
@@ -52,11 +56,16 @@ nav li a{
 }
 
 .menulevel1 a{
+	text-decoration: none;
 }
 
 .menulevel2{
 	padding-left: 4rem;
 	list-style: none;
+}
+
+.menulevel2 a{
+	text-decoration: none;
 }
 
 .menulevel3{
